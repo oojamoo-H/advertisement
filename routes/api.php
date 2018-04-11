@@ -13,6 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::namespace('Admin')->group(function (){
+    Route::get('/getUserList', 'UserController@getUserList');
+    Route::get('/generateCode', 'UserController@generateCode');
+    Route::post('/updatePoint', 'UserController@updatePoint');
 });
