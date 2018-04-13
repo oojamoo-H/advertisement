@@ -3,9 +3,8 @@
 @section('content')
     <div class="x-nav">
       <span class="layui-breadcrumb">
-        <a href="">首页</a>
-        <a href="">演示</a>
-        <a><cite>导航元素</cite></a>
+        <a href="javascript:;">User</a>
+        <a><cite>All Users</cite></a>
       </span>
         <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="javascript:location.replace(location.href);" title="刷新">
             <i class="layui-icon" style="line-height:30px">ဂ</i></a>
@@ -13,7 +12,7 @@
     <div class="x-body">
         <div class="layui-row">
             <div class="layui-form layui-col-md12 x-so">
-                <input type="text"  name="username"  placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                <input type="text"  name="username"  placeholder="Please entry username" autocomplete="off" class="layui-input">
                 <button class="layui-btn"  id="search" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
             </div>
         </div>
@@ -37,9 +36,11 @@
             laydate.render({
                 elem: '#end' //指定元素
             });
-
             //第一个实例
             var tableIns = table.render({
+                headers:{
+                    'X-SESSION-TOKEN' : $(window.parent.document).find('meta[name="session-token"]').attr('content')
+                },
                 elem: '#userTable',
                 loading:true,
                 height: 315,
@@ -80,7 +81,7 @@
                                     return false;
                                 }
 
-                                Helper.set_point({id: obj.data.id,point:point}, function (res) {
+                                Ajax.set_point({id: obj.data.id,point:point}, function (res) {
                                     if(res.code === 1){
                                         layer.close(index);
                                         tableReload();
@@ -93,7 +94,7 @@
                     case 'generateCode':
                         generateCode(obj.data, function (res) {
                             if (res.code === 1){
-                                layer.confirm(obj.data.username + "'s auth code is " + "<font color='red'>" + res.data + "</font>", {
+                                layer.confirm(obj.data.username + "'s new auth code is " + "<font color='red'>" + res.data + "</font>", {
                                     title:'Tips!',
                                     btn: ['Ok'],
                                     btn1:function (index) {
@@ -124,11 +125,11 @@
         });
 
         function generateCode(data, success){
-            Helper.generate_code({id:data.id}, success)
+            Ajax.generate_code({id:data.id}, success)
         }
 
         function setPoint(data, success){
-            Helper.set_point(data, success);
+            Ajax.set_point(data, success);
         }
     </script>
     @verbatim

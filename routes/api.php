@@ -14,7 +14,5 @@ use Illuminate\Http\Request;
 */
 
 Route::namespace('Admin')->group(function (){
-    Route::get('/getUserList', 'UserController@getUserList');
-    Route::get('/generateCode', 'UserController@generateCode');
-    Route::post('/updatePoint', 'UserController@updatePoint');
+
 });

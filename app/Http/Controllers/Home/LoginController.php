@@ -27,17 +27,37 @@ class LoginController extends BaseController
      * @param Request $request
      * @return array
      */
-    public function login(Request $request){
-        $username = $request->input('input');
-        $password = $request->input('password');
+    public function login(Request $request)
+    {
+        $username = $request->input('username');
+        $password = md5($request->input('password'));
 
-        if (! User::where(array('username' => $username, 'password' => md5($password), 'is_active' => 1))){
+        if (! $username){
+            return $this->Error(-1, 'Username is empty');
+        }
+
+        if (! $password){
+            return $this->Error(-1, 'Password is empty');
+        }
+
+        if (! $user = User::where(array('username' => $username, 'password' => $password))->select(array('id', 'username', 'is_active'))->first()){
             return $this->Error(-1, 'Please Register First');
         }
+
+        if (! $user->is_active){
+            return $this->Error(-2, 'Please contact customer service to activate');
+        }
+
+        $token = generate_user_token($user['id']);
+        $request->session()->put('home_user', $token);
+        return $this->Success($user->toArray());
     }
 
     /**
      * api-Logout
      */
-    public function logout(){}
+    public function logout()
+    {
+
+    }
 }

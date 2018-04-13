@@ -1,54 +1,79 @@
-<!DOCTYPE html>
-<html>
+@extends('home.layout.app')
+@section('content')
+<header class="mui-bar mui-bar-nav" style="background: #000">
+    <h1 class="mui-title">Login</h1>
+</header>
 
-<head>
-    <meta charset="utf-8">
-    <title>
-        X-admin v1.0
-    </title>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="{{asset('/X-admin/css/xadmin.css')}}" media="all">
-</head>
+<div class="mui-content">
+    <div class="login">
+        <form id='login-form' class="input-group" action="index.html">
+            <div>
+                <label>Username<span class="fr text-warning"></span></label>
+                <div class="mui-input-row">
+                    <input id='login-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
+                </div>
+            </div>
+            <div>
+                <label>Password<span class="fr text-warning"></span></label>
+                <div class="mui-input-row">
+                    <input id='login-password' type="password" autocomplete="new-password" class="mui-input-clear mui-input form-control" placeholder="Please entry password">
+                </div>
+            </div>
+            <button id='login' class="mui-btn mui-btn-block login-btn mui-btn-primary" data-loading-icon-position="right">Login</button>
 
-<body style="background-color: #393D49">
-<div>
+            <div class="link-area mui-text-center">
+                <a href="javascript:;" id='regBtn'>Register</a>
+            </div>
+        </form>
+    </div>
 
+    <div class="reg mui-hidden">
+        <form class="input-group">
+            <div>
+                <label>Username<span class="fr text-warning"></span></label>
+                <div class="mui-input-row">
+                    <input id='reg-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
+                </div>
+            </div>
+            <div>
+                <label>Password<span class="fr text-warning"></span></label>
+                <div class="mui-input-row">
+                    <input id='reg-password' type="password" autocomplete="new-password" class="mui-input-clear mui-input form-control" placeholder="Please entry password">
+                </div>
+            </div>
+            <div>
+                <label>Confirm</label>
+                <div class="mui-input-row">
+                    <input id='password_confirm' type="password" autocomplete="new-password" class="mui-input-clear mui-input form-control" placeholder="Please confirm password">
+                </div>
+            </div>
+            <div>
+                <label>Authentication<a style="color:red" href="javascript:;" id="registerTemp">（Before your register, please click to get the code）</a></label>
+                <div class="mui-input-row">
+                    <input id='code' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry code">
+                </div>
+            </div>
+            <div class="mui-content-padded">
+                <button id='register' class="mui-btn mui-btn-block mui-btn-primary">Register</button>
+            </div>
+
+            <div class="link-area mui-text-center">
+                <a href="javascript:;" id='logBtn'>Login</a>
+            </div>
+        </form>
+
+    </div>
 </div>
-<script src="{{asset('/X-admin/lib/layui/layui.js')}}" charset="utf-8">
-</script>
-<script>
-    layui.use(['form'],
-        function() {
-            $ = layui.jquery;
-            var form = layui.form,
-                layer = layui.layer;
 
-            $('.x-login-right li').click(function(event) {
-                color = $(this).attr('color');
-                $('body').css('background-color', color);
-            });
-
-            //监听提交
-            form.on('submit(save)',
-                function(data) {
-                    console.log(data);
-                    layer.alert(JSON.stringify(data.field), {
-                        title: '最终的提交信息'
-                    },function  () {
-                        location.href = "./index.html";
-                    })
-                    return false;
-                });
-
-        });
-
-</script>
-</body>
-
-</html>
+<div id="popover" class="mui-popover code-content">
+    <div class="mui-popup mui-popup-in">
+        <div class="mui-popup-inner">
+            <div class="mui-popup-title">
+                <img src="img/code.png" class="code"/>
+            </div>
+            <div class="mui-popup-text">Please contact customer service to get authentication code</div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="{{asset('/js/home/login.js')}}"></script>
+@endsection

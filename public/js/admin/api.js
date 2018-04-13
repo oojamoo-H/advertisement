@@ -1,5 +1,8 @@
 const API_LIST = {
-    'GET_ADMIN_USER_LIST' : 'api/getUserList',
-    'GENERATE_CODE' : 'api/generateCode',
-    'UPDATE_POINT' : 'api/updatePoint'
+    'GET_ADMIN_USER_LIST' : 'server/getUserList',
+    'GENERATE_CODE' : 'server/generateCode',
+    'UPDATE_POINT' : 'server/updatePoint',
+    'GT_AUTH' : 'server/gt',
+    'ADMIN_LOGIN' : 'server/login',
+    'ADMIN_LOGOUT': 'server/logout'
 }

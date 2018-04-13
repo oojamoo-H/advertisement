@@ -11,3 +11,17 @@ if (!function_exists('generate_user_auth_code')){
         return str_random($length);
     }
 }
+
+if (! function_exists('get_new_file_name')){
+    function get_new_file_name($file){
+        $ext = $file->getClientOriginalExtension();
+        return date('Y-m-d-H-i-s'). '-' . uniqid() . '.' . $ext;
+
+    }
+}
+
+if (! function_exists('generate_token')){
+    function generate_user_token($user_id, $prefix = 'user_token', $more_entropy = null){
+        return md5($user_id . uniqid($prefix, $more_entropy));
+    }
+}

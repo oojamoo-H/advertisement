@@ -23,32 +23,50 @@ class UserController extends BaseController
      */
     public function register(Request $request)
     {
-        $username = $request->input('username');
-        $password = $request->input('password');
-        $confirm_password = $request->input('confirm_password');
+        $username = trim($request->input('username'));
+        $password = trim($request->input('password'));
+        $confirm_password = trim($request->input('confirm_password'));
+        $auth_code = trim($request->input('code'));
+
+        // If username is empty return invalid
         if (! $username){
             return $this->Error(-1, 'Username Is Empty');
         }
 
+        // If password is empty return invalid
         if (! $password){
             return $this->Error(-1, 'Password Is Empty');
         }
 
-        if (! $password !== $confirm_password){
+        // If confirm_password is wrong return invalid
+
+        if ($password !== $confirm_password){
             return $this->Error(-1, 'Password Is Not Matched');
         }
 
-        if ($user = User::where('username', trim($username))->first()){
+        // If auth_code is empty return invalid
+        if (! $auth_code){
+            return $this->Error(-1, 'Auth Code Not Found');
+        }
+
+        $user = User::where(array('username' => $username))->first();
+
+        // If this user has been activated return invalid
+        if ($user->is_active){
             return $this->Error(-1, 'This Username Has Been Used');
         }
 
-        $user = new User();
-        $user->username = $user;
+        // If the auth code is wrong return invalid
+        if (! UserAuth::where(array('user_id' => $user['id'], 'auth_code' => $auth_code))->first()){
+            return $this->Error(-1, 'Auth Code is Wrong');
+        }
+
+        //Update user to activate
         $user->password = md5($password);
-        $user->is_active = 0;
-        $user->status = 0;
-        $result = $user->save();
-        return $this->Success();
+        $user->is_active = 1;
+        $user->save();
+        //Finish
+        return $this->Success($user);
     }
 
     /**
@@ -56,29 +74,26 @@ class UserController extends BaseController
      * @param Request $request
      * @return array
      */
-    public function activate(Request $request){
-        $auth_code = $request->input('code');
-        $user_id = $request->input('id');
+    public function registerTemp(Request $request)
+    {
+        $username = trim($request->input('username'));
 
-        if (! $auth_code || $user_id){
-            return $this->Error(-1, 'Param Not Found');
+        $user = User::where(array('username' => $username))->first();
+        if (! $user){
+            $user = new User();
+            $user->username = $username;
+            $user->password = '';
+            $user->is_active = 0;
+            $user->status = 0;
+            $user->save();
+            return $this->Success($user->id);
         }
 
-        if (! $auth = UserAuth::where(array('user_id' => $user_id, 'auth_code' => $auth_code))->fisrt()->toArray()){
-            return $this->Error(-1, 'Auth Code Error');
+        $user = $user->toArray();
+        if ($user['is_active']){
+            return $this->Error(-1,'This user has been activated');
         }
 
-        /**
-         * 此处激活码超时设定暂时不用
-         */
-        $expire = System::where('key', 'code_expire')->select('value')->first();
-        if (time() > strtotime($auth['updated_at']) + $expire['value']){
-            //#TODO
-        }
-
-        $user = User::find($user_id);
-        $user->is_active = 1;
-        $user->save();
-        return $this->Success();
+        return $this->Success(array('userId' =>$user['id']));
     }
 }

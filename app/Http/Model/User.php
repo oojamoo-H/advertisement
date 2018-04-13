@@ -14,4 +14,14 @@ class User extends BaseModel
     {
         return $this->hasOne('App\Http\Model\UserAsset');
     }
+
+    public function advertisement()
+    {
+        return $this->hasManyThrough('App\Http\Model\Advertisement', 'App\Http\Model\AdvertisementUserCity', 'user_id', 'id');
+    }
+
+    public function city(){
+        return $this->hasManyThrough('App\Http\Model\City', 'App\Http\Model\AdvertisementUserCity', 'user_id', 'id');
+
+    }
 }

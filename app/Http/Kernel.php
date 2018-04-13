@@ -29,6 +29,7 @@ class Kernel extends HttpKernel
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+//            \App\Http\Middleware\SessionStart::class,
             \Illuminate\Session\Middleware\StartSession::class,
             // \Illuminate\Session\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
@@ -56,5 +57,8 @@ class Kernel extends HttpKernel
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'admin.auth' => \App\Http\Middleware\AdminAuth::class,
+        'user.auth' => \App\Http\Middleware\UserAuth::class,
+        'admin.api.auth' => \App\Http\Middleware\AdminApiAuth::class,
     ];
 }

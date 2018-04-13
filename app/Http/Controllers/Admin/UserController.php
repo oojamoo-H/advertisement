@@ -17,8 +17,9 @@ use DB;
 
 class UserController extends BaseController
 {
-    public function index()
+    public function index(Request $request  )
     {
+        //print_r($request->session()->getId());exit;
         return view('admin.user');
     }
 
@@ -28,6 +29,7 @@ class UserController extends BaseController
      * @return array
      */
     public function getUserList(Request $request){
+
         $user_name = $request->input('username');
         $limit = $request->input('limit');
         $db = DB::table('users');

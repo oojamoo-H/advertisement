@@ -7,7 +7,6 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
-
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="{{asset('/X-admin/css/font.css')}}">
     <link rel="stylesheet" href="{{asset('/X-admin/css/xadmin.css')}}">
@@ -22,7 +21,7 @@
     <![endif]-->
     <script type="text/javascript" src="{{asset('/js/admin/config.js')}}"></script>
     <script type="text/javascript" src="{{asset('/js/admin/api.js')}}"></script>
-    <script type="text/javascript" src="{{asset('/js/helper.js')}}"></script>
+    <script type="text/javascript" src="{{asset('/js/admin/ajax.js')}}"></script>
 </head>
 
 <body>

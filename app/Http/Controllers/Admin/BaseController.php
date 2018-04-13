@@ -12,6 +12,8 @@ use App\Http\Controllers\Controller;
 
 class BaseController extends Controller
 {
+
+
     protected $response = array(
         'code' => 1,
         'data' => array(),
@@ -24,7 +26,7 @@ class BaseController extends Controller
     }
 
     protected function Error($status, $msg){
-        $this->response['status'] = $status;
+        $this->response['code'] = $status;
         $this->response['msg'] = $msg;
         return $this->response;
     }
