@@ -107,7 +107,7 @@
                 'X-SESSION-TOKEN': $('meta[name="session-token"]').attr('content')
             },
             success:function (res) {
-//                location.href = '/admin/signUp';
+                location.href = '/admin/signUp';
             }
         })
     })
