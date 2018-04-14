@@ -7,4 +7,5 @@ const API_LIST = {
     'ADMIN_LOGOUT': 'server/logout',
     'GET_ADVERTISEMENT_LIST' : 'server/getAdvertisementList',
     'GET_ADVERTISEMENT_MEDIA' : 'server/getAdvertisementMedia',
+    'SYSTEM_SAVE': 'server/systemSave'
 }

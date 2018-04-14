@@ -11,5 +11,5 @@ namespace App\Http\Model;
 
 class System extends BaseModel
 {
-
+    protected $fillable = ['key', 'value', 'show_name', 'description'];
 }

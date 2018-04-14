@@ -43,3 +43,7 @@ Ajax.get_advertisement_list = function (data, success) {
 Ajax.get_advertisement_media = function (data, success) {
     Ajax.get(BaseUri + API_LIST.GET_ADVERTISEMENT_MEDIA, data, success);
 };
+
+Ajax.system_save = function (data, success) {
+    Ajax.post(BaseUri + API_LIST.SYSTEM_SAVE, data, success);
+}

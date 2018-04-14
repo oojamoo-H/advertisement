@@ -245,7 +245,9 @@
             <div class="mui-popup-text" style="text-align: left">2.Open screen in wechat client </div>
             <div class="mui-popup-text" style="text-align: left">3.Long press to identify the QR-code</div>
             <div class="mui-popup-text" style="text-align: left">4.Entry into the shop to buy credit</div>
-            <div class="mui-popup-text" style="text-align: left">Tel:<a style="margin-left: 15px" href="tel:66666666">66666666</a><a style="margin-left: 15px" href="tel:66666666">66666666</a></div>
+            <div class="mui-popup-text" style="text-align: left">
+                Tel:<a id="service_tel" style="margin-left: 15px" href=""></a>
+            </div>
         </div>
     </div>
 </div>

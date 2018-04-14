@@ -116,4 +116,9 @@ class UserController extends BaseController
 
         return $this->Success(array('userId' =>$user['id']));
     }
+
+    public function getServiceTel(){
+        $tel = System::where('key', 'service_tel')->select('value')->first();
+        return $this->Success($tel);
+    }
 }

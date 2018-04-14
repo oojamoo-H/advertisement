@@ -60,3 +60,7 @@ Ajax.search_advertisement = function (data, success) {
 Ajax.get_top = function (data, success) {
     Ajax.get(BaseUri + API_LIST.GET_TOP, data, success);
 }
+
+Ajax.get_service_tel = function (data, success) {
+    Ajax.get(BaseUri + API_LIST.GET_SERVICE_TEL, data, success);
+}

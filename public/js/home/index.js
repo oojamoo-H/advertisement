@@ -20,6 +20,12 @@ $(function($) {
         mui('.mui-slider').slider({interval:2000});
 
     })
+    
+    Ajax.get_service_tel({}, function (res) {
+	    if (res.code === 1){
+            $('#service_tel').prop('href', 'tel:' + res.data.value).text(res.data.value);
+        }
+    })
 
     mui('body').on('tap', '.parent-cities', function () {
         $('.parent-cities').removeClass('selected');

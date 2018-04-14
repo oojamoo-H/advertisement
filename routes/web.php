@@ -31,7 +31,7 @@ Route::namespace('Home')->group(function(){
     Route::post('/user/registerTemp', 'UserController@registerTemp');
     Route::post('/user/login', 'LoginController@login');
     Route::post('/user/register', 'UserController@register');
-
+    Route::get('/user/getServiceTel', 'UserController@getServiceTel');
     Route::get('/login', 'LoginController@index');
 
 });
@@ -51,6 +51,7 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
         Route::get('/user', 'UserController@index');
         Route::get('/region', 'RegionController@index');
         Route::get('/userDetail', 'UserController@detail');
+        Route::get('setting', 'SystemController@index');
     });
 
     Route::get('/signUp', 'LoginController@index');
@@ -65,6 +66,7 @@ Route::namespace('Admin')->prefix('server')->group(function(){
         Route::get('/logout', 'LoginController@logout');
         Route::get('/getAdvertisementList', 'AdvertisementController@getAdvertisementList');
         Route::get('/getAdvertisementMedia', 'AdvertisementController@getAdvertisementMedia');
+        Route::post('/systemSave', 'SystemController@systemSave');
     });
 
     Route::post('/login', 'LoginController@login');
