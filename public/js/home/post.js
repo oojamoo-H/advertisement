@@ -38,6 +38,9 @@ $(function () {
             $('.img-list').find('img').eq(index).data('image-id', res.data.media_id);
             $('.img-list').find('img').eq(index).prop('src', res.data.url);
             index++;
+        },
+        error:function (index, upload) {
+            console.log(upload)
         }
     });
     
@@ -57,7 +60,7 @@ $(function () {
                     data.push(city);
                 })
 
-                var picker = new mui.PopPicker({layer: 2});
+                var picker = new mui.PopPicker({layer: 2, buttons:['cancle','ok']});
                 picker.setData(data);
                 picker.pickers[0].setSelectedIndex(0);
                 picker.pickers[1].setSelectedIndex(0);

@@ -170,7 +170,7 @@ ul {
 .search input {
   position: relative;
   z-index: 999;
-  width: 300px;
+  width: 80px;
   height: 29px;
   margin: 6px 0;
   border: 0;

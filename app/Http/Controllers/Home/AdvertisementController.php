@@ -32,9 +32,11 @@ class AdvertisementController extends BaseController
     {
         $parent_city = $request->input('parent_city') ? $request->input('parent_city') : 0;
         $sub_city = $request->input('sub_city');
+        $orderBy = $request->input('orderby');
 
         $parent_cities = City::where('parent_id', 0)->select(array('id', 'city_name'))->get()->toArray();
         $sub_cities = array();
+
 
         if ($parent_city != 0){
             if ($sub_cities_result = City::where('parent_id', $parent_city)->select(array('id', 'city_name'))->get()){
@@ -44,22 +46,38 @@ class AdvertisementController extends BaseController
 
         $sub_city = $sub_city ? $sub_city : $parent_city;
 
-        $results = DB::table('cities as c')
+        $db = DB::table('cities as c')
             ->select('ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content')
             ->leftjoin('advertisement_user_cities as auc','auc.city_id','=','c.id')
             ->join('users as u', 'u.id', '=', 'auc.user_id')
             ->join('advertisements as ad', 'ad.id', '=', 'auc.advertisement_id')
-            ->where('c.id', '=', $sub_city)
-            ->get();
+            ->where('c.id', '=', $sub_city);
 
-        if ($results){
-            $results = $results->toArray();
+
+        if ($orderBy == 'date'){
+            $db->orderBy('ad.created_at', 'desc');
+        }
+
+        if ($results = $db->get()){
             foreach ($results as &$res){
                 $media = DB::table('media as m')
                     ->join('advertisement_media as am','am.media_id', '=', 'm.id')
                     ->where('am.advertisement_id', '=', $res->advertisement_id)
                     ->get();
-                $res->media = $media ? $media : array();
+                $image = array(); $video = array();
+                if ($media){
+                    foreach ($media as $m){
+                        if ($m->media_type == 'image'){
+                            array_push($image, $m);
+                        }
+
+                        if ($m->media_type == 'video'){
+                            array_push($video, $m);
+                        }
+                    }
+                }
+                $res->image = $image;
+                $res->video = $video;
             }
         } else {
             $results = array();
@@ -68,24 +86,90 @@ class AdvertisementController extends BaseController
         return $this->Success(array('cities' => $parent_cities, 'advertisement_list' => $results, 'sub_cities' => $sub_cities));
     }
 
+    public function getTop(){
 
-    public function getAdvertisement(Request $request)
+        $user_top = DB::table('user_assets as ua')
+            ->join('advertisement_user_cities as auc', 'auc.user_id', '=', 'ua.user_id')
+            ->orderBy('ua.point', 'desc')
+            ->limit(5)
+            ->get();
+        if ($user_top){
+            $user_top = $user_top->toArray();
+            foreach ($user_top as &$top){
+                $media = DB::table('media as m')
+                    ->select('m.media_url', 'am.advertisement_id')
+                    ->join('advertisement_media as am','am.media_id', '=', 'm.id')
+                    ->where('am.advertisement_id', '=', $top->advertisement_id)
+                    ->where('m.media_type', '=', 'image')
+                    ->orderBy('m.created_at', 'desc')
+                    ->first();
+                $top->media = $media ? $media : array();
+            }
+        } else {
+            $user_top = array();
+        }
+
+        return $this->Success($user_top);
+    }
+
+
+    public function searchAdvertisement(Request $request)
     {
-        $city_id = $request->input('city_id') ? $request->input('city_id') : 1;
-        $advertisement_list = City::with('advertisement.media')->where('id', $city_id)->get()->toArray();
+        $keyword = $request->input('keyword');
+
+        $results = DB::table('advertisements as ad')
+            ->leftjoin('advertisement_user_cities as auc','auc.advertisement_id','=','ad.id')
+            ->join('users as u', 'u.id', '=','auc.user_id')
+            ->where('ad.content', 'like', "%{$keyword}%")
+            ->get();
+        if ($results){
+            $results = $results->toArray();
+            foreach ($results as &$res){
+                $media = DB::table('media as m')
+                    ->join('advertisement_media as am','am.media_id', '=', 'm.id')
+                    ->where('am.advertisement_id', '=', $res->advertisement_id)
+                    ->get();
+                $image = array(); $video = array();
+                if ($media){
+                    foreach ($media as $m){
+                        if ($m->media_type == 'image'){
+                            array_push($image, $m);
+                        }
+
+                        if ($m->media_type == 'video'){
+                            $video = $m;
+                        }
+                    }
+                }
+                $res->image = $image;
+                $res->video = $video;
+            }
+        } else {
+            $results = array();
+        }
+
+        return $this->Success(array('advertisement_list' => $results));
 
     }
 
     public function detail(Request $request)
     {
         $ad_id = $request->input('ad_id');
-        $user_id = $request->input('user_id');
-        $ad_detail = Advertisement::with('media')->where('id', $ad_id)->first()->toArray();
-        $user_ad = User::with('advertisement', 'city')->where('id', $user_id)->first()->toArray();
-        return view('home.detail', array('detail' => $ad_detail, 'user_ad' => $user_ad));
+        if ($ad_detail = Advertisement::with('media')->where('id', $ad_id)->first()){
+            $other_detail = DB::table('advertisement_user_cities as auc')
+                            ->join('users as u', 'auc.user_id', '=', 'u.id')
+                            ->where('auc.advertisement_id', '=', $ad_detail->id)
+                            ->select('u.id', 'u.username')
+                            ->first();
+            $user_ad = User::with('advertisement', 'city')->select('id', 'nickname')->where('id', $other_detail->id)->first();
+            return view('home.detail', array('detail' => $ad_detail, 'user_ad' => $user_ad));
+        } else {
+            return view('home.no-data');
+
+        }
     }
 
-    public function search()
+    public function search(Request $request)
     {
 
     }

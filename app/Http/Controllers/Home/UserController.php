@@ -25,12 +25,21 @@ class UserController extends BaseController
     {
         $username = trim($request->input('username'));
         $password = trim($request->input('password'));
+        $nickname = trim($request->input('nickname'));
         $confirm_password = trim($request->input('confirm_password'));
         $auth_code = trim($request->input('code'));
 
         // If username is empty return invalid
         if (! $username){
             return $this->Error(-1, 'Username Is Empty');
+        }
+
+        if(! $nickname){
+            return $this->Error(-1, 'Nickname Is Empty');
+        }
+
+        if (strlen($nickname) > 12){
+            return $this->Error(-1, 'Too long for nickname');
         }
 
         // If password is empty return invalid
@@ -49,6 +58,11 @@ class UserController extends BaseController
             return $this->Error(-1, 'Auth Code Not Found');
         }
 
+
+        if(User::where('nickname', $nickname)->first()){
+            return $this->Error(-1, 'Nickname has been used');
+        }
+
         $user = User::where(array('username' => $username))->first();
 
         // If this user has been activated return invalid
@@ -64,6 +78,7 @@ class UserController extends BaseController
         //Update user to activate
         $user->password = md5($password);
         $user->is_active = 1;
+        $user->nickname = $nickname;
         $user->save();
         //Finish
         return $this->Success($user);
@@ -77,6 +92,11 @@ class UserController extends BaseController
     public function registerTemp(Request $request)
     {
         $username = trim($request->input('username'));
+
+        // If username is empty return invalid
+        if (! $username){
+            return $this->Error(-1, 'Please entry username first to get code');
+        }
 
         $user = User::where(array('username' => $username))->first();
         if (! $user){

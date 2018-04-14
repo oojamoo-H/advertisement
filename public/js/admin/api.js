@@ -4,5 +4,7 @@ const API_LIST = {
     'UPDATE_POINT' : 'server/updatePoint',
     'GT_AUTH' : 'server/gt',
     'ADMIN_LOGIN' : 'server/login',
-    'ADMIN_LOGOUT': 'server/logout'
+    'ADMIN_LOGOUT': 'server/logout',
+    'GET_ADVERTISEMENT_LIST' : 'server/getAdvertisementList',
+    'GET_ADVERTISEMENT_MEDIA' : 'server/getAdvertisementMedia',
 }

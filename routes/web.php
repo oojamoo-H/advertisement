@@ -14,17 +14,18 @@
 
 Route::namespace('Home')->group(function(){
     Route::group(array('middleware' => array('web', 'user.auth')), function(){
-
-        Route::get('/ad/detail', 'AdvertisementController@detail');
         Route::get('/ad/post', 'AdvertisementController@postAd');
         Route::post('/ad/save', 'AdvertisementController@saveAd');
         Route::get('/ad/getAdvertisement', 'AdvertisementController@getAdvertisement');
         Route::get('/user', 'UserController@index');
         Route::get('/ad/getCity', 'RegionController@getCity');
         Route::post('/upload', 'UploadController@upload');
+        Route::post('ad/searchAdvertisement', 'AdvertisementController@searchAdvertisement');
     });
 
     Route::get('/', 'AdvertisementController@index');
+    Route::get('/ad/detail', 'AdvertisementController@detail');
+    Route::get('/ad/getTop', 'AdvertisementController@getTop');
     Route::get('/index', 'AdvertisementController@index');
 
     Route::post('/user/registerTemp', 'UserController@registerTemp');
@@ -49,6 +50,7 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
         Route::get('/', 'IndexController@index');
         Route::get('/user', 'UserController@index');
         Route::get('/region', 'RegionController@index');
+        Route::get('/userDetail', 'UserController@detail');
     });
 
     Route::get('/signUp', 'LoginController@index');
@@ -61,6 +63,8 @@ Route::namespace('Admin')->prefix('server')->group(function(){
         Route::get('/generateCode', 'UserController@generateCode');
         Route::post('/updatePoint', 'UserController@updatePoint');
         Route::get('/logout', 'LoginController@logout');
+        Route::get('/getAdvertisementList', 'AdvertisementController@getAdvertisementList');
+        Route::get('/getAdvertisementMedia', 'AdvertisementController@getAdvertisementMedia');
     });
 
     Route::post('/login', 'LoginController@login');

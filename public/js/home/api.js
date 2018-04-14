@@ -4,5 +4,7 @@ const API_LIST = {
     REGISTER_FOR_TEMP : 'user/registerTemp',
     REGISTER : 'user/register',
     SUBMIT_POST_AD : 'ad/save',
-    GET_CITY : 'ad/getCity'
+    GET_CITY : 'ad/getCity',
+    SEARCH_AD : 'ad/searchAdvertisement',
+    GET_TOP : 'ad/getTop'
 }

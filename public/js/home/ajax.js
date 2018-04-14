@@ -52,3 +52,11 @@ Ajax.submit_post_ad = function (data, success) {
 Ajax.get_city = function (data, success) {
     Ajax.get(BaseUri + API_LIST.GET_CITY, data, success);
 }
+
+Ajax.search_advertisement = function (data, success) {
+    Ajax.post(BaseUri + API_LIST.SEARCH_AD, data, success);
+}
+
+Ajax.get_top = function (data, success) {
+    Ajax.get(BaseUri + API_LIST.GET_TOP, data, success);
+}

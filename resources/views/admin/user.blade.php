@@ -27,32 +27,24 @@
             var laydate = layui.laydate;
             var table = layui.table;
             var layer = layui.layer
-            //执行一个laydate实例
-            laydate.render({
-                elem: '#start' //指定元素
-            });
 
-            //执行一个laydate实例
-            laydate.render({
-                elem: '#end' //指定元素
-            });
-            //第一个实例
             var tableIns = table.render({
                 headers:{
                     'X-SESSION-TOKEN' : $(window.parent.document).find('meta[name="session-token"]').attr('content')
                 },
                 elem: '#userTable',
                 loading:true,
-                height: 315,
+                height: 500,
                 url: BaseUri + API_LIST.GET_ADMIN_USER_LIST,
                 page: true,
                 cols: [[ //表头
                     {field: 'id', title: 'ID',width : 50},
-                    {field: 'username', title: 'Name'},
+                    {field: 'username', title: 'Name', width:150},
+                    {field: 'nickname', title: 'Nickname', width:150},
                     {field: 'point', title: 'Point', width:100},
-                    {field: 'code', title: 'Auth Code'},
-                    {field: 'is_active', title:'Active Status', templet: '#isActive', width:150},
-                    {field: 'created_at', title: 'Register Time'},
+                    {field: 'code', title: 'Auth Code', width:100},
+                    {field: 'is_active', title:'Active Status', templet: '#isActive', width:120},
+                    {field: 'created_at', title: 'Register Time', width:150},
                     {title:'Action', toolbar: '#barDemo'}
                 ]]
             });
@@ -109,6 +101,10 @@
                             }
                         });
                         break
+                    case 'viewDetail':
+                        location.href = '/admin/userDetail?user_id=' + obj.data.id
+                        break;
+
                 }
             });
 
@@ -131,11 +127,13 @@
         function setPoint(data, success){
             Ajax.set_point(data, success);
         }
+
     </script>
     @verbatim
         <script type="text/html" id="barDemo">
             <a class="layui-btn layui-btn-xs layui-btn-warm set-point"  lay-event="setPoint">Set Point</a>
             <a class="layui-btn layui-btn-xs set-point"  lay-event="generateCode">Generate Code</a>
+            <a class="layui-btn layui-btn-xs layui-btn-normal set-point"  lay-event="viewDetail">View</a>
         </script>
 
         <script type="text/html" id="isActive">

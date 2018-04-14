@@ -172,24 +172,40 @@
                 <div class="content mui-content-padded">
 
                     <h3 class="pb-sm">{{$detail['title']}}</h3>
+                    <p style="margin-top: 10px;">
+                        <div>Publisher:&nbsp;&nbsp;{{$user_ad['nickname']}}</div>
+                        <div>Date:&nbsp;&nbsp;{{$detail['created_at']}}</div>
+                    </p>
+
+                    <p style="margin-top: 25px;margin-bottom: 15px;">
+                        Content:
+                    </p>
+                    <p style="margin-top: 15px;margin-bottom: 15px;color:black;padding:0 20px">
+                        {{$detail['content']}}
+                    </p>
+                    <p style="margin-top: 25px;margin-bottom: 15px">
+                        Related Media:
+                    </p>
                     @foreach ($detail['media'] as $media)
-                        @if ($media['media_type'] === 'video/mp4')
+                        @if ($media['media_type'] === 'video')
                             <video width="100%" height="20%" controls="controls">
                                 <source src="{{$media['media_url']}}" type="video/mp4"></source>
                                 当前浏览器不支持 video直接播放
                             </video>
                             @break
                         @endif
+
                      @endforeach
                     <!--list-->
-                    <ul class="img-list">
-                        @foreach ($detail['media'] as $media)
-                            @if ($media['media_type'] === 'image/jpeg' || $media['media_type'] === 'image/png')
-                                <li><img data-preview-src="" data-preview-group="1"  style="width:100%" src="{{$media['media_url']}}"/></li>
-                            @endif
-                        @endforeach
-                    </ul>
+                    @foreach ($detail['media'] as $media)
+                        @if ($media['media_type'] === 'image')
+                            <div style="width:100%"><img data-preview-src="" data-preview-group="1"  style="width:100%" src="{{$media['media_url']}}"/></div>
+                        @endif
+                    @endforeach
                     <!--list-->
+                    <p style="margin-top:25px">
+                        Related Link:
+                    </p>
                     <ul class="news-list">
                         @foreach($user_ad['advertisement'] as $advertisement)
                         <li data-id="{{$advertisement['id']}}" data-user-id="{{$user_ad['id']}}" class="user-ads">{{$advertisement['content']}}</li>

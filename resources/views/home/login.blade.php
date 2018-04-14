@@ -48,6 +48,12 @@
                 </div>
             </div>
             <div>
+                <label>Nickname<span class="fr text-warning"></span></label>
+                <div class="mui-input-row">
+                    <input id='reg-nickname' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
+                </div>
+            </div>
+            <div>
                 <label>Authentication<a style="color:red" href="javascript:;" id="registerTemp">（Before your register, please click to get the code）</a></label>
                 <div class="mui-input-row">
                     <input id='code' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry code">

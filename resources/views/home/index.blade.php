@@ -173,9 +173,9 @@
                     <li class="mui-table-view-cell">
                         <a href="javascript:;" class="mui-navigate-right" id="buyPage">Buy Credit</a>
                     </li>
-                    <li class="mui-table-view-cell">
-                        <a href="javascript:;" class="mui-navigate-right" id="videoPage">My Account</a>
-                    </li>
+                    {{--<li class="mui-table-view-cell">--}}
+                        {{--<a href="javascript:;" class="mui-navigate-right" id="videoPage">My Account</a>--}}
+                    {{--</li>--}}
                     <li class="mui-table-view-cell">
                         <a href="javascript:;">NearBy</a>
                     </li>
@@ -188,8 +188,8 @@
         <header class="mui-bar mui-bar-nav">
             <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
             <div class="mui-icon-right-nav mui-pull-right search">
-                <input type="text" class="mui-input-clear" placeholder="">
-                <a href="javascript:;" class="mui-icon-search mui-icon"></a>
+                <input name="keyword" type="text" class="mui-input-clear" placeholder="">
+                <a href="javascript:;" class="mui-icon-search mui-icon search-ad"></a>
             </div>
         </header>
         <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
@@ -212,55 +212,19 @@
                 </div>
 
                 <!--swiper-->
-                <div id="slider" class="mui-slider">
-                    <div class="mui-slider-group mui-slider-loop">
-                        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-                        <div class="mui-slider-item mui-slider-item-duplicate">
-                            <a href="#">
-                                <img src="img/3.jpg">
-                            </a>
-                        </div>
-                        <!-- 第一张 -->
-                        <div class="mui-slider-item">
-                            <a href="#">
-                                <img src="img/1.jpg">
-                            </a>
-                        </div>
-                        <!-- 第二张 -->
-                        <div class="mui-slider-item">
-                            <a href="#">
-                                <img src="img/2.jpg">
-                            </a>
-                        </div>
-                        <!-- 第三张 -->
-                        <div class="mui-slider-item">
-                            <a href="#">
-                                <img src="img/3.jpg">
-                            </a>
-                        </div>
-                        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-                        <div class="mui-slider-item mui-slider-item-duplicate">
-                            <a href="#">
-                                <img src="img/1.jpg">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="mui-slider-indicator">
-                        <div class="mui-indicator mui-active"></div>
-                        <div class="mui-indicator"></div>
-                        <div class="mui-indicator"></div>
-                    </div>
+                <div id="slider" class="mui-slider  vip-swiper mui-slider-loop" >
+
                 </div>
 
                 <!--table-->
                 <div class="table pt-md tab-list">
-                    <a  href="javascript:;" class="mui-control-item tab" data-index="1">top</a>
+                    <a  href="javascript:;" id="topOrder" class="mui-control-item" data-index="1">top</a>
                     <span class="spliter">|</span>
                     <a  href="javascript:;" class="mui-control-item tab" data-index="2">gallery</a>
                     <span class="spliter">|</span>
                     <a  href="javascript:;" class="mui-control-item tab" data-index="3">vedio</a>
                     <span class="spliter">|</span>
-                    <a  href="javascript:;" class="mui-control-item tab" data-index="4">date</a>
+                    <a  href="javascript:;" id="dateOrder" class="mui-control-item" data-index="4">date</a>
                 </div>
                 <div id="advertisement-item">
 
@@ -277,7 +241,11 @@
             <div class="mui-popup-title">
                 <img src="img/code.png" class="code"/>
             </div>
-            <div class="mui-popup-text">Please contact customer service to get authentication code</div>
+            <div class="mui-popup-text" style="text-align: left">1.Take a screen shot </div>
+            <div class="mui-popup-text" style="text-align: left">2.Open screen in wechat client </div>
+            <div class="mui-popup-text" style="text-align: left">3.Long press to identify the QR-code</div>
+            <div class="mui-popup-text" style="text-align: left">4.Entry into the shop to buy credit</div>
+            <div class="mui-popup-text" style="text-align: left">Tel:<a style="margin-left: 15px" href="tel:66666666">66666666</a><a style="margin-left: 15px" href="tel:66666666">66666666</a></div>
         </div>
     </div>
 </div>
@@ -285,32 +253,6 @@
 <script src="{{asset('/js/home/mui.previewimage.js')}}"></script>
 <script src="{{asset('/js/home/mui.zoom.js')}}"></script>
 
-<script type="text/javascript">
-    $(function($){
-        mui.init();
-        $('.mui-inner-wrap').on('drag', function(event) {
-            event.stopPropagation();
-        });
-
-        mui('body').on('tap', '#buyPage', function () {
-            var session_user = $('meta[name=session-token]').attr('content')
-            if (! session_user){
-                Helper.redirect('/login')
-            } else {
-                mui('#offCanvasWrapper').offCanvas('close');
-                mui('#popover').popover('toggle');
-            }
-        });
-
-        mui('body').on('tap', '.tab', function () {
-            var index = $(this).data('index');
-            $('.mui-control-content').hide();
-            $('#item' + index).show();
-        })
-
-        mui.previewImage();
-    })
-</script>
     @verbatim
 
         <script type="text/html" id="aside-city">
@@ -344,34 +286,35 @@
             <div id="item1" class="mui-control-content mui-active">
                 <ul class="news-list">
                     {{# layui.each(d.advertisement_list, function(index, item){}}
-                    <li data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">{{item.content}}</li>
+                    <li style="word-wrap:break-word; " data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">{{item.content}}</li>
                     {{# }); }}
                 </ul>
             </div>
             <div id="item2" class="mui-control-content mui-active" style="display: none">
                 <ul class="news-list">
                     {{# layui.each(d.advertisement_list, function(index, item){}}
+                    {{# if (item.image.length > 0){}}
                     <li style="display: flex;flex-direction: row" data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
-                        {{# layui.each(item.media, function(i, mediaItem){}}
-                            {{# if(mediaItem.media_type ==='image/jpeg' || mediaItem.media_type ==='image/png'){}}
+                        {{# layui.each(item.image, function(i, mediaItem){}}
                             <img data-preview-src="" data-preview-group="{{index}}" style="margin-right: 3px" width="20%" height="20%" src="{{mediaItem.media_url}}"/>
-                            {{#} }}
                         {{# });}}
                     </li>
+                    {{#} }}
                     {{# }); }}
                 </ul>
             </div>
+
             <div id="item3" class="mui-control-content mui-active" style="display: none">
                 <ul class="news-list">
                     {{# layui.each(d.advertisement_list, function(index, item){}}
-                    <li data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
-                        {{# layui.each(item.media, function(i, mediaItem){}}
-                            {{# if(mediaItem.media_type ==='video/mp4'){}}
-                                <video width="100%" height="20%" src="{{mediaItem.media_url}}" controls="controls"></video>
-                            {{#} }}
-                        {{# });}}
 
+                    {{# if(item.video.length > 0){}}
+                    <li data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
+                        {{# layui.each(item.video, function(i, mediaItem){}}
+                            <video width="100%" height="20%" src="{{mediaItem.media_url}}" controls="controls"></video>
+                        {{# });}}
                     </li>
+                    {{#} }}
                     {{# }); }}
                 </ul>
             </div>
@@ -380,6 +323,35 @@
 
         <script type="text/html" id="vip-advertisement">
 
+            <div class="mui-slider-group mui-slider-loop">
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="/ad/detail?ad_id={{d[d.length - 1].advertisement_id}}">
+                        <img src="{{d[d.length - 1].media.media_url}}">
+                    </a>
+                </div>
+                {{# layui.each(d, function(index, item){}}
+
+                <!-- 第一张 -->
+                <div class="mui-slider-item">
+                    <a href="/ad/detail?ad_id={{item.advertisement_id}}">
+                        <img src="{{item.media.media_url}}">
+                    </a>
+                </div>
+
+                {{# }) }}
+                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+                <div class="mui-slider-item mui-slider-item-duplicate">
+                    <a href="/ad/detail?ad_id={{d[0].advertisement_id}}">
+                        <img src="{{d[0].media.media_url}}">
+                    </a>
+                </div>
+
+            </div>
+            <div class="mui-slider-indicator">
+                {{# layui.each(d, function(index, item){}}
+                <div class="mui-indicator {{# if(index == 0){}}mui-active {{# } }}"></div>
+                {{# }) }}
+            </div>
         </script>
 
     @endverbatim

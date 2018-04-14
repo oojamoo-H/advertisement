@@ -17,10 +17,16 @@ use DB;
 
 class UserController extends BaseController
 {
-    public function index(Request $request  )
+    public function index(Request $request)
     {
         //print_r($request->session()->getId());exit;
         return view('admin.user');
+    }
+
+    public function detail(Request $request){
+        $user_id = $request->input('user_id');
+
+        return view('admin.user-detail', array('user' => $user_id));
     }
 
     /**
@@ -40,7 +46,7 @@ class UserController extends BaseController
         }
 
         $result = $db->select(DB::raw(
-            'pre_users.id, pre_users.username, pre_users.created_at, pre_user_assets.point, pre_users.is_active, pre_users.status, pre_user_auths.auth_code as code, pre_user_auths.expire_in as expire'))
+            'pre_users.id, pre_users.username, pre_users.nickname, pre_users.created_at, pre_user_assets.point, pre_users.is_active, pre_users.status, pre_user_auths.auth_code as code, pre_user_auths.expire_in as expire'))
             ->leftJoin('user_assets', 'users.id', '=', 'user_assets.user_id')
             ->leftJoin('user_auths', 'users.id', '=', 'user_auths.user_id')
             ->paginate($limit)->toArray();

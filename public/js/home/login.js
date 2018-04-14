@@ -33,9 +33,16 @@ $(function(){
         mui('#register').button('loading');
         var username = $.trim($('#reg-username').val());
         var password = $.trim($('#reg-password').val());
+        var nickname = $.trim($('#reg-nickanme').val());
         var confirm_password = $.trim($('#password_confirm').val());
         var code = $.trim($('#code').val());
-        Ajax.register({username : username, password:password, confirm_password:confirm_password, code:code}, function (res) {
+        Ajax.register({
+            username: username,
+            password: password,
+            nickname: nickname,
+            confirm_password: confirm_password,
+            code: code
+        }, function (res) {
             mui('#register').button('reset');
             if (res.code === 1){
                 Helper.redirect('/login');

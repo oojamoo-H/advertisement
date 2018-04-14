@@ -21,6 +21,6 @@ class Advertisement extends BaseModel
 
     public function user()
     {
-        return $this->hasManyThrough('App\Http\Model\User', 'App\Http\Model\AdvertisementUserCity','advertisement_id', 'id')->select('users.id', 'advertisements.id');
+        return $this->hasManyThrough('App\Http\Model\User', 'App\Http\Model\AdvertisementUserCity','advertisement_id', 'id');
     }
 }

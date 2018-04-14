@@ -58,14 +58,14 @@
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe723;</i>
-                    <cite>Region</cite>
+                    <cite>System</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
                     <li>
                         <a _href="order-list.html">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>All Region</cite>
+                            <cite>System Setting</cite>
                         </a>
                     </li >
                 </ul>
@@ -79,7 +79,7 @@
 <div class="page-content">
     <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
         <ul class="layui-tab-title">
-            <li>我的桌面</li>
+            <li>Welecom</li>
         </ul>
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
@@ -93,7 +93,7 @@
 <!-- 中部结束 -->
 <!-- 底部开始 -->
 <div class="footer">
-    <div class="copyright">Copyright ©2017 x-admin v2.3 All Rights Reserved</div>
+    <div class="copyright">Copyright ©2017 </div>
 </div>
 </body>
 <script type="text/javascript" src="{{asset('/js/admin/config.js')}}"></script>
