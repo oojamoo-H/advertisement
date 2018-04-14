@@ -24,7 +24,7 @@ $(function(){
             } else if (res.code === -2) {
                 mui('#popover').popover('toggle');
             } else {
-                alert(res.msg)
+                mui.alert(res.msg, 'Alert', 'ok');
             }
         })
     });
@@ -40,7 +40,7 @@ $(function(){
             if (res.code === 1){
                 Helper.redirect('/login');
             } else {
-                alert(res.msg);
+                mui.alert(res.msg, 'Alert', 'ok');
             }
         })
     });
@@ -51,7 +51,7 @@ $(function(){
             if (res.code === 1){
                 mui('#popover').popover('toggle');
             } else {
-                alert(res.msg)
+                mui.alert(res.msg, 'Alert', 'ok');
             }
         })
 

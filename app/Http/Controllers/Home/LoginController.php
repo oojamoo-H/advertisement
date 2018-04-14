@@ -50,6 +50,7 @@ class LoginController extends BaseController
 
         $token = generate_user_token($user['id']);
         $request->session()->put('home_user', $token);
+        $request->session()->put('home_' . $token, $user->toArray());
         return $this->Success($user->toArray());
     }
 

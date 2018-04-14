@@ -12,7 +12,7 @@ $(function($) {
             Helper.render($('#sub-cities'), $('#sub-city'), res.data, 1);
             Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
 		} else {
-			alert(res.msg);
+            mui.alert(res.msg, 'Alert', 'ok');
 		}
     });
 
@@ -52,7 +52,7 @@ $(function($) {
         })
     });
 
-	mui('body').on('tap', '.news-list li', function () {
+	mui('body').on('tap', '#item1 li', function () {
 
 		Helper.redirect('/ad/detail', {
 			ad_id : $(this).data('id'),

@@ -11,5 +11,5 @@ namespace App\Http\Model;
 
 class AdvertisementUserCity extends BaseModel
 {
-
+    protected $fillable = ['user_id', 'city_id', 'advertisement_id'];
 }

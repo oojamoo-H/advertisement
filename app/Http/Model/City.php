@@ -15,4 +15,8 @@ class City extends BaseModel
     {
         return $this->hasManyThrough('App\Http\Model\Advertisement', 'App\Http\Model\AdvertisementUserCity', 'city_id', 'id');
     }
+
+    public function children(){
+        return $this->hasMany('App\Http\Model\City', 'parent_id', 'id')->select(array('id', 'city_name', 'parent_id'));
+    }
 }

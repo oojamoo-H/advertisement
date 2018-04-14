@@ -6,7 +6,7 @@
  * Time: 02:19
  */
 
-namespace app\Http\Controllers\Home;
+namespace App\Http\Controllers\Home;
 
 
 
@@ -17,11 +17,10 @@ class RegionController extends BaseController
 {
     public function getCity(Request $request)
     {
-
         if (! $parent_id = $request->input('parent_id')){
             $parent_id = 0;
         }
-        $city = City::where('parent_id', $parent_id)->get()->toArray();
+        $city = City::with('children')->where('parent_id', $parent_id)->select('id', 'city_name')->get()->toArray();
         return $this->Success($city);
     }
 }

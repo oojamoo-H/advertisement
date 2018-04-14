@@ -44,3 +44,11 @@ Ajax.register_for_temp = function (data, success) {
 Ajax.register = function (data, success) {
     Ajax.post(BaseUri + API_LIST.REGISTER, data, success);
 };
+
+Ajax.submit_post_ad = function (data, success) {
+    Ajax.post(BaseUri + API_LIST.SUBMIT_POST_AD, data, success);
+}
+
+Ajax.get_city = function (data, success) {
+    Ajax.get(BaseUri + API_LIST.GET_CITY, data, success);
+}

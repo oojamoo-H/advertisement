@@ -20,6 +20,7 @@ Route::namespace('Home')->group(function(){
         Route::post('/ad/save', 'AdvertisementController@saveAd');
         Route::get('/ad/getAdvertisement', 'AdvertisementController@getAdvertisement');
         Route::get('/user', 'UserController@index');
+        Route::get('/ad/getCity', 'RegionController@getCity');
         Route::post('/upload', 'UploadController@upload');
     });
 

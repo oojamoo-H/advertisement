@@ -1,7 +1,11 @@
 @extends('home.layout.app')
 
 @section('content')
-    <link href="{{asset('/X-admin/lib/layui/css/layui.css')}}" rel="stylesheet"/>
+<link href="{{asset('/X-admin/lib/layui/css/layui.css')}}" rel="stylesheet"/>
+<link href="{{asset('/js/home/picker/css/mui.poppicker.css')}}" rel="stylesheet"/>
+<link href="{{asset('/js/home/picker/css/mui.picker.css')}}" rel="stylesheet"/>
+<script type="text/javascript" src="{{asset('/js/home/picker/js/mui.picker.js')}}"></script>
+<script type="text/javascript" src="{{asset('/js/home/picker/js/mui.poppicker.js')}}"></script>
 <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
 
     <!--主界面部分-->
@@ -24,6 +28,17 @@
                             <textarea name="content" class="form-control" rows="5" placeholder=""></textarea>
                         </div>
                     </div>
+                    <div>
+                        <div class="input-file-group">
+                            <div style="margin-top: 10px">
+                                <div class="input-file-wrap">
+                                    <button type="button" id="cityBtn" class="mui-btn">Select City</button>
+                                </div>
+                                <span id="parent_city" style="margin-left:5px"></span>
+                                <span id="sub_city"  style="margin-left:5px"></span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="input-file-group">
                         <div style="margin-top: 10px">
                             <label>Upload Video</label>
@@ -35,6 +50,7 @@
                             <video width="100%">
                                 <source src="" type="video/mp4"></source>
                             </video>
+                            <input name="video" type="hidden"/>
                         </div>
                         <div style="margin-top: 20px">
                             <label>Upload Image</label>
@@ -53,7 +69,7 @@
                         </div>
                     </div>
                     <div class="mui-content-padded pt-md">
-                        <button id='submit' class="mui-btn mui-btn-block mui-btn-primary">Submit</button>
+                        <button type="button" id='submit' class="mui-btn mui-btn-block mui-btn-primary">Submit</button>
                     </div>
                 </form>
             </div>
