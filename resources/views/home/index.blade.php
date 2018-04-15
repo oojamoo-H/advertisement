@@ -240,7 +240,7 @@
         <div class="mui-popup mui-popup-in">
             <div class="mui-popup-inner">
                 <div class="mui-popup-title">
-                    <img src="img/code.png" class="code"/>
+                    <img src="img/buy_credit.jpeg" class="code"/>
                 </div>
                 <div class="mui-popup-text" style="text-align: left">1.Take a screen shot </div>
                 <div class="mui-popup-text" style="text-align: left">2.Open screen in wechat client </div>
