@@ -3,7 +3,8 @@ $(function($) {
     mui.init();
 
     mui(".mui-scroll-wrapper").scroll({
-        deceleration : 0.0005
+        deceleration : 0.0005,
+        indicators: false,
     });
 
 	Ajax.get_index_content({}, function (res) {

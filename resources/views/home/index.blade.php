@@ -184,7 +184,7 @@
         </div>
     </aside>
     <!--主界面部分-->
-    <div class="mui-inner-wrap mui-scroll-wrapper">
+    <div class="mui-inner-wrap">
         <header class="mui-bar mui-bar-nav">
             <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
             <div class="mui-icon-right-nav mui-pull-right search">
@@ -193,7 +193,7 @@
             </div>
             <h1 class="mui-title">Escortbabe</h1>
         </header>
-        <div id="offCanvasContentScroll" class="mui-content">
+        <div id="offCanvasContentScroll" class="mui-content  mui-scroll-wrapper">
             <div style="width:100%;height:30px;background: black;padding:5px 20px;font-size:12px">
                 <a style="color:white"  href="javascript:;" class="mui-control-item">Home</a>
                 <span style="color:white" class="spliter">></span>
