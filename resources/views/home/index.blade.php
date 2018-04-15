@@ -268,7 +268,7 @@
         </script>
 
         <script type="text/html" id="parent-city">
-            {{# layui.each(d, function(index, item){}}
+            {{# layui.each(d.cities, function(index, item){}}
                 <span class="spliter">|</span>
                 <a data-id="{{item.id}}" href="javascript:;" class="parent-cities">{{item.city_name}}</a>
             {{#  }); }}
