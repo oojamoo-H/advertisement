@@ -2,6 +2,9 @@
 
 @section('content')
     <style type="text/css">
+        body{
+            font-size:12px;
+        }
         .mui-preview-image.mui-fullscreen {
             position: fixed;
             z-index: 20;
@@ -161,98 +164,97 @@
             left:40%;
         }
     </style>
-<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
-    <!--侧滑菜单部分-->
-    <aside id="offCanvasSide" class="mui-off-canvas-left">
-        <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-                <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted" id="aside-menu">
-                    <li class="mui-table-view-cell">
-                        <a href="javascript:;" class="mui-navigate-right" id="linkPage">Post Ad</a>
-                    </li>
-                    <li class="mui-table-view-cell">
-                        <a href="javascript:;" class="mui-navigate-right" id="buyPage">Buy Credit</a>
-                    </li>
-                    {{--<li class="mui-table-view-cell">--}}
+    <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+        <!--侧滑菜单部分-->
+        <aside id="offCanvasSide" class="mui-off-canvas-left">
+            <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted" id="aside-menu">
+                        <li class="mui-table-view-cell">
+                            <a href="javascript:;" class="mui-navigate-right" id="linkPage">Post Ad</a>
+                        </li>
+                        <li class="mui-table-view-cell">
+                            <a href="javascript:;" class="mui-navigate-right" id="buyPage">Buy Credit</a>
+                        </li>
+                        {{--<li class="mui-table-view-cell">--}}
                         {{--<a href="javascript:;" class="mui-navigate-right" id="videoPage">My Account</a>--}}
-                    {{--</li>--}}
-                    <li class="mui-table-view-cell">
-                        <a href="javascript:;">NearBy</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </aside>
-    <!--主界面部分-->
-    <div class="mui-inner-wrap">
-        <header class="mui-bar mui-bar-nav index-header">
-            <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
-            <div class="mui-icon-right-nav mui-pull-right search">
-                <input name="keyword" type="text" class="mui-input-clear search-input" placeholder="">
-                <a href="javascript:;" class="mui-icon-search mui-icon"></a>
-            </div>
-            <h1 class="mui-title">Escortbabe</h1>
-        </header>
-        <div id="offCanvasContentScroll" class="mui-content index-header">
-            <div style="width:100%;height:30px;background: black;padding:5px 20px;font-size:12px">
-                <a style="color:white"  href="javascript:;" class="mui-control-item">Home</a>
-                <span style="color:white" class="spliter">></span>
-                <a style="color:white" href="javascript:;" class="mui-control-item selected-city">Melbourne</a>
-                <span style="color:white" class="spliter">></span>
-                <a style="color:white" href="javascript:;" class="mui-control-item">escorts</a>
-            </div>
-            <div class="content mui-scroll index-header">
-                <div class="link-area" id="parent-cities">
-                    <a href="javascript:;">All</a>
-
-                </div>
-                <div class="link-area" id="sub-cities">
-                </div>
-
-                <!--swiper-->
-                <div id="slider" class="mui-slider  vip-swiper mui-slider-loop" >
-
-                </div>
-
-                <!--table-->
-                <div class="table pt-md tab-list">
-                    <a  href="javascript:;" id="topOrder" class="mui-control-item" data-index="1">top</a>
-                    <span class="spliter">|</span>
-                    <a  href="javascript:;" class="mui-control-item tab" data-index="2">gallery</a>
-                    <span class="spliter">|</span>
-                    <a  href="javascript:;" class="mui-control-item tab" data-index="3">vedio</a>
-                    <span class="spliter">|</span>
-                    <a  href="javascript:;" id="dateOrder" class="mui-control-item" data-index="4">date</a>
-                </div>
-                <div id="advertisement-item">
-
+                        {{--</li>--}}
+                        <li class="mui-table-view-cell">
+                            <a href="javascript:;">NearBy</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- off-canvas backdrop -->
-        <div class="mui-off-canvas-backdrop"></div>
-    </div>
-</div>
+        </aside>
+        <!--主界面部分-->
+        <div class="mui-inner-wrap">
+            <header class="mui-bar mui-bar-nav  index-header">
+                <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+                <div class="mui-icon-right-nav mui-pull-right search">
+                    <input name="keyword" type="text" class="mui-input-clear search-input" placeholder="">
+                    <a href="javascript:;" class="mui-icon-search mui-icon search-ad'"></a>
+                </div>
+                <h1 class="mui-title">Escortbabe</h1>
+            </header>
+            <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper index-content">
+                <div style="width:100%;height:30px;background: black;padding:5px 20px;font-size:12px">
+                    <a style="color:white"  href="javascript:;" class="mui-control-item">Home</a>
+                    <span style="color:white" class="spliter">></span>
+                    <a style="color:white" href="javascript:;" class="mui-control-item selected-city">Melbourne</a>
+                    <span style="color:white" class="spliter">></span>
+                    <a style="color:white" href="javascript:;" class="mui-control-item">escorts</a>
+                </div>
+                <div class="content mui-scroll">
+                    <div class="link-area" id="parent-cities">
+                        <a href="javascript:;">All</a>
 
-<div id="popover" class="mui-popover code-content">
-    <div class="mui-popup mui-popup-in">
-        <div class="mui-popup-inner">
-            <div class="mui-popup-title">
-                <img src="img/buy_credit.jpeg" class="code"/>
+                    </div>
+                    <div class="link-area" id="sub-cities">
+                    </div>
+
+                    <!--swiper-->
+                    <div id="slider" class="mui-slider  vip-swiper mui-slider-loop" >
+
+                    </div>
+
+                    <!--table-->
+                    <div class="table pt-md tab-list">
+                        <a  href="javascript:;" id="topOrder" class="mui-control-item" data-index="1">top</a>
+                        <span class="spliter">|</span>
+                        <a  href="javascript:;" class="mui-control-item tab" data-index="2">gallery</a>
+                        <span class="spliter">|</span>
+                        <a  href="javascript:;" class="mui-control-item tab" data-index="3">vedio</a>
+                        <span class="spliter">|</span>
+                        <a  href="javascript:;" id="dateOrder" class="mui-control-item" data-index="4">date</a>
+                    </div>
+                    <div id="advertisement-item">
+
+                    </div>
+                </div>
             </div>
-            <div class="mui-popup-text" style="text-align: left">1.Take a screen shot </div>
-            <div class="mui-popup-text" style="text-align: left">2.Open screen in wechat client </div>
-            <div class="mui-popup-text" style="text-align: left">3.Long press to identify the QR-code</div>
-            <div class="mui-popup-text" style="text-align: left">4.Entry into the shop to buy credit</div>
-            <div class="mui-popup-text" style="text-align: left">
-                Tel:<a id="service_tel" style="margin-left: 15px" href=""></a>
-            </div>
+            <!-- off-canvas backdrop -->
+            <div class="mui-off-canvas-backdrop"></div>
         </div>
     </div>
-</div>
-<script type="text/javascript" src="{{asset('/js/home/index.js')}}"></script>
-<script src="{{asset('/js/home/mui.previewimage.js')}}"></script>
-<script src="{{asset('/js/home/mui.zoom.js')}}"></script>
+    <div id="popover" class="mui-popover code-content">
+        <div class="mui-popup mui-popup-in">
+            <div class="mui-popup-inner">
+                <div class="mui-popup-title">
+                    <img src="img/code.png" class="code"/>
+                </div>
+                <div class="mui-popup-text" style="text-align: left">1.Take a screen shot </div>
+                <div class="mui-popup-text" style="text-align: left">2.Open screen in wechat client </div>
+                <div class="mui-popup-text" style="text-align: left">3.Long press to identify the QR-code</div>
+                <div class="mui-popup-text" style="text-align: left">4.Entry into the shop to buy credit</div>
+                <div class="mui-popup-text" style="text-align: left">
+                    Tel:<a id="service_tel" style="margin-left: 15px" href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{asset('/js/home/index.js')}}"></script>
+    <script src="{{asset('/js/home/mui.previewimage.js')}}"></script>
+    <script src="{{asset('/js/home/mui.zoom.js')}}"></script>
 
     @verbatim
 
@@ -268,18 +270,18 @@
 
         <script type="text/html" id="parent-city">
             {{# layui.each(d.cities, function(index, item){}}
-                <span class="spliter">|</span>
-                <a data-id="{{item.id}}" href="javascript:;" class="parent-cities">{{item.city_name}}</a>
+            <span class="spliter">|</span>
+            <a data-id="{{item.id}}" href="javascript:;" class="parent-cities">{{item.city_name}}</a>
             {{#  }); }}
 
         </script>
 
         <script type="text/html" id="sub-city">
             {{# layui.each(d.sub_cities, function(index, item){}}
-                {{# if (index != 0) {}}
-                <span class="spliter">|</span>
-                {{# } }}
-                <a data-id="{{item.id}}" href="javascript:;" class="sub-cities">{{item.city_name}}</a>
+            {{# if (index != 0) {}}
+            <span class="spliter">|</span>
+            {{# } }}
+            <a data-id="{{item.id}}" href="javascript:;" class="sub-cities">{{item.city_name}}</a>
             {{#  }); }}
         </script>
 
@@ -297,7 +299,7 @@
                     {{# if (item.image.length > 0){}}
                     <li style="display: flex;flex-direction: row" data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
                         {{# layui.each(item.image, function(i, mediaItem){}}
-                            <img data-preview-src="" data-preview-group="{{index}}" style="margin-right: 3px" width="20%" height="20%" src="{{mediaItem.media_url}}"/>
+                        <img data-preview-src="" data-preview-group="{{index}}" style="margin-right: 3px" width="20%" height="20%" src="{{mediaItem.media_url}}"/>
                         {{# });}}
                     </li>
                     {{#} }}
@@ -312,7 +314,7 @@
                     {{# if(item.video.length > 0){}}
                     <li data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
                         {{# layui.each(item.video, function(i, mediaItem){}}
-                            <video width="100%" height="20%" src="{{mediaItem.media_url}}" controls="controls"></video>
+                        <video width="100%" height="20%" src="{{mediaItem.media_url}}" controls="controls"></video>
                         {{# });}}
                     </li>
                     {{#} }}
@@ -331,17 +333,17 @@
                     </a>
                 </div>
 
-                {{# layui.each(d, function(index, item){}}
+            {{# layui.each(d, function(index, item){}}
 
-                <!-- 第一张 -->
+            <!-- 第一张 -->
                 <div class="mui-slider-item">
                     <a href="/ad/detail?ad_id={{item.advertisement_id}}">
                         <img src="{{item.media.media_url}}">
                     </a>
                 </div>
 
-                {{# }) }}
-                <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            {{# }) }}
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
                 <div class="mui-slider-item mui-slider-item-duplicate">
                     <a href="/ad/detail?ad_id={{d[0].advertisement_id}}">
                         <img src="{{d[0].media.media_url}}">

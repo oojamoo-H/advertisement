@@ -169,7 +169,7 @@
                 <a id="goBack" href="javascript:;" class="mui-icon mui-action-menu mui-icon mui-icon-back mui-pull-left" style="color: white"></a>
             </header>
             <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
-                <div class="content mui-content-padded">
+                <div class="content mui-content-padded mui-scroll">
 
                     <h3 class="pb-sm">{{$detail['title']}}</h3>
                     <p style="margin-top: 10px;">
@@ -218,6 +218,12 @@
     @verbatim
         <script>
             $(function () {
+                mui.init();
+
+                mui(".mui-scroll-wrapper").scroll({
+                    deceleration : 0.0005,
+                    indicators: false,
+                });
                 mui('body').on('tap', '.user-ads', function () {
                     Helper.redirect('/ad/detail', {
                         ad_id : $(this).data('id'),
