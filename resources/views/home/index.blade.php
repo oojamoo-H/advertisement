@@ -185,15 +185,15 @@
     </aside>
     <!--主界面部分-->
     <div class="mui-inner-wrap">
-        <header class="mui-bar mui-bar-nav">
+        <header class="mui-bar mui-bar-nav index-header">
             <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
             <div class="mui-icon-right-nav mui-pull-right search">
                 <input name="keyword" type="text" class="mui-input-clear search-input" placeholder="">
-                <a href="javascript:;" class="mui-icon-search mui-icon search-ad'"></a>
+                <a href="javascript:;" class="mui-icon-search mui-icon"></a>
             </div>
             <h1 class="mui-title">Escortbabe</h1>
         </header>
-        <div id="offCanvasContentScroll" class="mui-content  mui-scroll-wrapper">
+        <div id="offCanvasContentScroll" class="mui-content index-header">
             <div style="width:100%;height:30px;background: black;padding:5px 20px;font-size:12px">
                 <a style="color:white"  href="javascript:;" class="mui-control-item">Home</a>
                 <span style="color:white" class="spliter">></span>
@@ -201,7 +201,7 @@
                 <span style="color:white" class="spliter">></span>
                 <a style="color:white" href="javascript:;" class="mui-control-item">escorts</a>
             </div>
-            <div class="content">
+            <div class="content mui-scroll index-header">
                 <div class="link-area" id="parent-cities">
                     <a href="javascript:;">All</a>
 
