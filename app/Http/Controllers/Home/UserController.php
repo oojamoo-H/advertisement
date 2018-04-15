@@ -71,7 +71,7 @@ class UserController extends BaseController
         }
 
         // If the auth code is wrong return invalid
-        if (! UserAuth::where(array('user_id' => $user['id'], 'auth_code' => $auth_code))->first()){
+        if (! UserAuth::where(array('user_id' => $user['id'], 'auth_code' => strtolower($auth_code)))->first()){
             return $this->Error(-1, 'Auth Code is Wrong');
         }
 
