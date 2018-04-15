@@ -161,7 +161,7 @@
             left:40%;
         }
     </style>
-<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-scroll-wrapper">
     <!--侧滑菜单部分-->
     <aside id="offCanvasSide" class="mui-off-canvas-left">
         <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
