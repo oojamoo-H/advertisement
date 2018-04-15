@@ -7,6 +7,14 @@ $(function($) {
         indicators: false,
     });
 
+    if (mui.os.plus && mui.os.ios) {
+        mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+            plus.webview.currentWebview().setStyle({
+                'popGesture': 'none'
+            });
+        });
+    }
+
 	Ajax.get_index_content({}, function (res) {
 		if (res.code === 1){
             Helper.render($('#aside-menu'), $('#aside-city'), res.data, 1)
