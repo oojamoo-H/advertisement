@@ -18,7 +18,6 @@ Route::namespace('Home')->group(function(){
         Route::post('/ad/save', 'AdvertisementController@saveAd');
         Route::get('/ad/getAdvertisement', 'AdvertisementController@getAdvertisement');
         Route::get('/user', 'UserController@index');
-        Route::get('/ad/getCity', 'RegionController@getCity');
         Route::post('/upload', 'UploadController@upload');
         Route::post('ad/searchAdvertisement', 'AdvertisementController@searchAdvertisement');
     });
@@ -32,6 +31,7 @@ Route::namespace('Home')->group(function(){
     Route::post('/user/login', 'LoginController@login');
     Route::post('/user/register', 'UserController@register');
     Route::get('/user/getServiceTel', 'UserController@getServiceTel');
+    Route::get('/ad/getCity', 'RegionController@getCity');
     Route::get('/login', 'LoginController@index');
 
 });

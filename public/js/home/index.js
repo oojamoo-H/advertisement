@@ -5,15 +5,18 @@ $(function($) {
     mui.init();
 	Ajax.get_index_content({}, function (res) {
 		if (res.code === 1){
-            Helper.render($('#aside-menu'), $('#aside-city'), res.data, 1)
-			Helper.render($('#parent-cities'), $('#parent-city'), res.data, 1);
-            Helper.render($('#sub-cities'), $('#sub-city'), res.data, 1);
             Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
 
 		} else {
             mui.alert(res.msg, 'Alert', 'ok');
 		}
     });
+
+	Ajax.get_city({}, function (res) {
+        Helper.render($('#parent-cities'), $('#parent-city'), res.data, 1);
+        Helper.render($('#aside-menu'), $('#aside-city'), res.data, 1);
+        Helper.render($('#sub-cities'), $('#sub-city'), res.data, 1);
+    })
 
 	Ajax.get_top({}, function (res) {
         Helper.render($('#slider'), $('#vip-advertisement'), res.data, 0);

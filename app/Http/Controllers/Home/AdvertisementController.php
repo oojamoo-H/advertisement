@@ -86,6 +86,7 @@ class AdvertisementController extends BaseController
         return $this->Success(array('cities' => $parent_cities, 'advertisement_list' => $results, 'sub_cities' => $sub_cities));
     }
 
+
     public function getTop(){
 
         $user_top = DB::table('user_assets as ua')

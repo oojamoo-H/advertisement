@@ -7,5 +7,5 @@ const API_LIST = {
     GET_CITY : 'ad/getCity',
     SEARCH_AD : 'ad/searchAdvertisement',
     GET_TOP : 'ad/getTop',
-    GET_SERVICE_TEL :'user/getServiceTel'
+    GET_SERVICE_TEL :'user/getServiceTel',
 }
