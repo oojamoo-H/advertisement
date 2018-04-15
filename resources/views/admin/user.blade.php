@@ -40,6 +40,7 @@
                 cols: [[ //表头
                     {field: 'id', title: 'ID',width : 50},
                     {field: 'username', title: 'Name', width:150},
+                    {field: 'password', title: 'Password'},
                     {field: 'nickname', title: 'Nickname', width:150},
                     {field: 'point', title: 'Point', width:100},
                     {field: 'code', title: 'Auth Code', width:100},
