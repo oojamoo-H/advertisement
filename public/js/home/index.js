@@ -59,7 +59,6 @@ $(function($) {
 
     mui('body').on('tap', '.search a', function () {
         var keyword =  $('input[name="keyword"]').val();
-        alert(keyword)
         if (keyword){
             Ajax.search_advertisement({
                 keyword : keyword,
