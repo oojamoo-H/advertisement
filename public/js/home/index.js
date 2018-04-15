@@ -105,6 +105,7 @@ $(function($) {
     });
 
 	mui('body').on('tap', '#linkPage', function () {
+        mui('#offCanvasWrapper').offCanvas('close');
 		Helper.redirect('/ad/post');
     });
 
