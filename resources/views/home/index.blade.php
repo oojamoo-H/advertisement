@@ -195,16 +195,18 @@
                     <a href="javascript:;" class="mui-icon-search mui-icon search-ad'"></a>
                 </div>
                 <h1 class="mui-title">Escortbabe</h1>
+
             </header>
-            <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper index-content">
-                <div style="width:100%;height:30px;background: black;padding:5px 20px;font-size:12px">
-                    <a style="color:white"  href="javascript:;" class="mui-control-item">Home</a>
-                    <span style="color:white" class="spliter">></span>
-                    <a style="color:white" href="javascript:;" class="mui-control-item selected-city">Melbourne</a>
-                    <span style="color:white" class="spliter">></span>
-                    <a style="color:white" href="javascript:;" class="mui-control-item">escorts</a>
-                </div>
-                <div class="content mui-scroll">
+            <div style="width:100%;height:30px;background: black;padding:5px 20px;font-size:12px;position: absolute;margin-top: 80px;z-index: 888;">
+                <a style="color:white" href="javascript:;" class="mui-control-item">Home</a>
+                <span style="color:white" class="spliter">&gt;</span>
+                <a style="color:white" href="javascript:;" class="mui-control-item selected-city">Brisbane</a>
+                <span style="color:white" class="spliter">&gt;</span>
+                <a style="color:white" href="javascript:;" class="mui-control-item">escorts</a>
+            </div>
+            <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+
+                <div class="content mui-scroll index-content" style="top:120px;">
                     <div class="link-area" id="parent-cities">
                         <a href="javascript:;">All</a>
 
