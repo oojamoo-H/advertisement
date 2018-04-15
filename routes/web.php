@@ -27,6 +27,8 @@ Route::namespace('Home')->group(function(){
     Route::get('/ad/getTop', 'AdvertisementController@getTop');
     Route::get('/index', 'AdvertisementController@index');
 
+    Route::get('/ad/getIndexContent', 'AdvertisementController@getIndexContent');
+
     Route::post('/user/registerTemp', 'UserController@registerTemp');
     Route::post('/user/login', 'LoginController@login');
     Route::post('/user/register', 'UserController@register');
@@ -34,12 +36,6 @@ Route::namespace('Home')->group(function(){
     Route::get('/ad/getCity', 'RegionController@getCity');
     Route::get('/login', 'LoginController@index');
 
-});
-
-Route::namespace('Home')->prefix('advertisement')->group(function(){
-    Route::group(array('middleware' => array('web')), function(){
-        Route::get('/getIndexContent', 'AdvertisementController@getIndexContent');
-    });
 });
 
 
