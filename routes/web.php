@@ -19,16 +19,15 @@ Route::namespace('Home')->group(function(){
         Route::get('/ad/getAdvertisement', 'AdvertisementController@getAdvertisement');
         Route::get('/user', 'UserController@index');
         Route::post('/upload', 'UploadController@upload');
-        Route::post('ad/searchAdvertisement', 'AdvertisementController@searchAdvertisement');
     });
 
     Route::get('/', 'AdvertisementController@index');
     Route::get('/ad/detail', 'AdvertisementController@detail');
-    Route::get('/ad/getTop', 'AdvertisementController@getTop');
     Route::get('/index', 'AdvertisementController@index');
 
     Route::get('/ad/getIndexContent', 'AdvertisementController@getIndexContent');
-
+    Route::post('ad/searchAdvertisement', 'AdvertisementController@searchAdvertisement');
+    Route::get('/ad/getTop', 'AdvertisementController@getTop');
     Route::post('/user/registerTemp', 'UserController@registerTemp');
     Route::post('/user/login', 'LoginController@login');
     Route::post('/user/register', 'UserController@register');
