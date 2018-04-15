@@ -1,5 +1,5 @@
 const API_LIST = {
-    GET_INDEX_CONTENT : 'advertisement/getIndexContent',
+    GET_INDEX_CONTENT : 'ad/getIndexContent',
     LOGIN : 'user/login',
     REGISTER_FOR_TEMP : 'user/registerTemp',
     REGISTER : 'user/register',
