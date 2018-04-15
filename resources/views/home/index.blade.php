@@ -161,7 +161,7 @@
             left:40%;
         }
     </style>
-<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable mui-scroll-wrapper">
+<div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable">
     <!--侧滑菜单部分-->
     <aside id="offCanvasSide" class="mui-off-canvas-left">
         <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
@@ -233,11 +233,12 @@
         <div class="mui-off-canvas-backdrop"></div>
     </div>
 </div>
+
 <div id="popover" class="mui-popover code-content">
     <div class="mui-popup mui-popup-in">
         <div class="mui-popup-inner">
             <div class="mui-popup-title">
-                <img src="img/code.png" class="code"/>
+                <img src="img/buy_credit.jpeg" class="code"/>
             </div>
             <div class="mui-popup-text" style="text-align: left">1.Take a screen shot </div>
             <div class="mui-popup-text" style="text-align: left">2.Open screen in wechat client </div>
