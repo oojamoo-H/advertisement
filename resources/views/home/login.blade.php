@@ -75,7 +75,7 @@
     <div class="mui-popup mui-popup-in">
         <div class="mui-popup-inner">
             <div class="mui-popup-title">
-                <img src="img/code.png" class="code"/>
+                <img src="img/code.jpeg" class="code"/>
             </div>
             <div class="mui-popup-text">Please contact customer service to get authentication code</div>
         </div>
