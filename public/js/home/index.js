@@ -139,4 +139,11 @@ $(function($) {
     })
 
     mui.previewImage();
+
+    $(".search-input").focus(function(){
+        $(this).addClass('search-active');
+    })
+    $(".search-input").blur(function(){
+        $(this).removeClass('search-active');
+    })
 });

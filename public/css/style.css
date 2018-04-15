@@ -24,26 +24,31 @@ ul {
   padding: 0;
   margin: 0;
 }
-.mui-scroll-wrapper {
-  overflow: auto;
-}
 .mui-btn-block {
   padding: 0;
   line-height: 2;
 }
 .mui-bar-nav {
-  background-color: #ff0000;
+  height: 90px;
+  background-color: red;
 }
 .mui-bar-nav a {
-  color: #000;
+  color: inherit;
   font-weight:bold;
 }
 .mui-bar-nav .mui-btn-link {
-  color: #fff;
+  color: inherit;
 }
 .mui-bar-nav .mui-title {
-  font-weight: bold;
   color: #ffffff;
+  padding-top: 44px;
+  font-weight: bold;
+}
+.mui-bar-nav ~ .mui-content {
+  padding-top: 90px;
+}
+.mui-scroll-wrapper {
+  overflow: auto;
 }
 .mui-btn {
   padding: 9px 15px;
@@ -167,7 +172,7 @@ ul {
 #reg {
   display: block;
 }
-.search input {
+.search input.search-input {
   position: relative;
   z-index: 999;
   width: 80px;
@@ -175,6 +180,10 @@ ul {
   margin: 6px 0;
   border: 0;
   border-radius: 6px;
+  transition: all 0.2s;
+}
+.search input.search-input.search-active {
+  width: 200px;
 }
 .code-content {
   top: 50%!important;

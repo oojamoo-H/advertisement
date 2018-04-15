@@ -188,14 +188,12 @@
         <header class="mui-bar mui-bar-nav">
             <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
             <div class="mui-icon-right-nav mui-pull-right search">
-                <input name="keyword" type="text" class="mui-input-clear" placeholder="">
-                <a href="javascript:;" class="mui-icon-search mui-icon search-ad"></a>
+                <input type="text" class="mui-input-clear search-input" placeholder="">
+                <a href="javascript:;" class="mui-icon-search mui-icon"></a>
             </div>
+            <h1 class="mui-title">Escortbabe</h1>
         </header>
         <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
-            <div style="width:100%;height:45px;background: red">
-                <div style="width:90%;margin:0 auto;padding:10px 0;color:black; text-align: center; font-weight: bold; font-size:14px">Escortbabe</div>
-            </div>
             <div style="width:100%;height:30px;background: black;padding:5px 20px;font-size:12px">
                 <a style="color:white"  href="javascript:;" class="mui-control-item">Home</a>
                 <span style="color:white" class="spliter">></span>
