@@ -19,7 +19,7 @@
                     <input id='login-password' type="password" autocomplete="new-password" class="mui-input-clear mui-input form-control" placeholder="Please entry password">
                 </div>
             </div>
-            <button id='login' class="mui-btn mui-btn-block login-btn mui-btn-primary" data-loading-icon-position="right">Login</button>
+            <button type="button" id='login' class="mui-btn mui-btn-block login-btn mui-btn-primary" data-loading-icon-position="right">Login</button>
 
             <div class="link-area mui-text-center">
                 <a href="javascript:;" id='regBtn'>Register</a>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="mui-content-padded">
-                <button id='register' class="mui-btn mui-btn-block mui-btn-primary">Register</button>
+                <button type="button" id='register' class="mui-btn mui-btn-block mui-btn-primary">Register</button>
             </div>
 
             <div class="link-area mui-text-center">
