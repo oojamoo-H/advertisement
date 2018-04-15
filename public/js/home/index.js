@@ -100,10 +100,6 @@ $(function($) {
 		Helper.redirect('/ad/post');
     });
 
-    $('.mui-inner-wrap').on('drag', function(event) {
-        event.stopPropagation();
-    });
-
     mui('body').on('tap', '#buyPage', function () {
         var session_user = $('meta[name=session-token]').attr('content')
         if (! session_user){
