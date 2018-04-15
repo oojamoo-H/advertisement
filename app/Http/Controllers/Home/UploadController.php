@@ -11,6 +11,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Http\Model\Media;
 use Illuminate\Http\Request;
+use Image;
 
 class UploadController extends BaseController
 {
@@ -33,6 +34,7 @@ class UploadController extends BaseController
         $path = $file->move(storage_path('app/public/upload'), $save_file);
         $media_path = $path->getPathname();
         $media_url = asset('storage/upload/') . DIRECTORY_SEPARATOR . $save_file;
+        Image::make($media_path)->resize(320, 180)->save($media_path);
 
         $media = new Media();
         $media->media_url = $media_url;
