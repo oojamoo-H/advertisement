@@ -188,7 +188,7 @@
         <header class="mui-bar mui-bar-nav">
             <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
             <div class="mui-icon-right-nav mui-pull-right search">
-                <input type="text" class="mui-input-clear search-input" placeholder="">
+                <input name="keyword" type="text" class="mui-input-clear search-input" placeholder="">
                 <a href="javascript:;" class="mui-icon-search mui-icon search-ad'"></a>
             </div>
             <h1 class="mui-title">Escortbabe</h1>
