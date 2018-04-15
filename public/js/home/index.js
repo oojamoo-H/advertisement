@@ -1,6 +1,4 @@
 $(function($) {
-    var selected_parent = 1;
-    var selected_sub_city = 0;
 
     mui.init();
 	Ajax.get_index_content({}, function (res) {
@@ -9,7 +7,9 @@ $(function($) {
 			Helper.render($('#parent-cities'), $('#parent-city'), res.data, 1);
             Helper.render($('#sub-cities'), $('#sub-city'), res.data, 1);
             Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
-
+            mui(".mui-scroll-wrapper").scroll({
+                deceleration : 0.0005
+            });
 		} else {
             mui.alert(res.msg, 'Alert', 'ok');
 		}

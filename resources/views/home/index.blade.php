@@ -165,7 +165,7 @@
     <!--侧滑菜单部分-->
     <aside id="offCanvasSide" class="mui-off-canvas-left">
         <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
-            <div class="mui-scroll">
+            <div class="mui-scroll mui-scroll-wrapper">
                 <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted" id="aside-menu">
                     <li class="mui-table-view-cell">
                         <a href="javascript:;" class="mui-navigate-right" id="linkPage">Post Ad</a>
@@ -184,7 +184,7 @@
         </div>
     </aside>
     <!--主界面部分-->
-    <div class="mui-inner-wrap">
+    <div class="mui-inner-wrap mui-scroll-wrapper">
         <header class="mui-bar mui-bar-nav">
             <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
             <div class="mui-icon-right-nav mui-pull-right search">
