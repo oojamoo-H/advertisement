@@ -324,13 +324,14 @@
 
 
         <script type="text/html" id="vip-advertisement">
-
+            {{# if d.length > 0{}}
             <div class="mui-slider-group mui-slider-loop">
                 <div class="mui-slider-item mui-slider-item-duplicate">
                     <a href="/ad/detail?ad_id={{d[d.length - 1].advertisement_id}}">
                         <img src="{{d[d.length - 1].media.media_url}}">
                     </a>
                 </div>
+
                 {{# layui.each(d, function(index, item){}}
 
                 <!-- 第一张 -->
@@ -354,6 +355,7 @@
                 <div class="mui-indicator {{# if(index == 0){}}mui-active {{# } }}"></div>
                 {{# }) }}
             </div>
+            {{# } }}
         </script>
 
     @endverbatim
