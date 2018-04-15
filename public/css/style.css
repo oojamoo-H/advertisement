@@ -49,6 +49,7 @@ ul {
 }
 .mui-scroll-wrapper {
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mui-btn {
   padding: 9px 15px;
@@ -107,7 +108,8 @@ ul {
 .input-group .form-select:focus {
   border-color: #2188ff;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075), 0 0 0 0.2em rgba(3, 102, 214, 0.3);
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075),
+    0 0 0 0.2em rgba(3, 102, 214, 0.3);
 }
 .input-group .mui-btn-white {
   color: #24292e;
@@ -186,8 +188,8 @@ ul {
   width: 200px;
 }
 .code-content {
-  top: 50%!important;
-  left: 50%!important;
+  top: 50% !important;
+  left: 50% !important;
   -webkit-transform: translate(-50%, -50%) !important;
   transform: translate(-50%, -50%) !important;
 }
@@ -221,7 +223,7 @@ ul {
   margin-top: 20px;
 }
 .input-file-group .img-list li {
-  border: 1px dashed #DDDDDD;
+  border: 1px dashed #dddddd;
   background: url("../img/upload.png") center no-repeat;
   background-size: 50%;
 }
