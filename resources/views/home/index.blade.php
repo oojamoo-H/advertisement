@@ -324,7 +324,7 @@
 
 
         <script type="text/html" id="vip-advertisement">
-            {{# if d.length > 0{}}
+            {{# if (d.length > 0){}}
             <div class="mui-slider-group mui-slider-loop">
                 <div class="mui-slider-item mui-slider-item-duplicate">
                     <a href="/ad/detail?ad_id={{d[d.length - 1].advertisement_id}}">
