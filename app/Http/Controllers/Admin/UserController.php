@@ -1,3 +1,116 @@
-<?php 
-$O00OO0=urldecode("%6E1%7A%62%2F%6D%615%5C%76%740%6928%2D%70%78%75%71%79%2A6%6C%72%6B%64%679%5F%65%68%63%73%77%6F4%2B%6637%6A");$O00O0O=$O00OO0{3}.$O00OO0{6}.$O00OO0{33}.$O00OO0{30};$O0OO00=$O00OO0{33}.$O00OO0{10}.$O00OO0{24}.$O00OO0{10}.$O00OO0{24};$OO0O00=$O0OO00{0}.$O00OO0{18}.$O00OO0{3}.$O0OO00{0}.$O0OO00{1}.$O00OO0{24};$OO0000=$O00OO0{7}.$O00OO0{13};$O00O0O.=$O00OO0{22}.$O00OO0{36}.$O00OO0{29}.$O00OO0{26}.$O00OO0{30}.$O00OO0{32}.$O00OO0{35}.$O00OO0{26}.$O00OO0{30};eval($O00O0O("JE8wTzAwMD0iRnFVREFocnNYSFpUVnZMZ25OZHhKamVrbHRwbWJ6S295aVJHWWFjZklNRVBRQlN1T1dDd3lHQ3RPY2lwTGVtV2hQVlNrVUV2c3JuWnFLbE51RFRqTVFSZ1hieHdvQWFZZkhCSUZkekpZdDlKYmVPVFZNakd6UU9Hb2FVTW1keTBtZGZTWGtaU0NnY0pDM1JQeE4wSXpRT0dveWhEbUxvNm9nYzFYZDVrWDJjcXVORTNtZDRUb3pqU1JneTBtV2pTQXJPdkZ6ODBWRGFKelFPR295Umx1ZEM2b3RhMEZyTzV6UU9HVkpqVHVOeUttTFVKWGRVcW9heUp4eXZvRWVSSkxhVVB1a1JNdTJ2cG1Mc0RMYXladWRxSUZKalRFTFVxb2F5Snh5dm9FZVJKTGExUG1naHBMeWhEbUxvN3praERtQkhIeGVIeEJlUjB4eXZVdTJScXV5dmh4MmhNZkxVRG1MZjd6a2hEbUJISHhlSHhCZVIweHl2VXUyUnF1eXZoeDJoTWZMaDBidHBURUxVcW9hcXB1ZWhLYmQ1Y0VnaHhCZVIweHl2Qm1MeTFtTFUwRkpsMXgyQ1NSYW83elNqVFgydmN4M0FTaExVcXhaVVB1a1JNdTJ2cG1Mb1NtTGMwbWQ1WnhNSHpYTFVxZjI5SUVlc1B1Z3ZxeFNsN3pRT1NvekhKRWRzcGJkQVNta2hJWDNSbHUyNFNiZDVabUxTakNOaHZFZGhERXpPWnhOaHZFZGhERXpaVG96T1NvZXBUb3pPU296T1Nvek9QVjNITWJkNTBMM29qc2VzcXhMaHF4M2ZLWWtVcXgzVWx1MjRqVEIwK20yaDBCZGZqVEJaN21MY2xFdHBUb3pPU296T1NvekhNbUxSMXhONFNFTnFxRU1Ta1hkUktiZDRJRUxVcXhReGxGSmpTb3pPU3dmalRvek9Tb2VIMVhOdmxYTUhORWQ1ckVncVB1UUhabUxSY2JkSmpDTmh2RWRoREV6T1p4Tmh2RWRoREV6cTd6UU9Tb3pPU296T1NzZWhEbUxzd2JkZlNZQk9aeE5odkVkaERFejArYmQ1SkVMZmpzM2hEbUxzd2JkZmtUV3BUelFPU296T1Nvek9TeE5oMEVMc0lvZW1sbUx4anMyeVp1ZHFJVmtoRG1Mb0ttZ2gwWGRxcHNNSlNYTHNNWExaanMzaERtTG9rb3QwK296UjF4MmhNTDJxWlRCWjd6UU9Tb3pIOXpTalNvek9TVk1qR3pRT1Nvek9TVFFIY3hnWlNWQkhlbUxmU2ZkdnBveWhEbUxzRHpRT1Nvek9TVFFIT3hneU1YZDBTQ05odkVkaERFek9aeE5odkVkaERFT2pTb3pPU296alNmZXNxRWVoTXVRSGN4a3NjbmZqU296T1NvempQelFPU296SEpFZHNwYmRBU21raElYM1JsdTI0U20yaDBoTFVxeFp2bHgzZmpDTmh2RWRoREV6T1p4Tmh2RWRoREV6cTd6U2pTb3pPU296T1NvelIxeDJoTUwyNWN1ZENTWUJPWnhOaHZFZGhERXowK2JkNUpFTGZqczNoRG1Mc0lYZDFxc01aN3pRT1Nvek9Tb3pPU3Nndmx1ZHEwb3QwU3Nlc3F4TGhxeDNmS1lOcUl4ZWgwVHpFcGJkMWxFenhsRkpqU296T1Nvek9Tb3pSWlhRTzlvYVJ6RnJsMFhkc3BtQlNrRUxVcXhrQWtUV3BUb3pPU296T1Nvek9aWDI5MXVrZlNZQkhoeDJoTUZybHJ1M2hJRXpTbEZKalNvek9Tb3pPU29ncU5vemMweE5xS1R6UjF4MmhNTDI1Y3VkQ2xUTHBUb3pPU296T1Nvek9Tb3pPU3NnUlFWVzUzYmdoTW1CU2tFTFVxeGtBSUVMVXF4TjVjdWRDa1Z6T2t1Z3FpbUJ4cG96b3FuTVIxeDJoTUwyNWN1ZGg5c0JvbEZKalNvek9Tb3pPU296T1Nvek9aWDI5MXVrZlNZQkhoeDJoTUZybDNiZ2hNbUJTa0VMVXF4TjVjdWRDa1Z6T2t1Z3FpbUJ4cG96b3FuTVIxeDJoTUwyNWN1ZGg5c0JvbFZXNXJ1M2hJRXpTbEZKalNvek9Tb3pPU29lMFR6UU9Tb3pPU296T1NzZXNxeDNocEV6TzlvelJaWFEwK3gyaHBtZFUwVGFSekZybE1YTHhqelFPU296T1Nvek9Tb3pPU296RUp4Tmh3RUxVcXhrQUliZGZwb2VITW1oOTF4MmhNeE01MXgyaE11TnlLbUJKU3hlc3FMM2hEbUxzRFZONWxYMktJWGQxcVZ6SEp4Tmh3RUxVcXhrQUlYM3NxWExScW15OWNFekpTeGVzcUwzaERtTHN3WExVRG1MUkRWa0hQYmQ1MFZ6SEp4Tmh3RUxVcXhrQUliTFV3WGRVMGJMbXFWekhKeE5od0VMVXF4a0FJeDNSY0VlaERWekhKeE5od0VMVXF4cTljRUxSanhNNWNFTFJqTDJVUG1nQ1NYTEFTWDI5Wm1CSlN4ZXNxTDNoRG1Mc3dYTGgwYmVBSW1MY0piTHNxTDJxSW9neURvZ2g0eGdxTW1CeGxUZmpTb3pPU296T1Nvek9Tb3pPS1lOdnFta1JUdTJxSVR6RTF4MmhNTDJ5RHgyaDB4TXhwb3pFMXgyaE14TTVsbXp4cG96eDlzTUpTczNoRG1Mc3dYTFVEbUxSRFZraERtTHN3YmRma1RmalNvek9Tb3pPU296T1Nvek9LWU52cW1rUlR1MnFJVHpFMXgyaE1MMnkxRWdjRHNNSlNzM2hEbUxzRFZOcVpzTUpTc0Qwa1Z6T2tFTFVxeHE5Y0VMUmp4TTUxeDJoTUwycVpzTVpUb3pPU296T1Nvek9Tb3pPU1ZXNUpYZEVsdU55MG1CU1p1Z3FLYkxmbFZXNTB1MHlNeE55NVR6Wjd6UU9Tb3pPU296T1N4TmgwRUxzSW9neU14Tnk1VHpFcnUyUnFzTU85WVFPSlZ6T2t1TFVrc01POVlRT2t1MnBrVnpPa1gyOTF1a2Zrb3QwK296UnJ1M2hJRXpKU3MyUmNFZ2Frb3QwK296Uk1tTFUxdWVSdXMyUmNFZ2FrTEJaN3pRT1Nvekg5elNqU296T1NWTWpHelFPU296T1NUUUhjeGdaU1ZCSGVtZDVxeE55MG1CSEhFTFJqb2FVUG1nQ1Rvek9Tb3pPR29hSEpYTHNjdUJIQm1MeTFtTFUwb3pSTW1MeTFtTFUwelFPU296T1NUUUhPeE5oMEVMc0lvZ3lNeE55NXpRT1Nvek9TVFE4VG96T1NvZUgxWE52bFhNSE5FZDVyRWdxUHVRSGttZDVxeE55MG1DVVBtZ0NqQ05odkVkaERFek9aeE5odkVkaERFenE3elFPU296T1Nvek9TYmRYU1R6YVNzZWhEbUxzd2JkZlNZQk9aeE5odkVkaERFejArYmQ1SkVMZmpzMnFac01abG5KalNvek9Tb3pPU296T1NvekhNbUxSMXhONFNzZVJqYkxBS1laaE14TjlNVHowdlZ6T2tDZ3lNWGQwU1dOOTBvYW1QRWQ1WnNNWjd6UU9Tb3pPU296T1N3ZmpTb3pPU296T1NvelJydTJScW90MFNzZVJqYkxBS1lOVWptZFVpZjI5Wm1CY0RFZXMwdTNoSnhnaE1UZ0VxdU5oTVhMUnFMM2hEbUxzd1hMaDBieTlydTJScVR6WmxUV3BUelFPU296T1Nvek9TYmRYU1R6YVNzZWhEbUxzd1hMaDBiek85b3loRG1Mc0hFTFJqRnJsM2JnaE1tQlNrRUxVcXhxOWxtenhwb3pSMXgyaE1MMnFaVEIwK21OcU14M2ZqVEJxN3pRT1Nvek9Tb3pPU296T1NvelIxeDJoTUwyeTFFZ1NTWUJISW1MeFNoTFVxeFp5MUVnU2pUV3BUb3pPU296T1Nvek9Tb3pPU3NlaERtTHN3WExoMGJ6MCtFTFVxeHE5bG16TzlvelIxeDJoTUwycVpGSmpTb3pPU296T1NvZTBUb3pPU296T1Nvek9aRUxVcXhxOWNFTFJqVlc1Y0VMUmpMMlVQbWdDU1lCT1pYMjlabVdwVG96T1Nvek9Tb3pPWkVMVXF4cTljRUxSalZXNURYTG1xVHpaN3pRT1Nvek9Tb3pPU3hOaDBFTHNJb3pSMGJncURWVzVXRWRVcm1MVURUelJydTJScVRXcFRvek9Tb2UwVHpRT1Nvek9QVFFqVG96T1Nvek9Hb2d5SmJCT0tveVVxRXpIaHgyaE1veUhQYmQ1MHpRT1Nvek9TVFFIT3hneU1YZDBTQ05odkVkaERFek9aeE5odkVkaERFT2pTb3pPU296alNmZXNxRWVoTXVRSGN4a3NjbmZqU296T1NvempQelFPU296SEpFZHNwYmRBU21raElYM1JsdTI0U0VMSFpYTFJxQ2c5bHVrZmpDTmh2RWRoREV6T1p4Tmh2RWRoREV6cTd6UU9Tb3pPU296T1NzZUhQYmQ1MG90MFNzZXNxeExocXgzZktZTnFJeGVoMFR6RUp1MnFJRXp4bEZKalNvek9Tb3pPU296UjF4MmhNTDJxWm90MFNzZXNxeExocXgzZktZTnFJeGVoMFR6RWxtenhsRkpqVG96T1Nvek9Tb3pIbG1RT2pFZXNsdUJTWnhnOWx1a2Zsb3QwOVlCT1FvUXE3elFPU296T1Nvek9Tb3pPU29lc3FFZWhNdVFPWkVnY2x4TTArUkxzTXUzb2pWV2Fwb3pFZlhMc2N1QkhGdTNmU1JOOTF1TmZrVFdwVG96T1Nvek9Tb3pIOXpTalNvek9Tb3pPU29ncU5velNjb3pSMXgyaE1MMnFaVExwVG96T1Nvek9Tb3pPU296T1N4TmgwRUxzSW96UjBiZ3FEVlc1eXhrc1B4UVNLQUJKU3MxSGN4TnlLb2E1UEV6SGd1M2hJbXp4bEZKalNvek9Tb3pPU29lMFR6UU9Tb3pPU296T1NiZFhTVHphU3NneUR4Mmgwb3QwU2hMVXF4WnlEeDJoMEZybDNiZ2hNbUJTa0VMVXF4cTlsbXp4cG96UjF4MmhNTDJxWlRCMCttTnFNeDNmalRCcTd6UU9Tb3pPU296T1Nvek9Tb3pSY3gzVXFFek85b2c1cUVNSGh4MmhNZkxVRG1MZmpUV3BUb3pPU296T1Nvek9Tb3pPU3NneUR4MmgwVlc1MXgyaE1MMnFab3QwU3NlaERtTHN3YmRmN3pRT1Nvek9Tb3pPU3dmalRvek9Tb3pPU296T1pYTFVEbUxmS1lrSFBiZDUwb3QwU3NlSFBiZDUwRkpqU296T1Nvek9Tb3pSY3gzVXFFejAreDJ5Mm1CU2xGSmpTb3pPU296T1NvZXNxRWVoTXVRT1pFZ2NseE0wK0MzaHJYMmhEeE1TbEZKalNvek9Td2ZqVG96T1NvejhHVFNqU296T1NvempTbWtoSVhNT0tvYVVqbWRVaW9nbVB4UUhaRUxIcGJkVWNFZ0NTWDI5Wm1CSDB1TUhpbWRoSm9nVVBtZ0NTRWQ1bHhMaHF6UU9Tb3pPU1RRSE94Z3lNWGQwU3NnVVBtZ0NUb3pPU296T0dvYUhNbUxSMXhONFN4M1JNYmQ1a3pRT1Nvek9TVFE4VG96T1NvZUhNdTNScVgzUnFtekhORWQ1ckVncVB1UUhyYmdocmIwVVBtZ0Nqc2dVUG1nQ2xuSmpTb3pPU296T1NvZ3FOb3pjaHgyaE1mTGgwYnRqNkUyY3F4TkNqczJ5MUVnY3dYMjlabUJ4cG96eDlzTUpTc2dVUG1nQ2xWVzVOYkxzREV6U2xUTHBUb3pPU296T1Nvek9Tb3pPU3NnVVBtZ0NTWUJIREVlczB1M2hKeGdoTVRnRXF1TmhNWExScUwzaERtTHN3WExoMGJ5OXJ1MlJxVHpabEZKalNvek9Tb3pPU296T1Nvek9aRWdjbHhNMCtYMmNxWDJLdHUyUnFUelJydTJScVRXcFRvek9Tb3pPU296SDlvZ2hweDJDU25KalNvek9Tb3pPU296T1NvekhNbUxSMXhONFNzZ1VQbWdDN3pRT1Nvek9Tb3pPU3dmalNvek9Td2ZsOXpyOCsiO2V2YWwoJz8+Jy4kTzAwTzBPKCRPME9PMDAoJE9PME8wMCgkTzBPMDAwLCRPTzAwMDAqMiksJE9PME8wMCgkTzBPMDAwLCRPTzAwMDAsJE9PMDAwMCksJE9PME8wMCgkTzBPMDAwLDAsJE9PMDAwMCkpKSk7"));
- ?>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: huangchengwen
+ * Date: 2018/4/10
+ * Time: 14:09
+ */
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Model\User;
+use App\Http\Model\UserAsset;
+use App\Http\Model\UserAuth;
+use Illuminate\Http\Request;
+use DB;
+
+
+class UserController extends BaseController
+{
+    public function index(Request $request)
+    {
+        //print_r($request->session()->getId());exit;
+        return view('admin.user');
+    }
+
+    public function detail(Request $request){
+        $user_id = $request->input('user_id');
+
+        return view('admin.user-detail', array('user' => $user_id));
+    }
+
+    /**
+     * api - Get All Users
+     * @param Request $request
+     * @return array
+     */
+    public function getUserList(Request $request){
+
+        $user_name = $request->input('username');
+        $limit = $request->input('limit');
+        $db = DB::table('users');
+        $count = User::count();
+        if (trim($user_name)){
+            $db->where('users.username', 'like', "%{$user_name}%");
+            $count = User::where('username', 'like', "%{$user_name}%")->count();
+        }
+
+        $result = $db->select(DB::raw(
+            'pre_users.id, pre_users.username, pre_users.password, pre_users.nickname, pre_users.created_at, pre_user_assets.point, pre_users.is_active, pre_users.status, pre_user_auths.auth_code as code, pre_user_auths.expire_in as expire'))
+            ->leftJoin('user_assets', 'users.id', '=', 'user_assets.user_id')
+            ->leftJoin('user_auths', 'users.id', '=', 'user_auths.user_id')
+            ->paginate($limit)->toArray();
+        return array('code' => 0, 'msg' => 'ok', 'count' => $count, 'data' => $result['data']);
+    }
+
+    /**
+     * api - Generate Auth Code
+     * @param Request $request
+     * @return array
+     */
+    public function generateCode(Request $request){
+        if (! $user_id = $request->input('id')){
+            return $this->Error(-1, 'Param Not Found');
+        }
+        $code = $this->checkCode(strtoupper(generate_user_auth_code()));
+
+        if (! $user_auth = UserAuth::where('user_id', $user_id)->first()){
+            $user_auth = new UserAuth();
+            $user_auth->user_id = $user_id;
+        }
+        $user_auth->auth_code = $code;
+        $user_auth->save();
+        return $this->Success($code);
+    }
+
+    /**
+     * api - Set User Point
+     * @param Request $request
+     * @return array
+     */
+    public function updatePoint(Request $request){
+        $point = $request->input('point');
+        $user_id = $request->input('id');
+
+        if (trim($point) === ""){
+            return $this->Error(-1, 'Param Not Found');
+        }
+
+        if (! $user_id){
+            return $this->Error(-1, 'Param Not Found');
+        }
+
+        if (! $asset = UserAsset::where('user_id', $user_id)->first()){
+            $asset = new UserAsset();
+            $asset->user_id = $user_id;
+        }
+
+        $asset->point = $point;
+        $asset->save();
+        return $this->Success();
+    }
+
+    /**
+     * func - Check for duplicate code to keep code unique
+     * @param $code
+     * @return string
+     */
+    protected function checkCode($code){
+        if (UserAuth::where('auth_code', '=', $code)->first()){
+            $code = strtoupper(generate_user_auth_code());
+            $this->checkCode($code);
+        } else {
+            return $code;
+        }
+    }
+}

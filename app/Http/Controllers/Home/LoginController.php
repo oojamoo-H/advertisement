@@ -30,7 +30,7 @@ class LoginController extends BaseController
     public function login(Request $request)
     {
         $username = $request->input('username');
-        $password = md5($request->input('password'));
+        $password = $request->input('password');
 
         if (! $username){
             return $this->Error(-1, 'Username is empty');

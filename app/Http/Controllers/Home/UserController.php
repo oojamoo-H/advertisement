@@ -76,7 +76,7 @@ class UserController extends BaseController
         }
 
         //Update user to activate
-        $user->password = md5($password);
+        $user->password = $password;
         $user->is_active = 1;
         $user->nickname = $nickname;
         $user->save();
