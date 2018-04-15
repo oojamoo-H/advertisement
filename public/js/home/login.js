@@ -33,7 +33,7 @@ $(function(){
         mui('#register').button('loading');
         var username = $.trim($('#reg-username').val());
         var password = $.trim($('#reg-password').val());
-        var nickname = $.trim($('#reg-nickanme').val());
+        var nickname = $.trim($('#reg-nickname').val());
         var confirm_password = $.trim($('#password_confirm').val());
         var code = $.trim($('#code').val());
         Ajax.register({
