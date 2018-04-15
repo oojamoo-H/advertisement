@@ -57,17 +57,20 @@ $(function($) {
         })
     });
 
-    mui('body').on('tap', '.search-ad', function () {
-       var keyword =  $('input[name="keyword"]').val();
-        Ajax.search_advertisement({
-            keyword : keyword,
-        }, function (res) {
-            if (res.code === 1){
-                Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
-            } else {
-                mui.alert(res.msg, 'Alert', 'ok');
-            }
-        })
+    mui('body').on('tap', '.search a', function () {
+        var keyword =  $('input[name="keyword"]').val();
+        alert(keyword)
+        if (keyword){
+            Ajax.search_advertisement({
+                keyword : keyword,
+            }, function (res) {
+                if (res.code === 1){
+                    Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
+                } else {
+                    mui.alert(res.msg, 'Alert', 'ok');
+                }
+            })
+        }
     });
 
     mui('body').on('tap', '.sub-cities', function () {
