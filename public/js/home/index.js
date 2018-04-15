@@ -1,15 +1,18 @@
 $(function($) {
 
     mui.init();
+
+    mui(".mui-scroll-wrapper").scroll({
+        deceleration : 0.0005
+    });
+
 	Ajax.get_index_content({}, function (res) {
 		if (res.code === 1){
             Helper.render($('#aside-menu'), $('#aside-city'), res.data, 1)
 			Helper.render($('#parent-cities'), $('#parent-city'), res.data, 1);
             Helper.render($('#sub-cities'), $('#sub-city'), res.data, 1);
             Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
-            mui(".mui-scroll-wrapper").scroll({
-                deceleration : 0.0005
-            });
+
 		} else {
             mui.alert(res.msg, 'Alert', 'ok');
 		}
