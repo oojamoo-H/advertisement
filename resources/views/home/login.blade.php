@@ -1,6 +1,7 @@
 @extends('home.layout.app')
 @section('content')
 <header class="mui-bar mui-bar-nav" style="background: #000">
+    <a id="goBack" href="javascript:;" class="mui-icon mui-action-menu mui-icon mui-icon-back mui-pull-left" style="color: white"></a>
     <h1 class="mui-title">Login</h1>
 </header>
 

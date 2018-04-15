@@ -38,11 +38,11 @@ ul {
   font-weight: bold;
 }
 .mui-bar-nav.index-header {
-  height: 80px;
+  height: 90px;
   background-color: red;
 }
 .mui-bar-nav.index-header .mui-title {
-  padding-top: 34px;
+  padding-top: 44px;
 }
 .mui-bar-nav.index-header ~ .mui-content {
   padding-top: 90px;
@@ -66,9 +66,9 @@ ul {
 }
 .mui-btn-primary {
   color: #fff;
-  background-color: #28a745;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#34d058), color-stop(90%, #28a745));
-  background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+  /*background-color: #28a745;*/
+  /*background-image: -webkit-gradient(linear, left top, left bottom, from(#34d058), color-stop(90%, #28a745));*/
+  /*background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);*/
 }
 .input-group {
   padding: 20px;
