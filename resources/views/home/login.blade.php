@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<div id="popover" class="mui-popover code-content">
+<div id="popover" class="mui-popover code-content" style="position: fixed">
     <div class="mui-popup mui-popup-in">
         <div class="mui-popup-inner">
             <div class="mui-popup-title">
