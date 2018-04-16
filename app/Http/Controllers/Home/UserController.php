@@ -47,11 +47,21 @@ class UserController extends BaseController
             return $this->Error(-1, 'Password Is Empty');
         }
 
+        if (strlen($password) < 6){
+            return $this->Error(-1, 'Password is too short');
+        }
+
+        if (strlen($password) > 12){
+            return $this->Error(-1, 'Password is too long');
+        }
+
         // If confirm_password is wrong return invalid
 
         if ($password !== $confirm_password){
             return $this->Error(-1, 'Password Is Not Matched');
         }
+
+
 
         // If auth_code is empty return invalid
         if (! $auth_code){

@@ -9,7 +9,7 @@
     <div class="login">
         <form id='login-form' class="input-group" action="index.html">
             <div>
-                <label>Username<span class="fr text-warning"></span></label>
+                <label>Username</label>
                 <div class="mui-input-row">
                     <input id='login-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
                 </div>
@@ -35,6 +35,7 @@
                 <div class="mui-input-row">
                     <input id='reg-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
                 </div>
+                <label class="fr text-warning">Please use the exactly same name as your Wechat ID name not nickname.</label>
             </div>
             <div>
                 <label>Password<span class="fr text-warning"></span></label>
@@ -55,10 +56,12 @@
                 </div>
             </div>
             <div>
-                <label>Authentication<a style="color:red" href="javascript:;" id="registerTemp">（Before your register, please click to get the code）</a></label>
+                <label>Authentication Code</label>
                 <div class="mui-input-row">
                     <input id='code' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry code">
+
                 </div>
+                <a style="color:red" href="javascript:;" id="registerTemp">（Before your register, please click here to get the code）</a>
             </div>
             <div class="mui-content-padded">
                 <button type="button" id='register' class="mui-btn mui-btn-block mui-btn-primary">Register</button>
@@ -78,7 +81,7 @@
             <div class="mui-popup-title">
                 <img src="img/code.jpeg" class="code"/>
             </div>
-            <div class="mui-popup-text">Please contact customer service to get authentication code</div>
+            <div class="mui-popup-text">Please scan QR code and contact service for authentication code</div>
         </div>
     </div>
 </div>
