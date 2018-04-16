@@ -62,7 +62,7 @@
                     <input id='code' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry code">
 
                 </div>
-                <a style="color:red" href="javascript:;" id="registerTemp">（Before your register, please click here to get the code）</a>
+                <a style="color:red" href="javascript:;" id="registerTemp">（Please click here to scan code）</a>
             </div>
             <div class="mui-content-padded">
                 <button type="button" id='register' class="mui-btn mui-btn-block mui-btn-primary">Register</button>
