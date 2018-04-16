@@ -35,7 +35,7 @@
                 <div class="mui-input-row">
                     <input id='reg-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
                 </div>
-                <label class="fr text-warning">Please use the exactly same name as your Wechat ID name not nickname.</label>
+                <label class="fr text-warning">Please use your Wechat ID as Username</label>
             </div>
             <div>
                 <label>Password<span class="fr text-warning"></span></label>
