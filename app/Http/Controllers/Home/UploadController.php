@@ -30,12 +30,15 @@ class UploadController extends BaseController
         $media_size = $file->getSize();
         $mime_type = $file->getClientMimeType();
         list($media_type, $ext) = explode("/", $mime_type);
+
+
         $save_file = get_new_file_name($file);
         $path = $file->move(storage_path('app/public/upload'), $save_file);
         $media_path = $path->getPathname();
         $media_url = asset('storage/upload/') . DIRECTORY_SEPARATOR . $save_file;
-        Image::make($media_path)->resize(320, 180)->save($media_path);
-
+        if ($media_type == 'image'){
+            Image::make($media_path)->resize(320, 180)->save($media_path);
+        }
         $media = new Media();
         $media->media_url = $media_url;
         $media->media_path = $media_path;
