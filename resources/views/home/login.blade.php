@@ -38,10 +38,11 @@
                 <label class="fr text-warning">Please use your Wechat ID as Username</label>
             </div>
             <div>
-                <label>Password<span class="fr text-warning"></span><label class="fr text-warning">Password's length between 6 and 12</label></label>
+                <label>Password<span class="fr text-warning"></span></label>
                 <div class="mui-input-row">
                     <input id='reg-password' type="password" autocomplete="new-password" class="mui-input-clear mui-input form-control" placeholder="Please entry password">
                 </div>
+                <label class="fr text-warning">Password's length between 6 and 12</label>
             </div>
             <div>
                 <label>Confirm</label>
