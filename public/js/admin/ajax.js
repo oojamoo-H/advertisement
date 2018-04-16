@@ -47,3 +47,7 @@ Ajax.get_advertisement_media = function (data, success) {
 Ajax.system_save = function (data, success) {
     Ajax.post(BaseUri + API_LIST.SYSTEM_SAVE, data, success);
 }
+
+Ajax.save_admin_password = function (data, success) {
+    Ajax.post(BaseUri + API_LIST.SAVE_ADMIN_PASSWORD, data, success);
+}

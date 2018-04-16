@@ -11,5 +11,5 @@ namespace App\Http\Model;
 
 class UserAdmin extends BaseModel
 {
-
+    protected $fillable = ['password'];
 }

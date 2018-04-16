@@ -19,11 +19,21 @@
                 <div class="layui-form-item">
                     <label class="layui-form-label">{{$s['show_name']}}</label>
                     <div class="layui-input-inline">
-                        <input type="text" name="{{$s['key']}}" required lay-verify="required" placeholder="" autocomplete="off" class="layui-input" value="{{$s['value']}}">
+                        <input type="text" name="{{$s['key']}}"  placeholder="" autocomplete="off" class="layui-input" value="{{$s['value']}}">
                     </div>
                     <div class="layui-form-mid layui-word-aux">{{$s['description']}}</div>
-                    <button data-id="{{$s['id']}}" data-key="{{$s['key']}}" type="button" class="layui-btn layui-btn-sm" lay-submit>Save</button>
+                    <button data-id="{{$s['id']}}" data-key="{{$s['key']}}" type="button" class="layui-btn layui-btn-sm system-button" lay-submit>Save</button>
                 </div>
+                @endforeach
+                @foreach($user as $u)
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">{{$u['username']}}</label>
+                        <div class="layui-input-inline">
+                            <input id="password{{$u['id']}}" type="text" name="password" placeholder="" autocomplete="off" class="layui-input" value="">
+                        </div>
+                        <div class="layui-form-mid layui-word-aux">Reset Password</div>
+                        <button data-id="{{$u['id']}}" type="button" class="layui-btn layui-btn-sm admin-button" lay-submit>Save</button>
+                    </div>
                 @endforeach
             </form>
         </div>
@@ -33,13 +43,30 @@
         $(function () {
             layui.use(['layer'], function () {
                 var layer = layui.layer;
-                $('body').on('click', 'button', function () {
+                $('body').on('click', '.system-button', function () {
                     var key = $(this).data('key');
                     var value = $('input[name="' + key + '"]').val()
                     var id = $(this).data('id');
                     var data = {key : key , id : id, value : value}
                     Ajax.system_save(data, function (res) {
+                        if (res.code === 1){
+                            alert('Saved Successfully')
+                        } else {
+                            alert(res.msg)
+                        }
+                    })
+                })
 
+                $('body').on('click', '.admin-button', function () {
+                    var id = $(this).data('id');
+
+                    var password = $('#password' + id).val();
+                    Ajax.save_admin_password({id : id, password : password}, function (res) {
+                        if (res.code === 1){
+                            alert('Saved Successfully')
+                        } else {
+                            alert(res.msg)
+                        }
                     })
                 })
             })
