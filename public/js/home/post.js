@@ -24,6 +24,8 @@ $(function () {
                 $('video').prop('controls', 'controls');
                 $('video').prop('src', res.data.url);
                 $('video').data('video-id', res.data.media_id);
+            } else {
+                Helper.alert(res.msg)
             }
         },
         error:function () {
@@ -50,9 +52,13 @@ $(function () {
         },
         done : function (res) {
             Helper.hideLoading();
-            $('.img-list').find('img').eq(index).data('image-id', res.data.media_id);
-            $('.img-list').find('img').eq(index).prop('src', res.data.url);
-            index++;
+            if (res.code === 1){
+                $('.img-list').find('img').eq(index).data('image-id', res.data.media_id);
+                $('.img-list').find('img').eq(index).prop('src', res.data.url);
+                index++;
+            } else {
+                Helper.alert(res.msg)
+            }
         },
         error:function (index, upload) {
             Helper.hideLoading();
