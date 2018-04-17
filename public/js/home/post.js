@@ -12,7 +12,6 @@ $(function () {
             'X-SESSION-TOKEN' :$('meta[name="session-token"]').attr('content')
         },
         size:'2048',
-        accept : 'video',
         elem: '#videoBtn',
         field: 'video',
         url : '/upload',
