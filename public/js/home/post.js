@@ -13,6 +13,7 @@ $(function () {
         },
         size:'2048',
         elem: '#videoBtn',
+        accept:'file',
         field: 'video',
         url : '/upload',
         before:function () {
