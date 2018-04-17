@@ -31,7 +31,6 @@ class UploadController extends BaseController
         $mime_type = $file->getClientMimeType();
         list($media_type, $ext) = explode("/", $mime_type);
 
-
         $save_file = get_new_file_name($file);
         $path = $file->move(storage_path('app/public/upload'), $save_file);
         $media_path = $path->getPathname();

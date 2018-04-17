@@ -16,12 +16,19 @@ $(function () {
         elem: '#videoBtn',
         field: 'video',
         url : '/upload',
+        before:function () {
+            Helper.showLoading();
+        },
         done : function (res) {
+            Helper.hideLoading();
             if (res.code === 1){
                 $('video').prop('controls', 'controls');
                 $('video').prop('src', res.data.url);
                 $('video').data('video-id', res.data.media_id);
             }
+        },
+        error:function () {
+            Helper.hideLoading();
         }
     });
 
@@ -38,16 +45,18 @@ $(function () {
         multiple:true,
         number:5,
         before: function(){
+            Helper.showLoading();
             index = 0;
             $('.img-list').find('img').removeProp('src');
         },
         done : function (res) {
+            Helper.hideLoading();
             $('.img-list').find('img').eq(index).data('image-id', res.data.media_id);
             $('.img-list').find('img').eq(index).prop('src', res.data.url);
             index++;
         },
         error:function (index, upload) {
-            console.log(upload)
+            Helper.hideLoading();
         }
     });
     
