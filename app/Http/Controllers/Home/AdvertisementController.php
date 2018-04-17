@@ -25,7 +25,9 @@ class AdvertisementController extends BaseController
 
     public function index()
     {
-        return view('home.index');
+        $token = session()->get('home_user');
+        $user = session()->get('home_' . $token);
+        return view('home.index', array('user' => $user));
     }
 
     public function getIndexContent(Request $request)
@@ -180,7 +182,9 @@ class AdvertisementController extends BaseController
      */
     public function postAd()
     {
-        return view('home.post');
+        $token = session()->get('home_user');
+        $user = session()->get('home_' . $token);
+        return view('home.post', array('user' => $user));
     }
 
 

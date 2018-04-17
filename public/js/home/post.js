@@ -17,10 +17,10 @@ $(function () {
         field: 'video',
         url : '/upload',
         before:function () {
-            Helper.showLoading();
+            Helper.layer.load();
         },
         done : function (res) {
-            Helper.hideLoading();
+            Helper.layer.closeAll('loading');
             if (res.code === 1){
                 $('video').prop('controls', 'controls');
                 $('video').prop('src', res.data.url);
@@ -30,7 +30,7 @@ $(function () {
             }
         },
         error:function () {
-            Helper.hideLoading();
+            Helper.layer.closeAll('loading');
         }
     });
 
@@ -47,23 +47,30 @@ $(function () {
         multiple:true,
         number:5,
         before: function(){
-            Helper.showLoading();
+            Helper.layer.load();
             index = 0;
             $('.img-list').find('img').removeProp('src');
         },
         done : function (res) {
-            Helper.hideLoading();
+            Helper.layer.closeAll('loading');
             if (res.code === 1){
-                $('.img-list').find('img').eq(index).data('image-id', res.data.media_id);
-                $('.img-list').find('img').eq(index).prop('src', res.data.url);
+                var img = document.createElement('img');
+                $(img).attr('data-preview-src', '');
+                $(img).attr('data-preview-group',"1");
+                $(img).css({width:'55.19px', height:'60px'});
+                $(img).data('image-id', res.data.media_id);
+                $(img).prop('src', res.data.url);
+                $('.img-list').find('a').eq(index).html(img);
                 index++;
+                mui.previewImage();
             }
         },
         error:function (index, upload) {
-            Helper.hideLoading();
+            Helper.layer.closeAll('loading');
         }
     });
-    
+
+
     mui('body').on('tap', '#cityBtn', function () {
         Ajax.get_city({}, function (res) {
             if (res.code === 1){
@@ -78,7 +85,7 @@ $(function () {
                         })
                     }
                     data.push(city);
-                })
+                });
 
                 var picker = new mui.PopPicker({layer: 2, buttons:['cancle','ok']});
                 picker.setData(data);

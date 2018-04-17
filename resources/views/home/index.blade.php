@@ -171,14 +171,18 @@
                 <div class="mui-scroll">
                     <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted" id="aside-menu">
                         <li class="mui-table-view-cell">
-                            <a href="javascript:;" class="mui-navigate-right" id="linkPage">Post Ad</a>
+                            <a href="javascript:;" class="mui-navigate-right" id="linkPage" data-point="{{$user['point']}}">Post Ad</a>
                         </li>
                         <li class="mui-table-view-cell">
                             <a href="javascript:;" class="mui-navigate-right" id="buyPage">Buy Credit</a>
                         </li>
-                        {{--<li class="mui-table-view-cell">--}}
-                        {{--<a href="javascript:;" class="mui-navigate-right" id="videoPage">My Account</a>--}}
-                        {{--</li>--}}
+                        <li class="mui-table-view-cell">
+                            @if (empty($user))
+                                <a href="/login" class="mui-navigate-right" id="myAccount">My Account</a>
+                            @else
+                                <a href="javacript:;" class="mui-navigate-right">Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
+                            @endif
+                        </li>
                         <li class="mui-table-view-cell">
                             <a href="javascript:;">NearBy</a>
                         </li>

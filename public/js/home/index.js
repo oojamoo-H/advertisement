@@ -15,6 +15,10 @@ $(function($) {
         });
     }
 
+    mui('body').on('tap', '#myAccount', function () {
+        Helper.redirect('/login');
+    })
+
 	Ajax.get_index_content({}, function (res) {
 		if (res.code === 1){
             Helper.render($('#aside-menu'), $('#aside-city'), res.data, 1)

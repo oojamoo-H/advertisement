@@ -10,6 +10,7 @@ namespace App\Http\Controllers\Home;
 
 
 use App\Http\Model\User;
+use App\Http\Model\UserAsset;
 use Illuminate\Http\Request;
 
 class LoginController extends BaseController
@@ -46,6 +47,11 @@ class LoginController extends BaseController
 
         if (! $user->is_active){
             return $this->Error(-2, 'Please contact customer service to activate');
+        }
+
+        $user->point = 0;
+        if ($userAsset = UserAsset::where('user_id', $user['id'])->first()){
+            $user->point = $userAsset->point;
         }
 
         $token = generate_user_token($user['id']);
