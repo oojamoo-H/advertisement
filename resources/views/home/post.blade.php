@@ -40,13 +40,6 @@
                         </div>
                     </div>
                     <div class="input-file-group">
-                        <div style="margin-top: 10px">
-                            <label>Upload Video</label>
-                            <div class="input-file-wrap">
-                                <button type="button" id="videoBtn" class="mui-btn">Select Video</button>
-                            </div>
-                        </div>
-
                         <div style="margin-top: 20px">
                             <label>Upload Image</label>
                             <div class="input-file-wrap">
@@ -62,6 +55,13 @@
                                 </ul>
                             </div>
                         </div>
+                        <div style="margin-top: 10px">
+                            <label>Upload Video</label>
+                            <div class="input-file-wrap">
+                                <button type="button" id="videoBtn" class="mui-btn">Select Video</button>
+                            </div>
+                        </div>
+
                         <div style="margin-top: 15px">
                             <video width="100%">
                                 <source src="" type="video/mp4"></source>
