@@ -8,4 +8,5 @@ const API_LIST = {
     SEARCH_AD : 'ad/searchAdvertisement',
     GET_TOP : 'ad/getTop',
     GET_SERVICE_TEL :'user/getServiceTel',
+    LOG_OUT : 'user/logout'
 }

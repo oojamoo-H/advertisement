@@ -64,3 +64,7 @@ Ajax.get_top = function (data, success) {
 Ajax.get_service_tel = function (data, success) {
     Ajax.get(BaseUri + API_LIST.GET_SERVICE_TEL, data, success);
 }
+
+Ajax.logout = function (data, success) {
+    Ajax.get(BaseUri + API_LIST.LOG_OUT, data, success);
+}

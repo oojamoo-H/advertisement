@@ -35,6 +35,8 @@ Route::namespace('Home')->group(function(){
     Route::get('/ad/getCity', 'RegionController@getCity');
     Route::get('/login', 'LoginController@index');
 
+    Route::get('/user/logout', 'LoginController@logout');
+
 });
 
 

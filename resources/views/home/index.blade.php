@@ -183,6 +183,13 @@
                                 <a href="javacript:;" class="mui-navigate-right">Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
                             @endif
                         </li>
+                        @if (! empty($user))
+                        <li class="mui-table-view-cell">
+
+                                <a href="javascript:;" class="mui-navigate-right" id="logout">Log Out</a>
+                        </li>
+                        @endif
+
                         <li class="mui-table-view-cell">
                             <a href="javascript:;">NearBy</a>
                         </li>

@@ -27,6 +27,7 @@ class AdvertisementController extends BaseController
     {
         $token = session()->get('home_user');
         $user = session()->get('home_' . $token);
+
         return view('home.index', array('user' => $user));
     }
 

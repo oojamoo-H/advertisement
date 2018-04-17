@@ -63,8 +63,12 @@ class LoginController extends BaseController
     /**
      * api-Logout
      */
-    public function logout()
+    public function logout(Request $request)
     {
+        $token = $request->session()->get('home_user');
 
+        $request->session()->forget('home_user');
+        $request->session()->forget('home_' . $token);
+        return $this->Success();
     }
 }
