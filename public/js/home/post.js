@@ -57,8 +57,6 @@ $(function () {
                 $('.img-list').find('img').eq(index).data('image-id', res.data.media_id);
                 $('.img-list').find('img').eq(index).prop('src', res.data.url);
                 index++;
-            } else {
-                mui.alert(res.msg, 'Alert', res.msg);
             }
         },
         error:function (index, upload) {
