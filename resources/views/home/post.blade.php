@@ -13,8 +13,8 @@
         <header class="mui-bar mui-bar-nav" style="background: black">
             <h1 class="mui-title">Post Ad</h1>
         </header>
-        <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
-            <div class="edit">
+        <div id="offCanvasContentScroll" class="mui-content ">
+            <div class="edit mui-scroll-wrapper">
                 <form class="input-group mui-scorll">
                     <div>
                         <label>Title</label>

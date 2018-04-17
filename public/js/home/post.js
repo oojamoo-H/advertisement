@@ -5,6 +5,7 @@ $(function () {
         deceleration : 0.0005,
         indicators: false,
     });
+
     var uploadVideoInst = Helper.upload.render({
         headers:{
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
