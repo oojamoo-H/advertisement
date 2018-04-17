@@ -46,12 +46,7 @@
                                 <button type="button" id="videoBtn" class="mui-btn">Select Video</button>
                             </div>
                         </div>
-                        <div style="margin-top: 15px">
-                            <video width="100%">
-                                <source src="" type="video/mp4"></source>
-                            </video>
-                            <input name="video" type="hidden"/>
-                        </div>
+
                         <div style="margin-top: 20px">
                             <label>Upload Image</label>
                             <div class="input-file-wrap">
@@ -66,6 +61,12 @@
                                     <li><a href="javascript:;" class="imageup"><img  width="55.19px" height="60px"/></a></li>
                                 </ul>
                             </div>
+                        </div>
+                        <div style="margin-top: 15px">
+                            <video width="100%">
+                                <source src="" type="video/mp4"></source>
+                            </video>
+                            <input name="video" type="hidden"/>
                         </div>
                     </div>
                     <div class="mui-content-padded pt-md">
