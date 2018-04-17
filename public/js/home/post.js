@@ -26,7 +26,7 @@ $(function () {
                 $('video').prop('src', res.data.url);
                 $('video').data('video-id', res.data.media_id);
             } else {
-                Helper.alert(res.msg)
+                mui.alert(res.msg, 'Alert', res.msg);
             }
         },
         error:function () {
@@ -58,7 +58,7 @@ $(function () {
                 $('.img-list').find('img').eq(index).prop('src', res.data.url);
                 index++;
             } else {
-                Helper.alert(res.msg)
+                mui.alert(res.msg, 'Alert', res.msg);
             }
         },
         error:function (index, upload) {
