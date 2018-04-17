@@ -28,9 +28,8 @@ class UploadController extends BaseController
         } else if ($video && $video->isValid()){
             $file = $video;
             $mime_type = $file->getClientMimeType();
-            return $this->Error(-1,$mime_type);
             list($media_type, $ext) = explode("/", $mime_type);
-            if ($media_type !='video' && ($ext != 'mp4' || $ext != 'mov')){
+            if ($media_type !='video' && ($ext != 'mp4' || $ext != 'mov' || $ext != 'quicktime')){
                 return $this->Error(-1, 'Wrong Video Type');
             }
         } else {
