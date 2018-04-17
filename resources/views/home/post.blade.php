@@ -14,7 +14,7 @@
             <h1 class="mui-title">Post Ad</h1>
         </header>
         <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
-            <div class="edit">
+            <div class="edit mui-scorll">
                 <form class="input-group">
                     <div>
                         <label>Title</label>
