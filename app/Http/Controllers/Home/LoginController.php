@@ -49,11 +49,6 @@ class LoginController extends BaseController
             return $this->Error(-2, 'Please contact customer service to activate');
         }
 
-        $user->point = 0;
-        if ($userAsset = UserAsset::where('user_id', $user['id'])->first()){
-            $user->point = $userAsset->point;
-        }
-
         $token = generate_user_token($user['id']);
         $request->session()->put('home_user', $token);
         $request->session()->put('home_' . $token, $user->toArray());
