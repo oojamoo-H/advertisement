@@ -28,7 +28,7 @@ $(function($) {
     })
 
     mui('body').on('tap', '#allBtn', function () {
-        Ajax.get_index_content(function (res) {
+        Ajax.get_index_content({},function (res) {
             Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
         })
     })
