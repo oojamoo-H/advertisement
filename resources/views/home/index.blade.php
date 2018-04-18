@@ -302,7 +302,7 @@
             <div id="item1" class="mui-control-content mui-active">
                 <ul class="news-list">
                     {{# layui.each(d.advertisement_list, function(index, item){}}
-                    <li style="word-wrap:break-word; " data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">{{item.content}}</li>
+                    <li style="word-wrap:break-word; " data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">{{item.title}}</li>
                     {{# }); }}
                 </ul>
             </div>

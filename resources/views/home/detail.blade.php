@@ -208,7 +208,7 @@
                     </p>
                     <ul class="news-list">
                         @foreach($user_ad['advertisement'] as $advertisement)
-                        <li data-id="{{$advertisement['id']}}" data-user-id="{{$user_ad['id']}}" class="user-ads">{{$advertisement['content']}}</li>
+                        <li data-id="{{$advertisement['id']}}" data-user-id="{{$user_ad['id']}}" class="user-ads">{{$advertisement['title']}}</li>
                         @endforeach
                     </ul>
                 </div>
