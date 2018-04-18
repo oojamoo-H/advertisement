@@ -181,7 +181,7 @@
                         Content:
                     </p>
                     <p style="margin-top: 15px;margin-bottom: 15px;color:black;padding:0 20px">
-                        {{!! $detail['content'] !!}}
+                        {!! $detail['content'] !!}
                     </p>
                     <p style="margin-top: 25px;margin-bottom: 15px">
                         Related Media:
