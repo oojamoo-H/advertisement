@@ -251,8 +251,12 @@ class AdvertisementController extends BaseController
             //Last insert the advertisement, city and user relationships into database
             AdvertisementUserCity::create(array('user_id' => $user['id'], 'city_id' => $sub_city_id, 'advertisement_id' => $advertisementModel->id));
             $point_consume = System::where('key', 'point_consume')->first()->toArray();
+            $user_new_point = $user_assets->point - $point_consume['value'];
 
-            $user_assets->point = $user_assets->point - $point_consume['value'];
+            if ($user_new_point  <= 0){
+                return $this->Error(-1, 'Point Not Enough');
+            }
+            $user_assets->point = $user_new_point;
             $user_assets->save();
             DB::commit();
         } catch(Exception $e){
