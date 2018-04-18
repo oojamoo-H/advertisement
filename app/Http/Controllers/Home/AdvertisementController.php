@@ -57,7 +57,7 @@ class AdvertisementController extends BaseController
         $sub_city = $sub_city ? $sub_city : $parent_city;
 
         $db = DB::table('cities as c')
-            ->select('ad.title,ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content')
+            ->select('ad.title','ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content')
             ->leftjoin('advertisement_user_cities as auc','auc.city_id','=','c.id')
             ->join('users as u', 'u.id', '=', 'auc.user_id')
             ->join('advertisements as ad', 'ad.id', '=', 'auc.advertisement_id')
