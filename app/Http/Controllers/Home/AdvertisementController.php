@@ -267,7 +267,7 @@ class AdvertisementController extends BaseController
             //First insert advertisement data into database
             $advertisementModel = new Advertisement();
             $advertisementModel->title = $title;
-            $advertisementModel->content = str_replace("<br>",'\r', $content);
+            $advertisementModel->content = str_replace("\n",'<br>', $content);
             $advertisementModel->save();
 
             //Then insert the advertisement and media relationships into database

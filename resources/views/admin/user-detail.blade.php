@@ -49,7 +49,7 @@
                     {field: 'city_name', title: 'Publish City', width: 100},
                     {field: 'created_at', title: 'Publish Time', width: 150},
                     {field: 'media', title:'Image', templet:'#imagelist'},
-                    {title:'Action',  toolbar: '#action'},
+                    {title: 'Action',  toolbar: '#action'},
                 ]]
             });
 
