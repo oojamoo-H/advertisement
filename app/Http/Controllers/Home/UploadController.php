@@ -19,7 +19,6 @@ class UploadController extends BaseController
     {
         $image = $request->file('image');
         $video = $request->file('video');
-        $type = $request->input('type');
 
         if ($image && $image->isValid()){
             $file = $image;
@@ -41,7 +40,7 @@ class UploadController extends BaseController
         $path = $file->move(storage_path('app/public/upload'), $save_file);
         $media_path = $path->getPathname();
         $media_url = asset('storage/upload/') . DIRECTORY_SEPARATOR . $save_file;
-        if ($type =='image' && $media_type == 'image'){
+        if ($media_type == 'image'){
             Image::make($media_path)->resize(320, 180)->save($media_path);
         }
 
