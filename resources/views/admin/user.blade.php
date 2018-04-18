@@ -44,7 +44,7 @@
                     {field: 'nickname', title: 'Nickname', width:150},
                     {field: 'point', title: 'Point', width:100},
                     {field: 'code', title: 'Auth Code', width:100},
-                    {field: 'is_active', title:'Active Status', templet: '#isActive', width:120},
+                    {field: 'is_active', title:'Status', templet: '#isActive', width:60},
                     {field: 'created_at', title: 'Register Time', width:150},
                     {title:'Action', toolbar: '#barDemo'}
                 ]]

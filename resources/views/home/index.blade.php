@@ -219,7 +219,7 @@
 
                 <div class="content mui-scroll index-content" style="top:120px;">
                     <div class="link-area" id="parent-cities">
-                        <a href="javascript:;">All</a>
+                        <a href="javascript:;" id="allBtn">All</a>
 
                     </div>
                     <div class="link-area" id="sub-cities">

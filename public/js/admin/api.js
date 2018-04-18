@@ -8,5 +8,6 @@ const API_LIST = {
     'GET_ADVERTISEMENT_LIST' : 'server/getAdvertisementList',
     'GET_ADVERTISEMENT_MEDIA' : 'server/getAdvertisementMedia',
     'SYSTEM_SAVE': 'server/systemSave',
-    'SAVE_ADMIN_PASSWORD':'server/saveAdminPassword'
+    'SAVE_ADMIN_PASSWORD':'server/saveAdminPassword',
+    'DELETE_ADVERTISEMENT' : 'server/deleteAdvertisement'
 }

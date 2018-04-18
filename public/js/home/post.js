@@ -17,7 +17,7 @@ $(function () {
         field: 'video',
         url : '/upload',
         before:function () {
-            Helper.layer.load();
+            Helper.layer.load(2);
         },
         done : function (res) {
             Helper.layer.closeAll('loading');
@@ -47,7 +47,7 @@ $(function () {
         multiple:true,
         number:5,
         before: function(){
-            Helper.layer.load();
+            Helper.layer.load(2);
             index = 0;
             $('.img-list').find('img').removeProp('src');
         },
@@ -118,6 +118,7 @@ $(function () {
         media = media.join('|');
         var title = $('input[name="title"]').val();
         var content = $('textarea[name="content"]').val()
+        Helper.layer.load(2);
         Ajax.submit_post_ad({
             media_ids : media,
             title : title,
@@ -128,6 +129,7 @@ $(function () {
             if (res.code === 1){
                 Helper.redirect('/index');
             } else {
+                Helper.layer.closeAll('loading');
                 mui.alert(res.msg, 'Alert', 'ok');
             }
         })

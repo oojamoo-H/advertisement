@@ -93,6 +93,19 @@
                             content: '<p style="padding:20px;font-size:16px;">' + data.content + '</p>'
                         });
                         break;
+                    case 'delete':
+                        layer.load(2, {shade : 0.8});
+                        layer.confirm('Are you sure to delete this ad？', function () {
+                            Ajax.delete_advertisement({id : obj.data.id}, function (res) {
+                                layer.closeAll('loading');
+                                if (res.code === 1){
+                                    location.reload()
+                                } else {
+                                    layer.msg('Deleted Failed', {icon: 2});
+                                }
+                            })
+                        });
+                        break;
                 }
             });
 
@@ -141,7 +154,7 @@
         <script type="text/html" id="action">
             <a class="layui-btn layui-btn-xs layui-btn-normal set-point"  lay-event="viewVideo">View Video</a>
             <a class="layui-btn layui-btn-xs layui-btn-normal set-point"  lay-event="viewContent">View Content</a>
-
+            <a class="layui-btn layui-btn-xs layui-btn-normal set-point"  lay-event="delete">Delete</a>
         </script>
     @endverbatim
 @endsection

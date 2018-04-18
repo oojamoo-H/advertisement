@@ -65,6 +65,7 @@ Route::namespace('Admin')->prefix('server')->group(function(){
         Route::get('/getAdvertisementMedia', 'AdvertisementController@getAdvertisementMedia');
         Route::post('/systemSave', 'SystemController@systemSave');
         Route::post('/saveAdminPassword', 'SystemController@saveAdminPassword');
+        Route::post('/deleteAdvertisement', 'AdvertisementController@deleteAdvertisement');
     });
 
     Route::post('/login', 'LoginController@login');

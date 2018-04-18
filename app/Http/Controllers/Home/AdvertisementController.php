@@ -40,29 +40,53 @@ class AdvertisementController extends BaseController
 
     public function getIndexContent(Request $request)
     {
+        $data = array();
         $parent_city = $request->input('parent_city') ? $request->input('parent_city') : 0;
         $sub_city = $request->input('sub_city');
         $orderBy = $request->input('orderby');
 
-        $parent_cities = City::where('parent_id', 0)->select(array('id', 'city_name'))->get()->toArray();
+        if (! $parent_city){
+            $parent_cities = City::where('parent_id', 0)->select(array('id', 'city_name'))->get()->toArray();
+            $data['cities'] = $parent_cities;
+        }
+
         $sub_cities = array();
-
-
         if ($parent_city != 0){
             if ($sub_cities_result = City::where('parent_id', $parent_city)->select(array('id', 'city_name'))->get()){
                 $sub_cities = $sub_cities_result->toArray();
+                $data['sub_cities'] = $sub_cities;
             }
         }
-
-        $sub_city = $sub_city ? $sub_city : $parent_city;
 
         $db = DB::table('cities as c')
             ->select('ad.title','ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content')
             ->leftjoin('advertisement_user_cities as auc','auc.city_id','=','c.id')
             ->join('users as u', 'u.id', '=', 'auc.user_id')
-            ->join('advertisements as ad', 'ad.id', '=', 'auc.advertisement_id')
-            ->where('c.id', '=', $sub_city);
+            ->join('advertisements as ad', 'ad.id', '=', 'auc.advertisement_id');
 
+        if ($sub_city){
+            $db->where('auc.city_id', '=', $sub_city);
+        } else if ($parent_city != 0){
+            if ($sub_cities){
+                $sub_cities_for_ad = array_map(function($city){
+                    return $city['id'];
+                }, $sub_cities);
+                $db->whereIn('auc.city_id', $sub_cities_for_ad);
+            } else {
+                $db->where('auc.city_id', '=', $parent_city);
+            }
+        }
+
+
+        if ($parent_city != 0 && $sub_cities){
+
+        }
+
+
+
+        if ($sub_city || ! $sub_cities){
+
+        }
 
         if ($orderBy == 'date'){
             $db->orderBy('ad.created_at', 'desc');
@@ -93,34 +117,36 @@ class AdvertisementController extends BaseController
             $results = array();
         }
 
-        return $this->Success(array('cities' => $parent_cities, 'advertisement_list' => $results, 'sub_cities' => $sub_cities));
+        $data['advertisement_list'] = $results;
+
+        return $this->Success($data);
     }
 
-
     public function getTop(){
-
+        $new_user_top = array();
         $user_top = DB::table('user_assets as ua')
             ->join('advertisement_user_cities as auc', 'auc.user_id', '=', 'ua.user_id')
             ->orderBy('ua.point', 'desc')
             ->limit(5)
             ->get();
-        if ($user_top){
+        if ($user_top) {
             $user_top = $user_top->toArray();
-            foreach ($user_top as &$top){
+            foreach ($user_top as &$top) {
                 $media = DB::table('media as m')
                     ->select('m.media_url', 'am.advertisement_id')
-                    ->join('advertisement_media as am','am.media_id', '=', 'm.id')
+                    ->join('advertisement_media as am', 'am.media_id', '=', 'm.id')
                     ->where('am.advertisement_id', '=', $top->advertisement_id)
                     ->where('m.media_type', '=', 'image')
                     ->orderBy('m.created_at', 'desc')
                     ->first();
-                $top->media = $media ? $media : array();
+                if (!empty($media)) {
+                    $top->media = $media;
+                    array_push($new_user_top, $top);
+                }
             }
-        } else {
-            $user_top = array();
         }
 
-        return $this->Success($user_top);
+        return $this->Success($new_user_top);
     }
 
 

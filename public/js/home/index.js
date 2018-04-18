@@ -27,6 +27,12 @@ $(function($) {
         });
     })
 
+    mui('body').on('tap', '#allBtn', function () {
+        Ajax.get_index_content(function (res) {
+            Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
+        })
+    })
+
 	Ajax.get_index_content({}, function (res) {
 		if (res.code === 1){
             Helper.render($('#aside-menu'), $('#aside-city'), res.data, 1)
