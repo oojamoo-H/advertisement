@@ -27,11 +27,14 @@ class AdvertisementController extends BaseController
     {
         $token = session()->get('home_user');
         $user = session()->get('home_' . $token);
-        $user['point'] = 0;
+        if ($user){
+            $user['point'] = 0;
 
-        if ($userAsset = UserAsset::where('user_id', $user['id'])->first()){
-            $user['point'] = $userAsset->point;
+            if ($userAsset = UserAsset::where('user_id', $user['id'])->first()){
+                $user['point'] = $userAsset->point;
+            }
         }
+
         return view('home.index', array('user' => $user));
     }
 
