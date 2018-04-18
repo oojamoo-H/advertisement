@@ -262,7 +262,7 @@ class AdvertisementController extends BaseController
             $point_consume = System::where('key', 'point_consume')->first()->toArray();
             $user_new_point = $user_assets->point - $point_consume['value'];
 
-            if ($user_new_point  <= 0){
+            if ($user_new_point  < 0){
                 return $this->Error(-1, 'Point Not Enough');
             }
             $user_assets->point = $user_new_point;
