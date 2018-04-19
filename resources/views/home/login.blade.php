@@ -87,7 +87,9 @@
             <div class="mui-popup-title">
                 <img src="img/code.jpeg" class="code"/>
             </div>
+            <div class="mui-popup-text">We will send authentication code to your email address.</div>
             <div class="mui-popup-text">Please scan QR code and contact service for authentication code</div>
+            <div class="mui-popup-text">Note: Working hr from 9am to 5pm, if register after working hr, authentication code might be received next working day.</div>
         </div>
     </div>
 </div>
