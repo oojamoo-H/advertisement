@@ -89,7 +89,7 @@
                 <img src="img/code.jpeg" class="code"/>
             </div>
             <div class="mui-popup-text" style="color:red">We will send authentication code to your email address.</div>
-            <div class="mui-popup-text" style="color:red">Please scan QR code to contact our service.</div>
+            <div class="mui-popup-text" style="color:red">Please scan QR code to contact our service. We will also send authentication code through your wechat if you don’t have an email account</div>
         </div>
     </div>
 </div>
