@@ -9,9 +9,9 @@
     <div class="login">
         <form id='login-form' class="input-group" action="index.html">
             <div>
-                <label>Username</label>
+                <label>E-mail</label>
                 <div class="mui-input-row">
-                    <input id='login-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
+                    <input id='login-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry e-mail">
                 </div>
             </div>
             <div>
@@ -33,7 +33,7 @@
             <div>
                 <label>E-mail<span class="fr text-warning"></span></label>
                 <div class="mui-input-row">
-                    <input id='reg-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
+                    <input id='reg-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry e-mail">
                 </div>
             </div>
             <div>
