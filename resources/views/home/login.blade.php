@@ -31,11 +31,10 @@
     <div class="reg mui-hidden">
         <form class="input-group">
             <div>
-                <label>Username<span class="fr text-warning"></span></label>
+                <label>E-mail<span class="fr text-warning"></span></label>
                 <div class="mui-input-row">
                     <input id='reg-username' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
                 </div>
-                <label class="fr text-warning">Please use your Wechat ID as Username</label>
             </div>
             <div>
                 <label>Password<span class="fr text-warning"></span></label>
