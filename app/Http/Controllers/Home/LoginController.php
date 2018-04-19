@@ -60,7 +60,7 @@ class LoginController extends BaseController
      */
     public function logout(Request $request)
     {
-        $token = $request->session()->get('home_user');
+        $token = $request->headers()->get('X-SESSION-TOKEN');
 
         $request->session()->forget('home_user');
         $request->session()->forget('home_' . $token);
