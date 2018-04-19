@@ -25,3 +25,15 @@ if (! function_exists('generate_token')){
         return md5($user_id . uniqid($prefix, $more_entropy));
     }
 }
+
+if (! function_exists('is_email')){
+    function is_email($email){
+        return preg_match('/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/', $email);
+    }
+}
+
+if (! function_exists('is_mobile')){
+    function is_mobile($mobile){
+        return preg_match('/^04\d{10}$/', $mobile);
+    }
+}
