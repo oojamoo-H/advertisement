@@ -59,7 +59,7 @@
             <div>
                 <label>Mobile<span class="fr text-warning"></span></label>
                 <div class="mui-input-row">
-                    <input id='reg-mobile' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
+                    <input id='reg-mobile' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry mobile">
                 </div>
             </div>
             <div>
