@@ -55,9 +55,7 @@ class LoginController extends BaseController
         return $this->Success($user->toArray());
     }
 
-    /**
-     * api-Logout
-     */
+
     public function logout(Request $request)
     {
         $token = $request->headers()->get('X-SESSION-TOKEN');
