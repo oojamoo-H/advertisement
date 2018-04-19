@@ -15,7 +15,6 @@ $(function(){
         mui('#login').button('loading')
         var username = $.trim($('#login-username').val());
         var password = $.trim($('#login-password').val());
-        var url = document.referrer;
 
         Ajax.login({username : username, password : password}, function (res) {
             mui('#login').button('reset')
@@ -34,12 +33,14 @@ $(function(){
         var username = $.trim($('#reg-username').val());
         var password = $.trim($('#reg-password').val());
         var nickname = $.trim($('#reg-nickname').val());
+        var mobile = $.trim($('#reg-mobile').val())
         var confirm_password = $.trim($('#password_confirm').val());
         var code = $.trim($('#code').val());
         Ajax.register({
             username: username,
             password: password,
             nickname: nickname,
+            mobile:mobile,
             confirm_password: confirm_password,
             code: code
         }, function (res) {
