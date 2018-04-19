@@ -26,6 +26,7 @@ class UserController extends BaseController
         $username = trim($request->input('username'));
         $password = trim($request->input('password'));
         $nickname = trim($request->input('nickname'));
+        $mobile = trim($request->input('mobile'));
         $confirm_password = trim($request->input('confirm_password'));
         $auth_code = trim($request->input('code'));
 
@@ -38,9 +39,22 @@ class UserController extends BaseController
             return $this->Error(-1, 'Nickname Is Empty');
         }
 
+        if (!$mobile){
+            return $this->Error(-1, 'Mobile Is Empty');
+        }
+
         if (strlen($nickname) > 12){
             return $this->Error(-1, 'Too long for nickname');
         }
+
+        if (! is_email($username)){
+            return $this->Error(-1, 'Wrong email format');
+        }
+
+        if (! is_mobile($mobile)){
+            return $this->Error(-1, 'Wrong mobile format');
+        }
+
 
         // If password is empty return invalid
         if (! $password){
@@ -89,6 +103,7 @@ class UserController extends BaseController
         $user->password = $password;
         $user->is_active = 1;
         $user->nickname = $nickname;
+        $user->mobile = $mobile;
         $user->save();
         //Finish
         return $this->Success($user);
@@ -106,6 +121,10 @@ class UserController extends BaseController
         // If username is empty return invalid
         if (! $username){
             return $this->Error(-1, 'Please entry username first to get code');
+        }
+
+        if (! is_email($username)){
+            return $this->Error(-1, 'Wrong email format');
         }
 
         $user = User::where(array('username' => $username))->first();
