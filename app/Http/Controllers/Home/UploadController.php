@@ -19,7 +19,7 @@ class UploadController extends BaseController
     {
         $image = $request->file('image');
         $video = $request->file('video');
-
+        $token = $request->headers()->get('x-session-token');
         if ($image && $image->isValid()){
             $file = $image;
             $mime_type = $file->getClientMimeType();
@@ -36,7 +36,7 @@ class UploadController extends BaseController
         }
 
         $media_size = $file->getSize();
-        $save_file = get_new_file_name($file);
+        $save_file = get_new_file_name($file, $token);
         $path = $file->move(storage_path('app/public/upload'), $save_file);
         $media_path = $path->getPathname();
         $media_url = asset('storage/upload/') . DIRECTORY_SEPARATOR . $save_file;
