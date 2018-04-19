@@ -19,7 +19,7 @@ class UploadController extends BaseController
     {
         $image = $request->file('image');
         $video = $request->file('video');
-        $token = $request->headers()->get('x-session-token');
+        $token = $request->session()->get('home_user');
         if ($image && $image->isValid()){
             $file = $image;
             $mime_type = $file->getClientMimeType();
