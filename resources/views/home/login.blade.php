@@ -57,6 +57,12 @@
                 </div>
             </div>
             <div>
+                <label>Mobile<span class="fr text-warning"></span></label>
+                <div class="mui-input-row">
+                    <input id='reg-mobile' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry username">
+                </div>
+            </div>
+            <div>
                 <label>Authentication Code</label>
                 <div class="mui-input-row">
                     <input id='code' type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry code">
