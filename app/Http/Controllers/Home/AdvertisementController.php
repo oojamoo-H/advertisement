@@ -122,10 +122,11 @@ class AdvertisementController extends BaseController
         if ($user_top){
             foreach ($user_top as $u){
                 $result = DB::table('advertisement_media as am')
-                    ->select('am.advertisement_id', 'm.media_url')
+                    ->select('am.advertisement_id', 'm.media_url', 'm.is_cover')
                     ->join('advertisement_user_cities as auc', 'auc.advertisement_id', '=', 'am.advertisement_id')
                     ->join('media as m', 'm.id' , '=', 'am.media_id')
                     ->where('auc.user_id', '=', $u->user_id)
+                    ->where('m.is_cover', '=', 1)
                     ->orderBy('auc.created_at', 'desc')
                     ->first();
                 if ($result){
