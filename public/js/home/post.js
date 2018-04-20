@@ -1,3 +1,4 @@
+var uploadImageInst = null;
 $(function () {
     mui.init();
 
@@ -5,6 +6,46 @@ $(function () {
         deceleration : 0.0005,
         indicators: false,
     });
+
+    mui('body').on('tap', '.cover', function (e) {
+        var imageA = $(this);
+        var field = 'image';
+        uploadImageInit(field, {isCover:1}, function (res) {
+            Helper.layer.closeAll('loading');
+            if (res.code === 1) {
+                var img = document.createElement('img');
+                $(img).attr('data-preview-src', '');
+                $(img).attr('data-preview-group', "1");
+                $(img).css({"height": "inherit", "width": "inherit"});
+                $(img).data('image-id', res.data.media_id);
+                var width = $('#cover-container').width();
+                var height = (res.data.height / res.data.width) * width;
+                $('#cover-container').height(height);
+                $(img).prop('src', res.data.url);
+                imageA.html(img);
+            }
+        })
+        $(this).siblings('.imageButton').trigger('click')
+    })
+
+    mui('body').on('tap', '.imageup', function (e) {
+        var imageA = $(this);
+        var field = 'image';
+        uploadImageInit(field, {isCover: 0}, function (res) {
+            Helper.layer.closeAll('loading');
+            if (res.code === 1) {
+                var img = document.createElement('img');
+                $(img).attr('data-preview-src', '');
+                $(img).attr('data-preview-group', "1");
+                $(img).css({"height": "inherit", "width": "inherit"});
+                $(img).data('image-id', res.data.media_id);
+                $(img).prop('src', res.data.url);
+                imageA.html(img);
+            }
+        })
+        $(this).siblings('.imageButton').trigger('click')
+    })
+
 
     var uploadVideoInst = Helper.upload.render({
         headers:{
@@ -33,43 +74,31 @@ $(function () {
             Helper.layer.closeAll('loading');
         }
     });
-
-    var index = 0
-    var uploadImageInst = Helper.upload.render({
-        headers:{
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
-            'X-SESSION-TOKEN' :$('meta[name="session-token"]').attr('content')
-        },
-        accept: 'images',
-        elem : '#imageBtn',
-        field: 'image',
-        url : '/upload',
-        multiple:true,
-        number:5,
-        before: function(){
-            Helper.layer.load(2);
-            index = 0;
-            $('.img-list').find('img').removeProp('src');
-        },
-        done : function (res) {
-            Helper.layer.closeAll('loading');
-            if (res.code === 1){
-                var img = document.createElement('img');
-                $(img).attr('data-preview-src', '');
-                $(img).attr('data-preview-group',"1");
-                $(img).css({width:'55.19px', height:'60px'});
-                $(img).data('image-id', res.data.media_id);
-                $(img).prop('src', res.data.url);
-                $('.img-list').find('a').eq(index).html(img);
-                index++;
-                mui.previewImage();
-            }
-        },
-        error:function (index, upload) {
-            Helper.layer.closeAll('loading');
+    function uploadImageInit(field, data, success) {
+        if (!uploadImageInst) {
+            uploadImageInst = Helper.upload.render({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                    'X-SESSION-TOKEN': $('meta[name="session-token"]').attr('content')
+                },
+                accept: 'images',
+                elem: '.imageButton',
+                field: field,
+                data : data,
+                url: '/upload',
+                multiple: true,
+                number: 1,
+                done: success,
+                error: function (index, upload) {
+                    Helper.layer.closeAll('loading');
+                }
+            });
+        } else {
+            uploadImageInst.config.field = field;
+            uploadImageInst.config.done = success;
+            uploadImageInst.config.data = data;
         }
-    });
-
+    }
 
     mui('body').on('tap', '#cityBtn', function () {
         Ajax.get_city({}, function (res) {

@@ -211,17 +211,33 @@
                     </div>
                     <div class="input-file-group">
                         <div style="margin-top: 20px">
+                            <label>Upload Cover</label>
+                            <ul class="img-list">
+                                <li id="cover-container" style="height:180px"><button type="button" style="display: none" class="imageButton"></button><a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="cover"></a></li>
+                            </ul>
+
+                        </div>
+                    <div class="input-file-group">
+                        <div style="margin-top: 20px">
                             <label>Upload Image</label>
-                            <div class="input-file-wrap">
-                                <button type="button" id="imageBtn" class="mui-btn">Select Image</button>
-                            </div>
                             <div style="margin-top: 10px">
                                 <ul class="img-list">
-                                    <li><a href="javascript:;" class="imageup"></a></li>
-                                    <li><a href="javascript:;" class="imageup"></a></li>
-                                    <li><a href="javascript:;" class="imageup"></a></li>
-                                    <li><a href="javascript:;" class="imageup"></a></li>
-                                    <li><a href="javascript:;" class="imageup"></a></li>
+                                    <li>
+                                        <button type="button" style="display: none" class="imageButton"></button>
+                                        <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup"></a>
+                                    </li>
+                                    <li>
+                                        <button type="button" style="display: none" class="imageButton"></button>
+                                        <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup"></a>
+                                    </li>
+                                    <li>
+                                        <button type="button" style="display: none" class="imageButton"></button>
+                                        <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup"></a>
+                                    </li>
+                                    <li>
+                                        <button type="button" style="display: none" class="imageButton"></button>
+                                        <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup"></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

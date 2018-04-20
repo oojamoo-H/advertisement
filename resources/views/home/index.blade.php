@@ -342,7 +342,7 @@
             <div class="mui-slider-group mui-slider-loop">
                 <div class="mui-slider-item mui-slider-item-duplicate">
                     <a href="/ad/detail?ad_id={{d[d.length - 1].advertisement_id}}">
-                        <img src="{{d[d.length - 1].media.media_url}}">
+                        <img src="{{d[d.length - 1].media_url}}">
                     </a>
                 </div>
 
@@ -351,7 +351,7 @@
             <!-- 第一张 -->
                 <div class="mui-slider-item">
                     <a href="/ad/detail?ad_id={{item.advertisement_id}}">
-                        <img src="{{item.media.media_url}}">
+                        <img src="{{item.media_url}}">
                     </a>
                 </div>
 
@@ -359,7 +359,7 @@
             <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
                 <div class="mui-slider-item mui-slider-item-duplicate">
                     <a href="/ad/detail?ad_id={{d[0].advertisement_id}}">
-                        <img src="{{d[0].media.media_url}}">
+                        <img src="{{d[0].media_url}}">
                     </a>
                 </div>
 

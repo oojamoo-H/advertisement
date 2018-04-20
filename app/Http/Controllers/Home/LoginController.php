@@ -10,7 +10,6 @@ namespace App\Http\Controllers\Home;
 
 
 use App\Http\Model\User;
-use App\Http\Model\UserAsset;
 use Illuminate\Http\Request;
 
 class LoginController extends BaseController

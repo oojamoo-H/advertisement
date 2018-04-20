@@ -78,16 +78,6 @@ class AdvertisementController extends BaseController
         }
 
 
-        if ($parent_city != 0 && $sub_cities){
-
-        }
-
-
-
-        if ($sub_city || ! $sub_cities){
-
-        }
-
         if ($orderBy == 'date'){
             $db->orderBy('ad.created_at', 'desc');
         }
@@ -123,30 +113,27 @@ class AdvertisementController extends BaseController
     }
 
     public function getTop(){
-        $new_user_top = array();
+
         $user_top = DB::table('user_assets as ua')
-            ->join('advertisement_user_cities as auc', 'auc.user_id', '=', 'ua.user_id')
             ->orderBy('ua.point', 'desc')
             ->limit(5)
             ->get();
-        if ($user_top) {
-            $user_top = $user_top->toArray();
-            foreach ($user_top as &$top) {
-                $media = DB::table('media as m')
-                    ->select('m.media_url', 'am.advertisement_id')
-                    ->join('advertisement_media as am', 'am.media_id', '=', 'm.id')
-                    ->where('am.advertisement_id', '=', $top->advertisement_id)
-                    ->where('m.media_type', '=', 'image')
-                    ->orderBy('m.created_at', 'desc')
+        $advertisement = array();
+        if ($user_top){
+            foreach ($user_top as $u){
+                $result = DB::table('advertisement_media as am')
+                    ->select('am.advertisement_id', 'm.media_url')
+                    ->join('advertisement_user_cities as auc', 'auc.advertisement_id', '=', 'am.advertisement_id')
+                    ->join('media as m', 'm.id' , '=', 'am.media_id')
+                    ->where('auc.user_id', '=', $u->user_id)
+                    ->orderBy('auc.created_at', 'desc')
                     ->first();
-                if (!empty($media)) {
-                    $top->media = $media;
-                    array_push($new_user_top, $top);
+                if ($result){
+                    array_push($advertisement, $result);
                 }
             }
         }
-
-        return $this->Success($new_user_top);
+        return $this->Success($advertisement);
     }
 
 
@@ -194,10 +181,10 @@ class AdvertisementController extends BaseController
         $ad_id = $request->input('ad_id');
         if ($ad_detail = Advertisement::with('media')->where('id', $ad_id)->first()){
             $other_detail = DB::table('advertisement_user_cities as auc')
-                            ->join('users as u', 'auc.user_id', '=', 'u.id')
-                            ->where('auc.advertisement_id', '=', $ad_detail->id)
-                            ->select('u.id', 'u.username')
-                            ->first();
+                ->join('users as u', 'auc.user_id', '=', 'u.id')
+                ->where('auc.advertisement_id', '=', $ad_detail->id)
+                ->select('u.id', 'u.username')
+                ->first();
             $user_ad = User::with('advertisement', 'city')->select('id', 'nickname')->where('id', $other_detail->id)->first();
             return view('home.detail', array('detail' => $ad_detail, 'user_ad' => $user_ad));
         } else {
