@@ -187,9 +187,9 @@
                         Related Media:
                     </p>
                     @foreach ($detail['media'] as $media)
-                        @if ($media['media_type'] === 'video')
+                        @if ($media->media_type === 'video')
                             <video width="100%" height="20%" controls="controls">
-                                <source src="{{$media['media_url']}}" type="video/mp4"></source>
+                                <source src="{{$media->media_url}}" type="video/mp4"></source>
                                 当前浏览器不支持 video直接播放
                             </video>
                             @break
@@ -198,8 +198,8 @@
                      @endforeach
                     <!--list-->
                     @foreach ($detail['media'] as $media)
-                        @if ($media['media_type'] === 'image')
-                            <div style="width:100%"><img data-preview-src="" data-preview-group="1"  style="width:100%" src="{{$media['media_url']}}"/></div>
+                        @if ($media->media_type === 'image')
+                            <div style="width:100%"><img data-preview-src="" data-preview-group="1"  style="width:100%" src="{{$media->media_url}}"/></div>
                         @endif
                     @endforeach
                     <!--list-->

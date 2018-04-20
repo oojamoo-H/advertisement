@@ -181,20 +181,25 @@ class AdvertisementController extends BaseController
     public function detail(Request $request)
     {
         $ad_id = $request->input('ad_id');
+        $ad_detail = Advertisement::find($ad_id);
 
-        if ($ad_detail = Advertisement::with('media')->where('id', $ad_id)->first()){
-            print_r($ad_detail);exit;
-            $other_detail = DB::table('advertisement_user_cities as auc')
-                ->join('users as u', 'auc.user_id', '=', 'u.id')
-                ->where('auc.advertisement_id', '=', $ad_detail->id)
-                ->select('u.id', 'u.username')
-                ->first();
-            $user_ad = User::with('advertisement', 'city')->select('id', 'nickname')->where('id', $other_detail->id)->first();
-            return view('home.detail', array('detail' => $ad_detail, 'user_ad' => $user_ad));
-        } else {
+        if (! $ad_detail){
             return view('home.no-data');
-
         }
+        $media = DB::table('advertisement_media as am')
+            ->select('m.media_url', 'm.media_type')
+            ->join('media as m', 'am.media_id', '=','m.id')
+            ->where('am.advertisement_id', '=', $ad_id)
+            ->get();
+        $ad_detail->media = $media ? $media->toArray() : array();
+
+        $other_detail = DB::table('advertisement_user_cities as auc')
+            ->join('users as u', 'auc.user_id', '=', 'u.id')
+            ->where('auc.advertisement_id', '=', $ad_detail->id)
+            ->select('u.id', 'u.username')
+            ->first();
+        $user_ad = User::with('advertisement', 'city')->select('id', 'nickname')->where('id', $other_detail->id)->first();
+        return view('home.detail', array('detail' => $ad_detail->toArray(), 'user_ad' => $user_ad->toArray()));
     }
 
     public function search(Request $request)
