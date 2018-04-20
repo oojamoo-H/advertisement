@@ -12,7 +12,7 @@ namespace App\Http\Model;
 class Advertisement extends BaseModel
 {
     public function media(){
-        return $this->hasManyThrough('App\Http\Model\Media', 'App\Http\Model\AdvertisementMedia','advertisement_id', 'media_id');
+        return $this->hasManyThrough('App\Http\Model\Media', 'App\Http\Model\AdvertisementMedia','advertisement_id', 'id');
     }
 
     public function city(){
