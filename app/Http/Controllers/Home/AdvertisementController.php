@@ -9,7 +9,6 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Model\Advertisement;
-use App\Http\Model\AdvertisementMedia;
 use App\Http\Model\AdvertisementUserCity;
 use App\Http\Model\City;
 use App\Http\Model\System;
@@ -79,6 +78,8 @@ class AdvertisementController extends BaseController
 
 
         if ($orderBy == 'date'){
+            $db->orderBy('ad.created_at', 'asc');
+        } else {
             $db->orderBy('ad.created_at', 'desc');
         }
 
