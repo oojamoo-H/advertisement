@@ -38,7 +38,6 @@ class UploadController extends BaseController
                 if ($media_type != 'video' && ($ext != 'mp4' || $ext != 'mov' || $ext != 'quicktime')) {
                     return $this->Error(-1, 'Wrong Video Type');
                 }
-                $is_cover = 1;
             } else {
                 return $this->Error(-1, 'Upload Failed');
             }
