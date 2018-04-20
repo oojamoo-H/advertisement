@@ -181,7 +181,9 @@ class AdvertisementController extends BaseController
     public function detail(Request $request)
     {
         $ad_id = $request->input('ad_id');
+
         if ($ad_detail = Advertisement::with('media')->where('id', $ad_id)->first()){
+            print_r($ad_detail);exit;
             $other_detail = DB::table('advertisement_user_cities as auc')
                 ->join('users as u', 'auc.user_id', '=', 'u.id')
                 ->where('auc.advertisement_id', '=', $ad_detail->id)
