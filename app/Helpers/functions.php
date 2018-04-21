@@ -34,6 +34,6 @@ if (! function_exists('is_email')){
 
 if (! function_exists('is_mobile')){
     function is_mobile($mobile){
-        return preg_match('/^04\d{10}$/', $mobile);
+        return preg_match('/^04\d{8}$/', $mobile);
     }
 }
