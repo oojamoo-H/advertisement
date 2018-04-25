@@ -324,7 +324,6 @@
                 <ul class="news-list">
                     {{# layui.each(d.advertisement_list, function(index, item){}}
                     {{# if (item.image.length > 0){}}
-
                     {{# layui.each(item.image, function(i, mediaItem){}}
                     {{# if (mediaItem.is_cover == 1) {}}
                     <li style="display: flex;flex-direction: column" data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
@@ -332,6 +331,7 @@
                         <br>
                         <sapn>{{item.title}}</sapn><br>
                         <span style="color:#aaa">Posted:{{item.created_at}}</span>
+
                     </li>
                     {{# return true;} }}
                     {{# });}}
