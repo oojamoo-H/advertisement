@@ -33,6 +33,10 @@ $(function($) {
         })
     })
 
+    mui('body').on('tap', '.to-detail', function () {
+        Helper.redirect('/ad/detail', {ad_id : $(this).data('id')})
+    })
+
 	Ajax.get_index_content({}, function (res) {
 		if (res.code === 1){
             Helper.render($('#aside-menu'), $('#aside-city'), res.data, 1)

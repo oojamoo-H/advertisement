@@ -310,9 +310,12 @@
                 <ul class="news-list">
                     {{# layui.each(d.advertisement_list, function(index, item){}}
                     {{# if (item.image.length > 0){}}
-                    <li style="display: flex;flex-direction: row" data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
+                    <li data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
                         {{# layui.each(item.image, function(i, mediaItem){}}
-                        <img data-preview-src="" data-preview-group="{{index}}" style="margin-right: 3px" width="20%" height="20%" src="{{mediaItem.media_url}}"/>
+                        {{# if (mediaItem.is_cover){}}
+                        <div><img data-preview-src="" data-preview-group="{{index}}" style="width:50%;height:50%" src="{{mediaItem.media_url}}"/></div>
+                        <a class="to-detail" href="javascript:;" data-id="{{item.advertisement_id}}" style="word-wrap:break-word;">{{item.title}}</a>
+                        {{# }}}
                         {{# });}}
                     </li>
                     {{#} }}
