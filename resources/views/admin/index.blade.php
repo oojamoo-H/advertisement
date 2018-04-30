@@ -68,6 +68,12 @@
                             <cite>System Setting</cite>
                         </a>
                     </li >
+                    <li>
+                        <a _href="/admin/friendlyLinksSetting">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>Friendly Links Setting</cite>
+                        </a>
+                    </li >
                 </ul>
             </li>
         </ul>

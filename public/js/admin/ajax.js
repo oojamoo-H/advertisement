@@ -55,3 +55,7 @@ Ajax.save_admin_password = function (data, success) {
 Ajax.delete_advertisement = function (data, success) {
     Ajax.post(BaseUri + API_LIST.DELETE_ADVERTISEMENT, data, success);
 }
+
+Ajax.save_friendly_link = function (data, success){
+    Ajax.post(BaseUri + API_LIST.SAVE_FRIENDLY_LINK, data, success);
+}

@@ -49,6 +49,8 @@ Route::namespace('Admin')->prefix('admin')->group(function(){
         Route::get('/region', 'RegionController@index');
         Route::get('/userDetail', 'UserController@detail');
         Route::get('setting', 'SystemController@index');
+        Route::get('friendlyLinksSetting', 'SystemController@friendlyLinksSetting');
+        Route::get('friendlyLinkDetail', 'SystemController@friendlyLinkDetail');
     });
 
     Route::get('/signUp', 'LoginController@index');
@@ -66,6 +68,8 @@ Route::namespace('Admin')->prefix('server')->group(function(){
         Route::post('/systemSave', 'SystemController@systemSave');
         Route::post('/saveAdminPassword', 'SystemController@saveAdminPassword');
         Route::post('/deleteAdvertisement', 'AdvertisementController@deleteAdvertisement');
+        Route::get('/getFriendlyLinksList', 'SystemController@getFriendlyLinksList');
+        Route::post('/saveFriendlyLink', 'SystemController@saveFriendlyLink');
     });
 
     Route::post('/login', 'LoginController@login');
