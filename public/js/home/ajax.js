@@ -68,3 +68,7 @@ Ajax.get_service_tel = function (data, success) {
 Ajax.logout = function (data, success) {
     Ajax.get(BaseUri + API_LIST.LOG_OUT, data, success);
 }
+
+Ajax.get_friendly_links = function (data, success) {
+    Ajax.get(BaseUri + API_LIST.GET_FRIENDLY_LINKS, data, success);
+}

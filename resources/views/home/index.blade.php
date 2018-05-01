@@ -243,6 +243,14 @@
                     <div id="advertisement-item">
 
                     </div>
+                    <div class="friendly-links" id="friendly-links">
+
+                        <div style="color:red">This site is restricted to persons 18 years or over<br/>
+                            All Rights Reserved ©2018 www.Escortbabe.com.au</div>
+
+
+                    </div>
+
                 </div>
             </div>
             <!-- off-canvas backdrop -->
@@ -375,5 +383,13 @@
             {{# } }}
         </script>
 
+        <script type="text/html" id="friendly-link">
+            {{# layui.each(d, function(index, item){}}
+            {{# if (index != 0) {}}
+            <br/>
+            {{# } }}
+            <a style="color:red" href="javascript:;" data-url="{{item.url}}" class="sub-cities">{{item.name}}</a>
+            {{#  }); }}
+        </script>
     @endverbatim
 @endsection

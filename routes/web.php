@@ -36,6 +36,8 @@ Route::namespace('Home')->group(function(){
     Route::get('/login', 'LoginController@index');
 
     Route::get('/user/logout', 'LoginController@logout');
+    Route::get('/sys/getFriendlyLinks', 'SystemController@getFriendlyLinks');
+    Route::get('sys/friendLink', 'SystemController@friendLink');
 
 });
 

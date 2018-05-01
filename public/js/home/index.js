@@ -61,6 +61,12 @@ $(function($) {
         }
     })
 
+    Ajax.get_friendly_links({}, function (res) {
+        if (res.code === 1){
+            Helper.render($('#friendly-links'), $('#friendly-link'), res.data, 1);
+        }
+    })
+
     mui('body').on('tap', '.parent-cities', function () {
         $('.parent-cities').removeClass('selected');
         $('.sub-cities').removeClass('selected');
@@ -121,9 +127,9 @@ $(function($) {
 
 	mui('body').on('tap', '#item1 li', function () {
 
-		Helper.redirect('/ad/detail', {
-			ad_id : $(this).data('id')
-		})
+        Helper.redirect('/ad/detail', {
+            ad_id : $(this).data('id')
+        })
     });
 
 	mui('body').on('tap', '#linkPage', function () {
@@ -183,4 +189,8 @@ $(function($) {
     $(".search-input").blur(function(){
         $(this).removeClass('search-active');
     })
+
+    mui('body').on('tap', '#friendly-links a', function () {
+        Helper.redirect($(this).data('url'));
+    });
 });
