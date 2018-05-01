@@ -61,7 +61,7 @@ class AdvertisementController extends BaseController
         }
 
         $db = DB::table('cities as c')
-            ->select('ad.title', 'ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content')
+            ->select('ad.title', 'ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content', 'ad.count')
             ->leftjoin('advertisement_user_cities as auc', 'auc.city_id', '=', 'c.id')
             ->join('users as u', 'u.id', '=', 'auc.user_id')
             ->join('advertisements as ad', 'ad.id', '=', 'auc.advertisement_id');
@@ -192,6 +192,10 @@ class AdvertisementController extends BaseController
         if (!$ad_detail) {
             return view('home.no-data');
         }
+
+        DB::table('advertisements')->where('id',$ad_id)->increment('count');
+        $ad_detail->count += 1;
+
         $media = DB::table('advertisement_media as am')
             ->select('m.media_url', 'm.media_type')
             ->join('media as m', 'am.media_id', '=', 'm.id')
