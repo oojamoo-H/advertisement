@@ -180,7 +180,7 @@
                             @if (empty($user))
                                 <a href="/login" class="mui-navigate-right" id="myAccount">My Account</a>
                             @else
-                                <a href="javacript:;" class="mui-navigate-right">Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
+                                <a href="javacript:;" class="mui-navigate-right" id="myAccount2">Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
                             @endif
                         </li>
                         @if (! empty($user))

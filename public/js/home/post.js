@@ -149,6 +149,7 @@ $(function () {
         var content = $('textarea[name="content"]').val()
         Helper.layer.load(2);
         Ajax.submit_post_ad({
+            id : $('#form').data('id'),
             media_ids : media,
             title : title,
             content:content,

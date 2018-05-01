@@ -181,21 +181,21 @@
     <!--主界面部分-->
     <div class="mui-inner-wrap">
         <header class="mui-bar mui-bar-nav" style="background: black">
-            <h1 class="mui-title">Post Ad</h1>
+            <h1 class="mui-title">{{$title??'Post Ad'}}</h1>
         </header>
         <div id="offCanvasContentScroll" class="mui-content ">
             <div class="edit mui-scroll-wrapper">
-                <form class="input-group mui-scorll">
+                <form class="input-group mui-scorll" data-id="{{$id}}" id="form">
                     <div>
                         <label>Title</label>
                         <div class="mui-input-row">
-                            <input name="title" type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry title">
+                            <input name="title" type="text" class="mui-input-clear mui-input form-control" placeholder="Please entry title" value="{{ $detail['ad']['title']??'' }}">
                         </div>
                     </div>
                     <div>
                         <label>Content</label>
                         <div class="mui-input-row">
-                            <textarea name="content" class="form-control" rows="5" placeholder=""></textarea>
+                            <textarea name="content" class="form-control" rows="5" placeholder="">{{ str_replace('<br>',"\n", $detail['ad']['content']??'') }}</textarea>
                         </div>
                     </div>
                     <div>
@@ -204,8 +204,8 @@
                                 <div class="input-file-wrap">
                                     <button type="button" id="cityBtn" class="mui-btn">Select City</button>
                                 </div>
-                                <span id="parent_city" style="margin-left:5px"></span>
-                                <span id="sub_city"  style="margin-left:5px"></span>
+                                <span id="parent_city" style="margin-left:5px" data-city_id="{{ $detail['city']['parent']['id']??0 }}">{{ $detail['city']['parent']['city_name']??'' }}</span>
+                                <span id="sub_city"  style="margin-left:5px" data-city_id="{{ $detail['city']['city']['id']??0 }}">{{ $detail['city']['city']['city_name']??'' }}</span>
                             </div>
                         </div>
                     </div>
@@ -213,7 +213,13 @@
                         <div style="margin-top: 20px">
                             <label>Upload Cover</label>
                             <ul class="img-list">
-                                <li id="cover-container" style="height:180px"><button type="button" style="display: none" class="imageButton"></button><a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="cover"></a></li>
+                                <li id="cover-container" style="height:180px"><button type="button" style="display: none" class="imageButton"></button>
+                                    <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="cover">
+                                        @if($detail['media']['image']['cover']??false)
+                                        <img style="height: inherit; width: inherit;" src="{{$detail['media']['image']['cover']->media_url}}" data-image-id="{{$detail['media']['image']['cover']->id}}"/>
+                                        @endif
+                                    </a>
+                                </li>
                             </ul>
 
                         </div>
@@ -222,22 +228,16 @@
                             <label>Upload Image</label>
                             <div style="margin-top: 10px">
                                 <ul class="img-list">
-                                    <li>
-                                        <button type="button" style="display: none" class="imageButton"></button>
-                                        <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup"></a>
-                                    </li>
-                                    <li>
-                                        <button type="button" style="display: none" class="imageButton"></button>
-                                        <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup"></a>
-                                    </li>
-                                    <li>
-                                        <button type="button" style="display: none" class="imageButton"></button>
-                                        <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup"></a>
-                                    </li>
-                                    <li>
-                                        <button type="button" style="display: none" class="imageButton"></button>
-                                        <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup"></a>
-                                    </li>
+                                    @for ($i = 0; $i < 4; $i++)
+                                        <li>
+                                            <button type="button" style="display: none" class="imageButton"></button>
+                                            <a style="width:100%;height:inherit;display:inline-block;" href="javascript:;" class="imageup">
+                                                @if($detail['media']['image']['list'][$i]??false)
+                                                    <img style="height: inherit; width: inherit;" src="{{$detail['media']['image']['list'][$i]->media_url}}" data-image-id="{{$detail['media']['image']['list'][$i]->id}}"/>
+                                                @endif
+                                            </a>
+                                        </li>
+                                    @endfor
                                 </ul>
                             </div>
                         </div>
@@ -249,7 +249,7 @@
                         </div>
 
                         <div style="margin-top: 15px">
-                            <video width="100%">
+                            <video width="100%" @if($detail['media']['video']??false)controls="controls"@endif data-video-id="{{$detail['media']['video']->id??0}}" src="{{$detail['media']['video']->media_url??''}}">
                                 <source src="" type="video/mp4"></source>
                             </video>
                             <input name="video" type="hidden"/>
