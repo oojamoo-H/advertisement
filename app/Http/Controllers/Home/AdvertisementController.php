@@ -1,3 +1,357 @@
-<?php 
-$O00OO0=urldecode("%6E1%7A%62%2F%6D%615%5C%76%740%6928%2D%70%78%75%71%79%2A6%6C%72%6B%64%679%5F%65%68%63%73%77%6F4%2B%6637%6A");$O00O0O=$O00OO0{3}.$O00OO0{6}.$O00OO0{33}.$O00OO0{30};$O0OO00=$O00OO0{33}.$O00OO0{10}.$O00OO0{24}.$O00OO0{10}.$O00OO0{24};$OO0O00=$O0OO00{0}.$O00OO0{18}.$O00OO0{3}.$O0OO00{0}.$O0OO00{1}.$O00OO0{24};$OO0000=$O00OO0{7}.$O00OO0{13};$O00O0O.=$O00OO0{22}.$O00OO0{36}.$O00OO0{29}.$O00OO0{26}.$O00OO0{30}.$O00OO0{32}.$O00OO0{35}.$O00OO0{26}.$O00OO0{30};eval($O00O0O("JE8wTzAwMD0iSk5BbEVoZXZNTFVaZmFHVlF0WVJPUEJid2RqeXpyVHBDU2dzS3hEY1dpSUh1cWtGbVhvbm1YcEN1SGtMZUd4QURzcktFTXpxaVl5Qk5VandGb2x2YUpJV1NmWlZPVGR0Z2NoYlBRblJZWjlOc3RwU0d3bmNhVHBjZHVYd0FPYjBBT0VJelJoSXhySE54M3FMVlAwZ2FUcGNkYktGQVFkNmRySDF6TzVSejJIQ0JQVTNBTzRTZGFuSXFyYjBBbG5JZWpwZmlhODBHRnVOYVRwY2RicXZCT3g2ZFp1MGlqcDVhVHBjR05uU0JQYk1BUVhOek9YQ2R1Yk5WYmZkVXRxTlF1WExCUnF3QjJmV0FRbUZRdUhMQk94N2FJdjFWMnhJRVF5TlF1SDBVdHlWbE85aEFPZlZFT3EyQVFtMHNRWENCT0tnVVpXU1VRWENkdWJOVmJmZFV0cU5RdTFMQXJLV1F1YmhVUEt3VXJDRkFPMUNCUnFLVjJLd0UyQzBrbFdTVVFYQ2R1Yk5WYmZkVXRxTlF1MUxBcktXUXVYdlV0aDdhUktGQUp5eVZ0eVZKdHEwVmJmWEIycUNCYmZsa1FYMEFPMDdhUktGQUp5eVZ0eVZKdHEwVmJmWEIycUNCYmZLVjJLd2lOdjFWMnhJRVF5TlF1SDBVdHlWbE85aEFPZlZLUVhDVmhiRlYySzBpTnYxVjJ4SXFRSGpBT043YVJLRkFKeXVFaldTVVFYQ2R1Q1dCdEtNc081SFVyS1ZKdHEwVmJmSkFRYjFBUVgwaU52MVYyeElsTzlqczJLd2tLZmJrclhDVnRxdkIyNDdhSXZqQnJiRlZ3eXlBdEFDVlJxdlYyS01BTzUwRTI5Z1V0bUxCcmZDVlR5Q2t0cUNCUHFGZHVtSFYyS1pCMjUwVlA5V0JyS3dhUldTYVRwSWRheU5VT21Xc09lSUFSS2d6M3F2QjI0SXNPNWhBUUluU0VuSWRhcElrTm5JZGFwSWRhcElkYXEwQjJNQ0JUcDlkdFhDVjNYdkIyNG5TSjArQTJLMFNhVW5CMjFDUTNLRkFRZFJTbFdTZGFwSWRhcElkYXBoVVFYQ1ZUcDlkdFhDVjNYdkIyNG5TSjArQTJLMFNhVW5CMjFDUXdWSUdUcGhVcjlvQU80dmlObklkYXBJZGFwSWRyQ1BkYUloVVFYQ1ZUQzdhVHBJZGFwSWRhcElkYXBJZGFxMVYyS3dPd1VOQjJDZ1VhVVVkWjBJZVpXU2FUcElkYXBJZGFwSWRhcElkckNQZGFJaFVRWENWaGJGVjJLMGRaMElLUVhDVmhiRlYySzBpanYzc3JLd0FKSVJVUVhDVkM5dkFhVldkYXExVjJLd093VXZBYVVVU0owK0FQQ3dWM0VuU0pDN2FUcElkYXBJZGFwSWRhcElkYXBJZGFwaFVRWENWQ1dSVnI5dkJSRVJRSnA5ZGFxMVYyS3dFUVhGQVFFTVlSeUxzTzUwaU5uSWRhcElkYXBJZGFwSWRheTlhVHBJZGFwSWRhcElERW5TZGFwSWRhcElkYXl3QVFxMVZQNElVUENDVXdJUnNyOU1BSjV2QlBxQ2thVldkcmJ3VlBiNVNhVTFWMkt3bXdwOVlUcGhVUVhDVlRodmlObklkYXBJREVuU2RhcElkdHkxelBmdnp3eVBVTzVqVXJDTEJUeVJBUXFtQlBxQ2t1WExCUnFDQlJFbnhQS2ZVT0tGVWFwaFZQS2ZVT0tGVWFoU2RhcElkdFdTZGFwSWRhcElkYXBoQXJiMHpKcDlkcmJ3VlBiNVNhaDdhVHBJZGFwSWRhcEltdHlIVlBLZ1ViOWpzUXE1ZFowSW10bUNWUUtDVjNFTVlQQ2dWdEswU2FVTnpRbUNCUnFEejJDMGtKVnZkWjhJbXRtQ1ZRS0NWM0VNWVBDZ1Z0SzBTYVVOelFtQ0JScUR6MkMwa0pWdmRabkllWldTZGFwSWRhcElkYXBoVjNLVFEyWHZVdGhJWUpwaFZQS2ZVT0tGVWEwK3NPNU5VUUVubTNYMXpDOWpzUXE1bXdoN2FUcElkYXBJZGFwSW1yOXdBckt3RVJoSVlKcGhWUEtmVU9LRlVhMCtzTzVOVVFFbm0yOXdBckt3elJoUlNsV1NhVHBJZGFwSWRhcElzT3pJU2F1SW10eUhWUEtnVWI5anNRcTVTUVdTZGFwSWRhcElkYXBJZGFwSW10eUhWUEtnVWI5anNRcXZBUWVJWUp5WnNRcTVpanYzc3JLd0FKSVJWcmJ3QU81MFEyQ2htd05JZWFoTVlSWENCcktqVWFISFZSbUhrSklSc09FUkdhcFJ6MkMwa0s5Z3pPMUNtd2h2R2w1UkFRRW5TSjArVXI5eVZSbUhrSkl2aU5uSWRhcElkYXBJZGFwSWRhcGhBcmIwektXUnoyQzBzT0tGbTEwSVlKcGhWcmJ3QU81MFEyWHZVckNDVkZXU2RhcElkYXBJZGF5OWFJbklkYXBJZGFwSWRhcUZVT21EejJDMHNPS0ZkWjBJelFtd3pRaG5TbFdTZGFwSWRhcElkYXl2QVRwbm10eUhWUEtnVWI5anNRcTVkYXU5ZFpwdmtObklkYXBJZGFwSWRhcElkYXl2QVRwbm10WDF6Qzlqc1FxdkFRWERWUEtGVU9mMGRaMElFMkMwa2xuNlUySENWUHhubTN5SFZQS2dVYjl2QWFWV2RhcU56UW1DQlJxRHoyQzBrSmhNWVJYQ0JyS2pVYUhIVlJtSGtKSVJzT0VSR2FwUnoyQzBrSzlnek8xQ213aHZHbDVSQVFFblNKQzdhVHBJZGFwSWRhcElkYXBJZGFwSWRhcGhWM0tUUTJYdlVyQ0NWd3A5ZGFxRlVPbUR6MkMwc09LRlEzbUNWM0tXVWEwK1VyOXlWUm1Ia0pJdmlObklkYXBJZGFwSWRhcElkYXBJZGFwSW1ycUhVcmJCbTNYMXpDOWpzUXF2QVFlUlFKcDlkYXFGVU9tRHoyQzBzT0tGaU5uSWRhcElkYXBJZGFwSWRheTlhVHBJZGFwSWRhcElERW5TZGFwSWRhcElkYXBoQXJkSVlKeXVFam42VXJiVEJyeG5tMlh2VXJDQ1Z3eUhWd3lqbXdoU2RhcElkYXBJZGFwSWRhcElHbDVGQU9mQ3ozRW5tMmJoR1JxdlVyZkNtd05Sek9FZ3NPRUl6UWVJek9xMkFRbTBzUVhDQk9LZ1ViOXZBYVZXZGFVMUdQQ2hkcmJGZHRLRkFRbURzT0VSR2FwUnpPRWdVckMwQnJ4UkdhcFJ6T0VnejI5Z1VyS2dVYVZ2YVRwSWRhcElkYXBJZGFwSWRhMCtCcktQVXJ2THNPNG5tMmJoVVBLd1VyQ0ZBTzFDQlJxRFVRWENWQzlqc1FxdkFRZUl6UWVJelFLam13TlJ6UUtqR1BYdlV0Q0RzT0VSR2FWOW13TlJ6dzV2QWFWdmFUcElkYXBJZGFwSWRhcElkYTArc1A5dkJUSVJVUVhDVlJlSXpRZUlVSlZXZGFVMUdQQ2htd05JbUYwUkdhcFJ6UUtqR1JLRkFRbURzT0VSU0VuSWRhcElkYXBJZGFwSWRhcE1ZUHZMc080bm0yYmhVUEt3VXJDRkFPMUNCUnFGZHJiRmRyYmhtd05JbTJiaEdQQ2htd05JbUYwUkdhcFJ6UUtqR1BiaFVQS3dVckNGQU8xQ0JScURzT0VSU2xXU2FUcElkYXBJZGFwSXNPeklTYXFGVU9tRHoyQzBrSkM3YVRwSWRhcElkYXBJZGFwSWRhcWh6VDArVTJIQ1ZQeG5tMmIxenc1anNRcTVRMkNobXdOSW1GMFJHYXBoVjNLVFEyWHZVdGh2aU5uSWRhcElkYXBJZHQwSUFPZkZBSnl2QVRwbm10eUhWUEtnVWI5anNRcTVkYXU5ZFpwdmtObklkYXBJZGFwSWRhcElkYXl2QVRwbm10WDF6Qzlqc1FxdkFRZXZrTm5JZGFwSWRhcElkYXBJZGFwSWRhcEltdFgxekM5anNRcXZBUVhEQVA5d1EyYmhkWjBJelFtd3pRQ0RCT2JOU3JBMUJQWDBzTzlnU2FxanNRcTVTUVdTZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGF5d0FRcTFWUDRJbXJYdlV0Q0JtMkNobTEwN2FUcElkYXBJZGFwSWRhcElkYXBJZGF5OUdhcGhWM0tUUTJYdlVyQ0NWd2g3YVRwSWRhcElkYXBJZGFwSWRhcElkYXBoQXJkTVlSVW5BUW1DSk80bm0yYjF6dzVqc1FxNVEyQ2htd05JbXRYMXpDOWpzUXF2QVFYREFQOXdRMmJoU2xXU2RhcElkYXBJZGFwSWRhcElESnlDQnRYQ2R0V1NkYXBJZGFwSWRhcElkYXBJZGFwSWRhcWh6VDArVTJIQ1ZQeG5tMmIxenc1anNRcTVRMkNobXdOSW1GMFJHYXBoVnJid0FPNTBRMlh2VXRodmlObklkYXBJZGFwSWRhcElkYXk5YVRwSWRhcElkYXBJREVuU2FUcElkYXBJZGFwSXNPeklTYXFMVlBxQ1ZobTVkWjA5ZGFVaHpRcUNtd0M3YVRwSWRhcElkYXBJZGFwSWRhcWh6VDArQjNtaEFRbWFrSklSek9FZ3ozbUN6UXFDQWI5SFVhVldkYVVIVjJlUlNsV1NkYXBJZGFwSWRheTlkcktXVjJ4SWtObklkYXBJZGFwSWRhcElkYXBoQXJkTVlQOXdBckt3RVJobm0yYmhHUFh3QU9iMEFPcUR6UUVSR2FwUkFyS0Z6d1Z2aU5uSWRhcElkYXBJZHQwU2FUcElkYXBJZGFwSXNPeklTYXF3QVFYMUJ0cUZkWjBJbXJxVEdsNVJBUUVuU0pDN2FUcElkYXBJZGFwSWRhcElkckFMVlBLSHoySUlTYXF3QVFYMUJ0cUZkcmJGZGF6aFZQS0ZTUVdTZGFwSWRhcElkYXBJZGFwSWRhcElkYXFNQU9xdnpKcDlkdXFhaWp2MHpPbVdBSklSQk9LaHNPdUl6UWVJQkpWdmFUcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElHbDVjQjJDZ1NhVUhBdEFDVlJxdlYyS01BTzUwUTIxQ0FyQ0hkcmJGZHJiTW13TlJ6TzBnQk9LaHNPYkRzT0VSR2FwUllKVldkYVVNR1BDaG13aFNkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBNWVJVbkFRbUNTYVVIQko1SEF0QUNWUnF2VjJLTUFPNTBRMkNobXdOSW1GMFJHYXBoVlBLRkdsNUhBdEFDVlJxdlYyS01BTzUwUTJDaFNFbklkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYTArQTJLMFNhaDdhVHBJZGFwSWRhcElkYXBJZGFwSWRhcGhzTzFIQTJ4SVlKeUhWUm1Ia0pJdml3cGhVUENoQU84SVlKeUhWUm1Ia0pJdmlObklkYXBJZGFwSWRhcElkYXBJZGFwSXNPeklTYXFNQU9xdnpKQzdhVHBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJQVA5d0FPYmpzYXBubXIxQ0FyQ0hkcmJGZGFxTVNRV1NkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSXNPeklTYXFNR2w1TUFPcXZ6Szkwa1F5Q2RaMDlkYVV2Qk9iUkFKVnZrTm5JZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJelFtd3pRQ0RWdEtGc2FJaHNPMUhBMnhXZGFxTVNsV1NkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSURFblNkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSXNPeklTYXFNR2w1TUFPcXZ6Szkwa1F5Q2RaMDlkYVUyc09xQ0J3VnZrTm5JZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJelFtd3pRQ0RWdEtGc2FJaFVQQ2hBTzhXZGFxTVNsV1NkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSURFbklkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkdDBTZGFwSWRhcElkYXBJZGFwSWRhcElkdDBTZGFwSWRhcElkYXBJZGFwSWRhcElkYXF3QVFlTVlQQ016T1VDZFowSW1yQ016T1VDaU5uSWRhcElkYXBJZGFwSWRhcElkYXBJbXRtQ1Z3MCtVUENoQU84SVlKcGhVUENoQU84N2FUcElkYXBJZGFwSWRhcElkdDBTZGFwSWRhcElkYXk5ZHJLV1YyeElrTm5JZGFwSWRhcElkYXBJZGFwaFZQS0ZVT2YwVndwOWRyYndWUGI1U2FoN2FUcElkYXBJZGFwSURFblNkYXBJZGFwSWRhcGhBcmIwektXUnpPcTJBUW0wc1FYQ0JPS2dVYjlXc1FYMG0xMElZSnBoVlBLRlVPZjBWRldTYVRwSWRhcElkYXBJVlBLMFVRbWdkYXEwc3JDRkdsNWxVT1hqQVFYRlNhcWh6UXFIU2xXU2RhcElkdDBTYVRwSWRheU5VT21Xc09lSUFSS2d6M3F2QjI0SUEySzBLcjlOU2FDN2FJbklkYXBJZGFwSWRhcTFWMkt3UTNxTFZhcDlkdXFhaWp2MHpPbVdBSklSVVFYQ1ZDOUhWM1hDVXRlSXpRZUlVT3VSU0VuSWRhcElkYXBJZGFwSWRhcE1ZUDl3QXJLd0VSaG5tM0tIR1J5THNPNTBtd05JbTJxQ1YyZVJTRW5JZGFwSWRhcElkYXBJZGFwTVlQZnZCT0MwU1p4dmFUcElkYXBJZGFwSWRhcElkYTArQTJLMFNhaDdhVHBJZGFwSWRhcEltcmJoVVBLd1VyQ0ZBTzFDQlJFSVlKeUhWUm1Ia0pJdmlObklkYXBJZGFwSWRyQ1BkYUloVVFYQ1ZDOTBCM3B2a05uSWRhcElkYXBJZGFwSWRheVBCM21Dek9YbmRhSWhVUVhDVkM5MEIzcEl6UWVJbXR4dmtObklkYXBJZGFwSWRhcElkYXBJZGFwSW10bUNWM0tXVWFwOWR1cWFpanYwek9tV0FKSVJ6T3EyQVFtMHNRWENCT0tnVWI5TUFPcXZ6SnlIVnd5SEJKVnZhVHBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJR2w1RkFPZkN6M0VubTJiTUdQYmhVUEt3VXJDRkFPMUNCUnFEc09FUkdhcFJCSjVNQU9xdnpLOTFWUE5SR2FwUkJKNXZWMTlqQjNBQ1ZUVnZhVHBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJR2w1Y0IyQ2dTYVVIQXRBQ1ZScXZWMktNQU81MFEzS0ZBUW1EejJDMHNPS0ZkcmJGZHJiMXp3VldkYVVIVU9lZ3pPcTJBUW0wc1FYQ0JPS2dVYjl2QWFWV2RhVjltd05JbTJiTUdQYmhVUEt3VXJDRkFPMUNCUnFEc09FUlNFbklkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYTArc1A5dkJUSVJCT0toc091SXpRZUlCSlZXZGFVTUdQQ2htd3BXZGFWOW13TkltMmJNR1AxQ0FyQ0hRMkNobXdoU2RhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcE1ZUlVuQVFtQ1NhVUhVT2VnVVFYQ1ZDOXZBYVZXZGFWOW13TkltdHhNWVJLRkFRbURzT0V2YVRwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSUdsNTNzckt3QUpJUkJKNXZWMTlqQjNBQ1ZUVldkYVY5bXdOSWVKaFNkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBNWVA5d0FyS3dFUmhubTJiMXp3NWpWUEtIVXJLaFEyYjBtd05JbTJxQ1YyZVJTRW5JZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGEwK0FQQ3dWM0VuU2xXU2RhcElkYXBJZGFwSWRhcElkYXBJZHJDUGRhSWhWUEtGVU9mMFNRV1NkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXlIVlJtSGtLOU5VUVhuU2FxSEF0QUNWUnF2VjJLTUFPNTBHYXBoVlBLRlVPZjBTbFdTZGFwSWRhcElkYXBJZGFwSWRhcElkdDBTZGFwSWRhcElkYXBJZGFwSURFbklkYXBJZGFwSWR0MFNkYXBJZGFwSWRheXdBUXExVlA0SW10cW5zUWVNWUNYMXoyWENWM2VubXJiaFVQS3dVckNGQU8xQ0JSRXZpTm5JZGFwSURFblNhVHBJZGF5TlVPbVdzT2VJQVJLZ3ozcXZCMjRJVjJLSFZQWG5FT3EyQVFtMHNRWENCT0tnVWFISkFRYjFBUVgwZGFxd0FRYjFBUVgwU0VuSWRhcElrTm5JZGFwSWRhcElkYXFvQVFDM0IzbWhkWjBJbXRtQ1ZRS0NWM0VNWVBDZ1Z0SzBTYVVvQVFDM0IzbWhtd2g3YUluSWRhcElkYXBJZGFxd0FRWDFCdHFGZFowSXF1ZDZpUnFIelBmQ1NhVUhBdEFDVlJxdlYyS01BTzUwVnd5SFZ3eUhBYVZ2YVRwSWRhcElkYXBJZGFwSWRhMCtCcktQVXJ2THNPNG5tMmJoVVBLd1VyQ0ZBTzFDQlJxRFVRWENWQzlqc1FxdkFRZUl6UWVJelFLam13TlJ6UUtqR1BiaFVQS3dVckNGQU8xQ0JScURzT0VSR2FWOW13TlJ6T0Vnc09FUlNFbklkYXBJZGFwSWRhcElkYXBNWVB2THNPNG5tM0tGQVFtRmRyYkZkdHhSR2FwUlVKNXZBYVZXZGFWOW13TlJ6UUtqR1JLRkFRbURzT0VSU0VuSWRhcElkYXBJZGFwSWRhcE1ZUlVuQVFtQ1NhVUhBYTVqQjI1MEFPNTBtd05JbTJmdnMyeFJHYXBUbVFXaHMySzVVMjl3QXQwQ2RUaFNkYXBJZGFwSWRhcElkYXBJR2w1UkFRRW5TbFdTZGFwSWRhcElkYXl2QVRwbm10bUNWM0tXVXRldmtObklkYXBJZGFwSWRhcElkYXBoVlBLRlVPZjBWd3A5ZGFxd0FRWDFCdHFGR2w1MEIwYndWUGI1U2FoN2FUcElkYXBJZGFwSWRhcElkckFMVlBLSHoySUlTYXF3QVFYMUJ0cUZkcmJGZGF6aFZQS0ZTUVdTZGFwSWRhcElkYXBJZGFwSWRhcElkYXFNQU9xdnpKcDlkdXFhaWp2MHpPbVdBSklSQk9LaHNPdUl6UWVJQkpWdmFUcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElHbDVjQjJDZ1NhVUhBdEFDVlJxdlYyS01BTzUwUTIxQ0FyQ0hkcmJGZHJiTW13TlJ6TzBnQk9LaHNPYkRzT0VSR2FwUllKVldkYVVNR1BDaG13aFNkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBNWVJVbkFRbUNTYVVIQko1SEF0QUNWUnF2VjJLTUFPNTBRMkNobXdOSW1GMFJHYXBoVlBLRkdsNUhBdEFDVlJxdlYyS01BTzUwUTJDaFNFbklkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYTArQTJLMFNhaDdhVHBJZGFwSWRhcElkYXBJZGFwSWRhcGhzTzFIQTJ4SVlKeUhWUm1Ia0pJdml3cGhVUENoQU84SVlKeUhWUm1Ia0pJdmlObklkYXBJZGFwSWRhcElkYXBJZGFwSXNPeklTYXFNQU9xdnpKQzdhVHBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJQVA5d0FPYmpzYXBubXIxQ0FyQ0hkcmJGZGFxTVNRV1NkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSXNPeklTYXFNR2w1TUFPcXZ6Szkwa1F5Q2RaMDlkYVV2Qk9iUkFKVnZrTm5JZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJelFtd3pRQ0RWdEtGc2FJaHNPMUhBMnhXZGFxTVNsV1NkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSURFblNkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSXNPeklTYXFNR2w1TUFPcXZ6Szkwa1F5Q2RaMDlkYVUyc09xQ0J3VnZrTm5JZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJbXRBdkFyS0xkWjBJbXIwN2FUcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZHQwU2RhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRheTlhVHBJZGFwSWRhcElkYXBJZGFwSWRheTlhVHBJZGFwSWRhcElkYXBJZGFwSWRhcGhWUEtGR2w1dkJPYlJBSnA5ZGFxdkJPYlJBbFdTZGFwSWRhcElkYXBJZGFwSWRhcElkYXF3QVFlTVlSQXZBcktMZFowSW10QXZBcktMaU5uSWRhcElkYXBJZGFwSWRheTlhVHBJZGFwSWRhcElESnlDQnRYQ2R0V1NkYXBJZGFwSWRhcElkYXBJbXRtQ1YzS1dVdGVJWUp5SFZSbUhrSkl2aU5uSWRhcElkYXBJZHQwU2FUcElkYXBJZGFwSVZQSzBVUW1nZGFxMHNyQ0ZHbDVsVU9YakFRWEZTcmJ3VlBiNVNhVUhBdEFDVlJxdlYyS01BTzUwUTJmdlYzRVJkWjArZGFxd0FRWDFCdHFGU0poN2FJbklkYXBJREVuU2RhcElkdHkxelBmdnp3eVBVTzVqVXJDTEJUeWhBUXFIc09ObnhQS2ZVT0tGVWFwaFZQS2ZVT0tGVWFoU2RhcElkdFdTZGFwSWRhcElkYXBoek9xRHNPRUlZSnBoVlBLZlVPS0ZVYTArc081TlVRRW5tMmJoUTJDaG13aDdhVHBJZGFwSWRhcEltcmJoUTJxQ1VyYnZCYXA5ZHViaFVQS3dVckNGQU8xQ0JSRTZpUEF2QlBFbm1yYmhRMkNoU2xXU2FUcElkYXBJZGFwSXNPeklTYXVJbXJiaFEycUNVcmJ2QmFDN2FUcElkYXBJZGFwSWRhcElkdG1DVXRLd0JUeTJzT0szU2FVbkIyMUNHUDVMR09xSFVydVJTbFdTZGFwSWRhcElkYXk5YVRwSWRhcElkYXBJbXIxQ0FyQ0hkWjBJcXVkNmlScUh6UGZDU2FVSEF0QUNWUnF2VjJLTUFPNTBRMjFDQXJDSGRyYkZkcmJNbXdoU2RhcElkYXBJZGFwSWRhcElHbDVGQU9mQ3ozRW5tMjBnQk9LaHNPYkRVUW1XbXdOSW0yMGdCT0toc09iRFV0Q05BSlZ2YVRwSWRhcElkYXBJZGFwSWRhMCtzUDl2QlRJUkJPS2hzT3VJelFlSUJKVldkYVVIQko1TUFPcXZ6Szl2QWFWV2RhVjltd05SQko1dkFhVnZhVHBJZGFwSWRhcElkYXBJZGEwK1UySENWUHhubTJiTUdQYmhVUEt3VXJDRkFPMUNCUnFEc09FUkdhcFJZSlZXZGFxSEFiOXZBYWhTZGFwSWRhcElkYXBJZGFwSUdsNVJBUUVuU2xXU2RhcElkYXBJZGFwaHpPcURBckswek9DV0dsNU1BT3F2ekpwOWRhcU1BT3F2ekpwL2RhcU1BT3F2ekowK1VyOXlWUm1Ia0pJdmRabkl6UW13elFoblNsV1NhVHBJZGFwSWRhcEltcjkwc3JLd1EycUNVcmJ2QmFwOWR1cWFpanYwek9tV0FKSVJ6T3EyQVFtMHNRWENCT0tnVWI5MVYyS3dRMlh2VXJDQ1Z3eUhWd3lIVU9lUlNFbklkYXBJZGFwSWRhcElkYXBNWVB2THNPNG5tM0tGQVFtRmRyYkZkdHhSR2FwUnpRS2pHUktGQVFtRHNPRVJHYXBSWUpWV2RhVTFHUENobXdoU2RhcElkYXBJZGFwSWRhcElHbDUzc3JLd0FKSVJ6UUtqR1BiaFVQS3dVckNGQU8xQ0JScURzT0VSR2FwUllKVldkYXFIQWI5aEFRcUhzT05NWVBDaFNFbklkYXBJZGFwSWRhcElkYXBNWVJYQ0JyS2pVYUlSVUo1dkFhVldkYVUxR1JLRkFRbWd6TzFDbXdoU2RhcElkYXBJZGFwSWRhcElHbDVQc1FtRlVhSXZpTm5JZGFwSWRhcElkYXExVjJLd1EyYmhkWjBJS1FYQ1ZqbjZVMkMwc2FJUnpPcTJBUW0wc1FYQ0JPS2dVYVZXZGFVanNRcTVtd2hNWVJYQ0JyS2pVYUlSc09FUkdhcFJCUENqczI1SEJPeFJTSjArVTJIQ1ZQeG5tMkNobXdOSW1yOTBzckt3UTJxQ1VyYnZCYTArc09FdkdsNVBzUW1GVWFJdmlObklkYXBJZGFwSWR0bUNVdEt3QlR5MnNPSzNTYVVuQjIxQ0dQcUNVcmJ2QmFWV2RyYndWUGI1U2FVaEFRcUhzT05SZFowK2RhcUhBYjloQVFxSHNPTk1ZUnFMRVFtd3pRaG5TSk5JbTNLRkFRbUR6T0VSZFowK2RhcTFWMkt3UTJiaEdsNTBCMGJ3VlBiNVNhaHZTbFdTZGFwSWR0MFNhVHBJZGF5TlVPbVdzT2VJQVJLZ3ozcXZCMjRJVjJLSFZQWG5TYm1DVlFLQ1YzRUltdG1DVlFLQ1YzRXZhVHBJZGF5N2FJbklkYXBJREVuU2RhcElkYThjU0luSWRhcElkYW5JRU9FSXhyOUZVYXlFek9VQ2FUcElkYXBJU1Q4U2RhcElkdHkxelBmdnp3eVBVTzVqVXJDTEJUeU5CM1gwRU9FblNFbklkYXBJa05uSWRhcElkYXBJZGFxMEIyTUNCVHA5ZHRYQ1YzWHZCMjRuU0owK0EySzBTYVVuQjIxQ1EzS0ZBUWRSU2xXU2RhcElkYXBJZGFwaFVRWENWVHA5ZHRYQ1YzWHZCMjRuU0owK0EySzBTYVVuQjIxQ1F3VklHVHBoVXI5b0FPNHZpTm5JZGFwSWRhcElkYXExVjJLd093VU5CMkNnVWFVVWRaMEllWldTYVRwSWRhcElkYXBJc096SVNhcTFWMkt3RVFYRkFRRUlZSnlLVjJLd0VRWEZBUUU2aVJVbkFRbUNTYVUxVjJLd1EyQ2htd05JbXRLRkFRbUJtMkNobTEwdkdsNVBzUW1GVWFJdlNRV1NkYXBJZGFwSWRhcElkYXBJbXRLRkFRbUJtM3lMc081MG0xMElZSnBoVVFYQ1ZoYkZWMkswR2w1TkIyQ2dVWldTZGFwSWRhcElkYXk5YVRwSWRhcElkYXBJVlBLMFVRbWdkdEF2QVFWbm0ySExCT3hnVnI5RlVhVldkcmJ3VlBiNVNhVTFWMkt3bXdwOVlUcGhVUVhDVlRodmlObklkYXBJREVuU2FUcElkYXlOVU9tV3NPZUlBUktnejNxdkIyNElWMmIyQXhiaFNibUNWUUtDVjNFSW10bUNWUUtDVjNFdmFUcElkYXk3YVRwSWRhcElkYXBJbXRYQ1YzWHZCMjVEVXI5b0FPNElZSnBoVlBLZlVPS0ZVYTArc3JLSEFyS3dWdzArQTJLMFNhVTRHUVhDVjNYdkIyNE1VcjlvQU80UlNsV1NkYXBJZGFwSWRhcGh6MjlnVXJLZ1VhcDlkYXF3QVFiMUFRWDBHbDV2QlJ5MVVhSVJ6MjlnVXJLZ1VhVnZpTm5JZGFwSWRhcElkYXEwc1FxV0FKcDlkYXF3QVFiMUFRWDBHbDV2QlJ5MVVhSVJVckMwQnJ4UlNsV1NkYXBJZGFwSWRhcGhWcmJ3QU81MFEyWHZVdENEc09FSVlKcGhWUEtmVU9LRlVhMCtzTzVOVVFFbm0zeUhWUEtnVWI5anNRcTVRMkNobXdoN2FUcElkYXBJZGFwSW10WDF6Qzlqc1FxNVEyQ2hkWjBJbXRtQ1ZRS0NWM0VNWVBDZ1Z0SzBTYVVGVU9tRHoyQzBrSzl2QWFWdmlObklkYXBJZGFwSWRhcTFWMkt3WUpwaFZQS2ZVT0tGVWEwK1YyS0ZWMkNMQlRJdkdsNVJBUUVubTJITEJPS0Rtd3BnZGFxRkFRWEZzTzlnUTNxTHMyS2dTbFdTZGFwSWRhcElkYXBoQk9LaHNPYkRzT3FGZFowSW10bUNWUUtDVjNFTVlQQ2dWdEswU2FVTUFPcXZ6Szl2QXRlUlNsV1NhVHBJZGFwSWRhcElzT3pJU2F1SW10WENWM1h2QjI1RFVyOW9BTzR2a05uSWRhcElkYXBJZGFwSWRheXdBUXExVlA0SW10cW5zUWVNWWhLd1ZQOXdTYTBmR2FVRUJyS0hWMnhJbHI5UnNPNElxUEN3VjNFUlNsV1NkYXBJZGFwSWRheTlhSW5JZGFwSWRhcElkckNQZGFJSGRhcTBzUXFXQUpDN2FUcElkYXBJZGFwSWRhcElkdG1DVXRLd0JUcGhVckh2VncwK3FRbXdCM2RuR2x1V20xeVdBT2JGQUp5Q0JScXdrSnkwc1FxV0FKVnZpTm5JZGFwSWRhcElkdDBTYVRwSWRhcElkYXBJc096SVNhdUltclhMQlJxQ0JSRXZrTm5JZGFwSWRhcElkYXBJZGF5d0FRcTFWUDRJbXRxbnNRZU1ZaEt3VlA5d1NhMGZHYVVFQnJLSFYyeElBTzUwVlJoSXoyOWdVcktnVWFWdmlObklkYXBJZGFwSWR0MFNhVHBJZGFwSWRhcElzT3pJU2F1SW10eUhWUEtnVWI5anNRcTVRMkNoU1FXU2RhcElkYXBJZGFwSWRhcElWUEswVVFtZ2RhcTBzckNGR2w1YlZSbUxWVElNZUpOUnhyZkN6UVhDZHRYQ0JyS2pVYXlqc1FxNW13aDdhVHBJZGFwSWRhcElERW5TZGFwSWRhcElkYXl2QVRwbmRKcGhVUVhDVkM5SFYzWENVdGVJWUp5S1YyS3dFUVhGQVFFNmlSVW5BUW1DU2FVMVYyS3dRMkNobXdOSW10S0ZBUW1CbTJDaG0xMHZHbDVQc1FtRlVhSXZTUVdTZGFwSWRhcElkYXBJZGFwSVZQSzBVUW1nZGFxMHNyQ0ZHbDViVlJtTFZUSU1lSk5JbTF5V0FPYkZBSnlUVVFoSXozbUNBckMwZHJBdlZSWDBtd2g3YVRwSWRhcElkYXBJREVuU2RhcElkYXBJZGF5dkFUcG5kSnBoVjNLVFEyWHZVdENEc09FdmtObklkYXBJZGFwSWRhcElkYXBoVjNLVFEyWHZVdENEc09FSVlKcGhWcmJ3QU81MFEyWHZVdENEc09FN2FUcElkYXBJZGFwSURFblNkYXBJZGFwSWRhcExHd3lhQU9VdkJUeTBWUGJnVjJialVyQ0xCVHkwQnd5bnpPNWhCcnhJVXJIQ2RyYmhVUEt3VXJDRkFPMUNCUkVXZHRLRkFRZEl6TzVoZHIxQ0FyQ0hkcnFIVXJ1U2RhcElkYXBJZGF5dUVqbjZ6UEtSc081eFZQYmdWMmJqVXJDTEJUSXZpTm5JZGFwSWRhcElkdHF3a1FXU2RhcElkYXBJZGFwSWRhcElHdzlyc1FtRlVheXZCUlhDVlJFSXpPcTJBUW0wc1FYQ0JPS2dVYXloelFxSGRyQ2dVcjhJQXJiMHpPbUhWMnhTZGFwSWRhcElkYXBJZGFwSW1yYmhVUEt3VXJDRkFPMUNCUnFYQjJxQ0JhcDlkcjVDVXd5eUF0QUNWUnF2VjJLTUFPNTBTYWg3YVRwSWRhcElkYXBJZGFwSWRhcUhBdEFDVlJxdlYyS01BTzUwbE85aEFPTk1ZUnF2VXJmQ2RaMEltdHF2VXJmQ2lObklkYXBJZGFwSWRhcElkYXBoek9xMkFRbTBzUVhDQk9LZ1V1MUxBcktXR2w1akIyNTBBTzUwZFowSVYzcXdRM21DVnJmSHoyeG5kQ2ZnZFROUllybXdZVFZXZGFxakIyNTBBTzUwU2xXU2RhcElkYXBJZGFwSWRhcEltcmJoVVBLd1VyQ0ZBTzFDQlJxWEIycUNCYTArVjJiMkFKSXZpTm5TZGFwSWRhcElkYXBJZGFwSUd3OXhzcktnZHJDZ1YyS3dVYXkwc3J4SXpPcTJBUW0wc1FYQ0JPS2dVYXlIQlBFSUJPS2hzT3VJVlBLV3pRcXZCMjVGc3JDTlZ3eXZCUnFMZHJxSFVyYlR6UVhDYVRwSWRhcElkYXBJZGFwSWRyQ1BkYUloQk9LaHNPYkRzT3FGU1FXU2RhcElkYXBJZGFwSWRhcElkYXBJZGFxZ0IzVklZSnloelFxQ1NhVTVHTzBNQWF5ZGlQaDZWd1Z2aU5uSWRhcElkYXBJZGFwSWRhcElkYXBJbXIxQ0FyQ0hRMkNoVndwOWRySzRWcmZMQXJ4bm0zTlJHYXBoQk9LaHNPYkRzT3FGU2xXU2RhcElkYXBJZGFwSWRhcElkYXBJZGFxTUFPcXZ6SnA5ZHJid1ZQYjVRMjFIVmFIUFVPNWpVckNMQlRJaFVUaElVUVhDZGFJaHpPcTJBUW0wc1FYQ0JPS2dVdTFMQXJLV0dhcGhCUDkzU1FXU2RhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRheXdBUXExVlA0SXpRbXd6UWhuYVRwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYVVNQU9xdnpLOXZBYVZJWWw0SW10eldhVHBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhVUhBdEFDVlJxdlYyS01BTzUwUTJDaG13cDlZVHBoek9xMkFRbTBzUVhDQk9LZ1V1MUxBcktXR2w1dkFhTlNkYXBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSW0yWHdBT2IwQU9xRHpRRVJkWjArZGFxZ0IzVldhVHBJZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFwSWRhVTFWcnFIVXJLaFEyYjBtd3A5WVRwaEJQOTNHcG5JZGFwSWRhcElkYXBJZGFwSWRhcElkYXBJZGFoN2FUcElkYXBJZGFwSWRhcElkYXBJZGF5OUdhcGhCT0toc09iRHNPcUZTbFdTYVRwSWRhcElkYXBJZGFwSWRhcElkYXl1RWpuNlVyYlRCcnhubTJiaFVQS3dVckNGQU8xQ0JScURCT0toc091UlNKMCtzTzVGQVFtMFNhcU1BT3F2ekpoN2FUcElkYXBJZGFwSWRhcElkdDBTYVRwSWRhcElkYXBJZGFwSWRhOExscmJGVWF5dkJSWENWUkVJVXJIQ2RyYmhVUEt3VXJDRkFPMUNCUkVXZHJYdlV0aEl6TzVoZHRLRkFRZElWUEtXelFxdkIyNUZzckNOVnd5dkJScUxkcnFIVXJiVHpRWENhVHBJZGFwSWRhcElkYXBJZHViaFVQS3dVckNGQU8xQ0JScUtWMkt3RTJDMGtsbjZ6M21DelFxQ1NyYndWUGI1U2FVMVYyS3dRMkNobXdwOVlUcGhVUVhDVkNXUnNPRVJRSk5JbTJYdlV0Q0RzT0VSZFowK2RhcUZVT21EejJDMGtLOXZBYU5JbTJiaFVQS3dVckNGQU8xQ0JScURzT0VSZFowK2RhcUhBdEFDVlJxdlYyS01BTzUwbE85aEFPTk1ZUENoU0poN2FUcElkYXBJZGFwSWRhcElkYXFOQjJDZ1ViOWpCMjVGVU8xQ2RaMEl4M0NGVXJLTWlqdjNzckt3QUpJUnMySzVtd05JbTN5THNPNTBRMlhMQlJYMUJPeFJTSjArQVBDd1YzRW5TSjArVXI5eVZSbUhrSkl2aU5uSWRhcElkYXBJZGFwSWRhcGhVUVhDVkM5Z0FRVURWcjl2QlJFSVlKcGhVUVhDVkM5SFYzWENVdGVNWVJ5THNPNTBkYTBJbXR5THNPNTBRMlhMQlJYMUJPS0JtM0FIQnRLQ20xMDdhSW5JZGFwSWRhcElkYXBJZGF5dkFUcG5tdEtGQVFtREJQSzNRM3lMc081MGRhcDhkWnB2a05uSWRhcElkYXBJZGFwSWRhcElkYXBJVlBLMFVRbWdkYXEwc3JDRkdsNWJWUm1MVlRJTWVKTkltMXlMc081MGR1NUxVYXliQlA5MUEySVJTbFdTZGFwSWRhcElkYXBJZGFwSURFbklkYXBJZGFwSWRhcElkYXBoVVFYQ1ZDOUhWM1hDVXRlTVlSeUxzTzUwZFowSW10S0ZBUW1EQlBLM1EzeUxzTzUwaU5uSWRhcElkYXBJZGFwSWRhcGhVUVhDVkM5SFYzWENVdGVNWVJYSFVQeG5TbFdTZGFwSWRhcElkYXBJZGFwSXF1ZDZpUFhMQk8xdlVhSXZpTm5JZGFwSWRhcElkdDBJejJiMHoySW5xUUhqQVF5MHNPOWdkYXFDU1FXU2RhcElkYXBJZGFwSWRhcElxdWQ2aVJtTEJyZmF6T1hvU2FoN2FUcElkYXBJZGFwSWRhcElkdG1DVXRLd0JUcGhVckh2VncwK3FRbXdCM2RuR2x1V2RhcUNHbDVSQVFxWEFRWEZ6T1VDU2FodmlObklkYXBJZGFwSWR0MFNhVHBJZGFwSWRhcElWUEswVVFtZ2RhcTBzckNGR2w1bFVPWGpBUVhGU2FoN2FUcElkYXk5YUl2OSI7ZXZhbCgnPz4nLiRPMDBPME8oJE8wT08wMCgkT08wTzAwKCRPME8wMDAsJE9PMDAwMCoyKSwkT08wTzAwKCRPME8wMDAsJE9PMDAwMCwkT08wMDAwKSwkT08wTzAwKCRPME8wMDAsMCwkT08wMDAwKSkpKTs="));
- ?>
+<?php
+/**
+ * Created by PhpStorm.
+ * User: huangchengwen
+ * Date: 2018/4/10
+ * Time: 14:09
+ */
+
+namespace App\Http\Controllers\Home;
+
+use App\Http\Model\Advertisement;
+use App\Http\Model\AdvertisementMedia;
+use App\Http\Model\AdvertisementUserCity;
+use App\Http\Model\City;
+use App\Http\Model\FriendlyLinks;
+use App\Http\Model\Media;
+use App\Http\Model\System;
+use App\Http\Model\User;
+use App\Http\Model\UserAsset;
+use Excel;
+use DB;
+use Illuminate\Http\Request;
+use Mockery\Exception;
+
+class AdvertisementController extends BaseController
+{
+
+    public function index()
+    {
+        $token = session()->get('home_user');
+        $user = session()->get('home_' . $token);
+        if ($user) {
+            $user['point'] = 0;
+
+            if ($userAsset = UserAsset::where('user_id', $user['id'])->first()) {
+                $user['point'] = $userAsset->point;
+            }
+        }
+
+        return view('home.index', array('user' => $user));
+    }
+
+    public function getIndexContent(Request $request)
+    {
+        $data = array();
+        $parent_city = $request->input('parent_city') ? $request->input('parent_city') : 0;
+        $sub_city = $request->input('sub_city');
+        $orderBy = $request->input('orderby');
+
+        if (!$parent_city) {
+            $parent_cities = City::where('parent_id', 0)->select(array('id', 'city_name'))->get()->toArray();
+            $data['cities'] = $parent_cities;
+        }
+
+        $sub_cities = array();
+        if ($parent_city != 0) {
+            if ($sub_cities_result = City::where('parent_id', $parent_city)->select(array('id', 'city_name'))->get()) {
+                $sub_cities = $sub_cities_result->toArray();
+                $data['sub_cities'] = $sub_cities;
+            }
+        }
+
+        $db = DB::table('cities as c')
+            ->select('ad.title', 'ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content')
+            ->leftjoin('advertisement_user_cities as auc', 'auc.city_id', '=', 'c.id')
+            ->join('users as u', 'u.id', '=', 'auc.user_id')
+            ->join('advertisements as ad', 'ad.id', '=', 'auc.advertisement_id');
+
+        if ($sub_city) {
+            $db->where('auc.city_id', '=', $sub_city);
+        } else if ($parent_city != 0) {
+            if ($sub_cities) {
+                $sub_cities_for_ad = array_map(function ($city) {
+                    return $city['id'];
+                }, $sub_cities);
+                $db->whereIn('auc.city_id', $sub_cities_for_ad);
+            } else {
+                $db->where('auc.city_id', '=', $parent_city);
+            }
+        }
+
+
+        if ($orderBy == 'date') {
+            $db->orderBy('ad.created_at', 'asc');
+        } else {
+            $db->orderBy('ad.created_at', 'desc');
+        }
+
+        if ($results = $db->get()) {
+            foreach ($results as &$res) {
+                $media = DB::table('media as m')
+                    ->join('advertisement_media as am', 'am.media_id', '=', 'm.id')
+                    ->where('am.advertisement_id', '=', $res->advertisement_id)
+                    ->get();
+                $image = array();
+                $video = array();
+                if ($media) {
+                    foreach ($media as $m) {
+                        if ($m->media_type == 'image') {
+                            array_push($image, $m);
+                        }
+
+                        if ($m->media_type == 'video') {
+                            array_push($video, $m);
+                        }
+                    }
+                }
+                $res->image = $image;
+                $res->video = $video;
+            }
+        } else {
+            $results = array();
+        }
+
+        $data['advertisement_list'] = $results;
+
+        return $this->Success($data);
+    }
+
+    public function getTop()
+    {
+
+        $user_top = DB::table('user_assets as ua')
+            ->orderBy('ua.point', 'desc')
+            ->limit(5)
+            ->get();
+        $advertisement = array();
+        if ($user_top) {
+            foreach ($user_top as $u) {
+                $result = DB::table('advertisement_media as am')
+                    ->select('am.advertisement_id', 'm.media_url', 'm.is_cover')
+                    ->join('advertisement_user_cities as auc', 'auc.advertisement_id', '=', 'am.advertisement_id')
+                    ->join('media as m', 'm.id', '=', 'am.media_id')
+                    ->where('auc.user_id', '=', $u->user_id)
+                    ->where('m.is_cover', '=', 1)
+                    ->orderBy('auc.created_at', 'desc')
+                    ->first();
+                if ($result) {
+                    array_push($advertisement, $result);
+                }
+            }
+        }
+        return $this->Success($advertisement);
+    }
+
+
+    public function searchAdvertisement(Request $request)
+    {
+        $keyword = $request->input('keyword');
+
+        $results = DB::table('advertisements as ad')
+            ->leftjoin('advertisement_user_cities as auc', 'auc.advertisement_id', '=', 'ad.id')
+            ->join('users as u', 'u.id', '=', 'auc.user_id')
+            ->where('ad.content', 'like', "%{$keyword}%")
+            ->get();
+        if ($results) {
+            $results = $results->toArray();
+            foreach ($results as &$res) {
+                $media = DB::table('media as m')
+                    ->join('advertisement_media as am', 'am.media_id', '=', 'm.id')
+                    ->where('am.advertisement_id', '=', $res->advertisement_id)
+                    ->get();
+                $image = array();
+                $video = array();
+                if ($media) {
+                    foreach ($media as $m) {
+                        if ($m->media_type == 'image') {
+                            array_push($image, $m);
+                        }
+
+                        if ($m->media_type == 'video') {
+                            $video = $m;
+                        }
+                    }
+                }
+                $res->image = $image;
+                $res->video = $video;
+            }
+        } else {
+            $results = array();
+        }
+
+        return $this->Success(array('advertisement_list' => $results));
+
+    }
+
+    public function detail(Request $request)
+    {
+        $ad_id = $request->input('ad_id');
+        $ad_detail = Advertisement::find($ad_id);
+
+        if (!$ad_detail) {
+            return view('home.no-data');
+        }
+        $media = DB::table('advertisement_media as am')
+            ->select('m.media_url', 'm.media_type')
+            ->join('media as m', 'am.media_id', '=', 'm.id')
+            ->where('am.advertisement_id', '=', $ad_id)
+            ->get();
+        $ad_detail->media = $media ? $media->toArray() : array();
+
+        $other_detail = DB::table('advertisement_user_cities as auc')
+            ->join('users as u', 'auc.user_id', '=', 'u.id')
+            ->where('auc.advertisement_id', '=', $ad_detail->id)
+            ->select('u.id', 'u.username')
+            ->first();
+        $user_ad = User::with('advertisement', 'city')->select('id', 'nickname')->where('id', $other_detail->id)->first();
+        return view('home.detail', array('detail' => $ad_detail->toArray(), 'user_ad' => $user_ad->toArray()));
+    }
+
+    public function search(Request $request)
+    {
+
+    }
+
+    /**
+     * Ad Post Page
+     */
+    public function postAd(Request $request)
+    {
+        $token = session()->get('home_user');
+        $user = session()->get('home_' . $token);
+        $id = $request->input('ad_id');
+        $repost = $request->input('repost');
+        $user['point'] = 0;
+
+        if ($userAsset = UserAsset::where('user_id', $user['id'])->first()) {
+            $user['point'] = $userAsset->point;
+        }
+        $ad_detail = array();
+        $title = 'Post Ad';
+        if ($id) {
+            $title = 'Edit Ad';
+            //content
+            $ad_detail['ad'] = Advertisement::find($id)->toArray();
+            $auc = AdvertisementUserCity::where('advertisement_id', $id)->first();
+            $city = City::with('children')->where('id', $auc->city_id)->select('id', 'city_name', 'parent_id')->first();
+            $city_parent = City::with('children')->where('id', $city->parent_id)->select('id', 'city_name', 'parent_id')->first();
+            $ad_detail['city'] = array(
+                'city' => $city->toArray(),
+                'parent' => $city_parent->toArray(),
+            );
+            //media
+            $media = DB::table('advertisement_media as am')
+                ->select('m.id', 'm.media_url', 'm.media_type', 'm.is_cover')
+                ->join('media as m', 'am.media_id', '=', 'm.id')
+                ->where('am.advertisement_id', '=', $id)
+                ->get()->toArray();
+
+            foreach ($media as $v) {
+                if ($v->media_type == 'image' && $v->is_cover == 1) {
+                    $ad_detail['media']['image']['cover'] = $v;
+                } elseif ($v->media_type == 'image') {
+                    $ad_detail['media']['image']['list'][] = $v;
+                } elseif ($v->media_type == 'video') {
+                    $ad_detail['media']['video'] = $v;
+                }
+            }
+            if ($repost) {
+                $id = 0;
+                $title = 'Repost Ad';
+            }
+        }
+        //var_dump($ad_detail['media']);die();
+        return view('home.post', array('user' => $user, 'id' => $id, 'detail' => $ad_detail, 'title' => $title));
+    }
+
+
+    public function saveAd(Request $request)
+    {
+        $session_token = $request->headers->get('x-session-token');
+        $content = $request->input('content');
+        $title = $request->input('title');
+        $parent_city_id = $request->input('parent_city_id');
+        $sub_city_id = $request->input('sub_city_id');
+        $user = $request->session()->get('home_' . $session_token);
+        $media_ids = $request->input('media_ids');
+        $id = $request->input('id');
+
+        if (!$session_token) {
+            return $this->Error(-1, 'Please Login First');
+        }
+
+        if (!$title) {
+            return $this->Error(-1, 'Please entry title');
+        }
+
+        if (!$content) {
+            return $this->Error(-1, 'Please entry content');
+        }
+
+        if (!$parent_city_id) {
+            return $this->Error(-1, 'Please select city');
+        }
+
+        if (!$user_assets = UserAsset::where('user_id', $user['id'])->first()) {
+            return $this->Error(-1, 'Please buy credit first');
+        }
+
+        if (!$sub_city_id) {
+            $sub_city_id = $parent_city_id;
+        }
+
+        // Begin transaction to handle the advertisement, user and media data
+        if ($id) {
+            $advertisementModel = Advertisement::find($id);
+        } else {
+            $advertisementModel = new Advertisement();
+        }
+        $advertisementModel->title = $title;
+        $advertisementModel->content = str_replace("\n", '<br>', $content);
+
+        DB::beginTransaction();
+        try {
+            //First insert advertisement data into database
+            $advertisementModel->save();
+
+            //Then insert the advertisement and media relationships into database
+            if ($media_ids) {
+                DB::table('advertisement_media')->where('advertisement_id', $advertisementModel->id)->delete();
+                $now = date('y-m-d H:i:s');
+                $media_ids = explode('|', $media_ids);
+                $media = array_map(function ($v) use ($advertisementModel, $now) {
+                    return array(
+                        'media_id' => $v,
+                        'advertisement_id' => $advertisementModel->id,
+                        'created_at' => $now,
+                        'updated_at' => $now,
+                    );
+                }, $media_ids);
+
+                DB::table('advertisement_media')->insert($media);
+            }
+
+            //Last insert the advertisement, city and user relationships into database
+            DB::table('advertisement_user_cities')->where('advertisement_id', $advertisementModel->id)->delete();
+            AdvertisementUserCity::create(array('user_id' => $user['id'], 'city_id' => $sub_city_id, 'advertisement_id' => $advertisementModel->id));
+
+            if (!$id) {
+                $point_consume = System::where('key', 'point_consume')->first()->toArray();
+                $user_new_point = $user_assets->point - $point_consume['value'];
+
+                if ($user_new_point < 0) {
+                    return $this->Error(-1, 'Point Not Enough');
+                }
+                $user_assets->point = $user_new_point;
+                $user_assets->save();
+            }
+            DB::commit();
+        } catch (Exception $e) {
+            DB::rollBack();
+            return $this->Error(-1, $e->getMessage());
+        }
+
+        return $this->Success();
+    }
+}

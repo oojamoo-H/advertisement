@@ -19,6 +19,7 @@ Route::namespace('Home')->group(function(){
         Route::get('/ad/getAdvertisement', 'AdvertisementController@getAdvertisement');
         Route::get('/user', 'UserController@index');
         Route::post('/upload', 'UploadController@upload');
+        Route::get('/ad/myAdList', 'UserController@myAdList');
     });
 
     Route::get('/', 'AdvertisementController@index');

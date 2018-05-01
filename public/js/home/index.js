@@ -19,6 +19,10 @@ $(function($) {
         Helper.redirect('/login');
     })
 
+    mui('body').on('tap', '#myAccount2', function () {
+        Helper.redirect('/ad/myAdList');
+    })
+
     mui('body').on('tap', '#logout', function () {
         Ajax.logout({}, function (res) {
             if (res.code === 1){
