@@ -61,7 +61,7 @@ class AdvertisementController extends BaseController
         }
 
         $db = DB::table('cities as c')
-            ->select('ad.title', 'ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content', 'ad.count')
+            ->select('ad.title', 'ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content', 'ad.count','ad.created_at')
             ->leftjoin('advertisement_user_cities as auc', 'auc.city_id', '=', 'c.id')
             ->join('users as u', 'u.id', '=', 'auc.user_id')
             ->join('advertisements as ad', 'ad.id', '=', 'auc.advertisement_id');
@@ -110,6 +110,9 @@ class AdvertisementController extends BaseController
             }
         } else {
             $results = array();
+        }
+        foreach($results as &$v){
+            $v->created_at = date('j M,G A',strtotime($v->created_at));
         }
 
         $data['advertisement_list'] = $results;

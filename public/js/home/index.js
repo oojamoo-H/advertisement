@@ -135,6 +135,18 @@ $(function($) {
             ad_id : $(this).data('id')
         })
     });
+    mui('body').on('tap', '#item2 li', function () {
+
+        Helper.redirect('/ad/detail', {
+            ad_id : $(this).data('id')
+        })
+    });
+    mui('body').on('tap', '#item3 li', function () {
+
+        Helper.redirect('/ad/detail', {
+            ad_id : $(this).data('id')
+        })
+    });
 
 	mui('body').on('tap', '#linkPage', function () {
         mui('#offCanvasWrapper').offCanvas('close');
