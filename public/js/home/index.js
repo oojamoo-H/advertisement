@@ -43,7 +43,7 @@ $(function($) {
 			Helper.render($('#parent-cities'), $('#parent-city'), res.data, 1);
             Helper.render($('#sub-cities'), $('#sub-city'), res.data, 1);
             Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
-
+            $('#area_text').text('');
 		} else {
             mui.alert(res.msg, 'Alert', 'ok');
 		}
@@ -75,7 +75,7 @@ $(function($) {
         Ajax.get_index_content({parent_city:$(this).data('id')}, function (res) {
             Helper.render($('#sub-cities'), $('#sub-city'), res.data, 0);
             Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
-
+            $('#area_text').text($('.selected-city').text()+' Escort Adult Services');
         })
     })
 
@@ -90,6 +90,7 @@ $(function($) {
             if (res.code === 1){
                 Helper.render($('#sub-cities'), $('#sub-city'), res.data, 0);
                 Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
+                $('#area_text').text($('.selected-city').text()+' Escort Adult Services');
             } else {
                 mui.alert(res.msg, 'Alert', 'ok');
             }
@@ -119,6 +120,7 @@ $(function($) {
         Ajax.get_index_content({sub_city:$(this).data('id')}, function (res) {
             if (res.code === 1){
                 Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
+                $('#area_text').text($('.selected-city').text()+' Escort Adult Services');
             } else {
                 mui.alert(res.msg, 'Alert', 'ok');
             }
