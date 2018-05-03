@@ -229,7 +229,9 @@
                     <div id="slider" class="mui-slider  vip-swiper mui-slider-loop" >
 
                     </div>
+                    <div id="area_text" style="line-height: 1.5;color:red;padding-top:10px;">
 
+                    </div>
                     <!--table-->
                     <div class="table pt-md tab-list">
                         <a  href="javascript:;" id="topOrder" class="mui-control-item" data-index="1">top</a>
