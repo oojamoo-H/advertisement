@@ -15,6 +15,7 @@ use App\Http\Model\System;
 use App\Http\Model\User;
 use App\Http\Model\UserAuth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class UserController extends BaseController
 {
@@ -135,15 +136,17 @@ class UserController extends BaseController
             $user->password = '';
             $user->is_active = 0;
             $user->status = 0;
-            $user->save();
-            return $this->Success($user->id);
+            if($user->save()){
+                return $this->Error(-1, 'System Error!');
+            }
         }
 
         $user = $user->toArray();
         if ($user['is_active']) {
             return $this->Error(-1, 'This user has been activated');
         }
-
+        $code = $this->saveUserCode($user);
+        $this->sendRegisterEmail($user,$code);
         return $this->Success(array('userId' => $user['id']));
     }
 
@@ -166,5 +169,41 @@ class UserController extends BaseController
             ->get()->toArray();
 
         return view('home.my-ad-list', array('result' => $ad));
+    }
+
+    private function saveUserCode($user)
+    {
+        $code = $this->getCode();
+        if (! $user_auth = UserAuth::where('user_id', $user['id'])->first()){
+            $user_auth = new UserAuth();
+            $user_auth->user_id = $user['id'];
+        }
+        $user_auth->auth_code = $code;
+        $user_auth->save();
+        return $code;
+    }
+
+    private function sendRegisterEmail($user,$code)
+    {
+        $params = array(
+            'code' => $code,
+        );
+        Mail::alwaysTo($user['username']);
+        $flag = Mail::send('reg_email',$params,function($message){
+            $message->subject('测试邮件');
+        });
+        return $flag;
+    }
+
+    private function getCode()
+    {
+        $code = '';
+        while(true){
+            $code = strtoupper(generate_user_auth_code());
+            if (!UserAuth::where('auth_code', '=', $code)->first()){
+                break;
+            }
+        }
+        return $code;
     }
 }

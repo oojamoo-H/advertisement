@@ -57,7 +57,8 @@ $(function(){
         var username = $.trim($('#reg-username').val());
         Ajax.register_for_temp({username : username}, function (res) {
             if (res.code === 1){
-                mui('#popover').popover('toggle');
+                //mui('#popover').popover('toggle');
+                mui.alert(res.msg, 'Alert', 'Message has been sent');
             } else {
                 mui.alert(res.msg, 'Alert', 'ok');
             }
