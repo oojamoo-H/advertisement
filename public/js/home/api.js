@@ -9,5 +9,6 @@ const API_LIST = {
     GET_TOP : 'ad/getTop',
     GET_SERVICE_TEL :'user/getServiceTel',
     LOG_OUT : 'user/logout',
-    GET_FRIENDLY_LINKS : '/sys/getFriendlyLinks'
+    GET_FRIENDLY_LINKS : '/sys/getFriendlyLinks',
+    EMAIL_TO_FRIEND : '/emailToFriend'
 }
