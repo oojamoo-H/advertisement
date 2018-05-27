@@ -251,10 +251,19 @@ class AdvertisementController extends BaseController
             ->select('u.id', 'u.username')
             ->first();
         $user_ad = User::with('advertisement', 'city')->select('id', 'nickname')->where('id', $other_detail->id)->first();
+        $token = session()->get('home_user');
+        $user = session()->get('home_' . $token);
+        if ($user) {
+                $user['point'] = 0;
+
+                if ($userAsset = UserAsset::where('user_id', $user['id'])->first()) {
+                    $user['point'] = $userAsset->point;
+                }
+        }
         if($this->isMobile()) {
             return view('home.detail', array('detail' => $ad_detail->toArray(), 'user_ad' => $user_ad->toArray()));
         }else{
-            return view('pc.detail', array('detail' => $ad_detail->toArray(), 'user_ad' => $user_ad->toArray()));
+            return view('pc.detail', array('detail' => $ad_detail->toArray(), 'user_ad' => $user_ad->toArray(),'user'=>$user));
         }
     }
 

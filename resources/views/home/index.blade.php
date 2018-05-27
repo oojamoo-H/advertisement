@@ -180,7 +180,7 @@
                             @if (empty($user))
                                 <a href="/login" class="mui-navigate-right" id="myAccount">My Account</a>
                             @else
-                                <a href="javacript:;" class="mui-navigate-right" id="myAccount2">Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
+                                <a href="javascript:;" class="mui-navigate-right" id="myAccount2">Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
                             @endif
                         </li>
                         @if (! empty($user))
@@ -248,7 +248,7 @@
                     <div class="friendly-links" id="friendly-links">
 
                         <div style="color:red">This site is restricted to persons 18 years or over<br/>
-                            All Rights Reserved ©2018 www.Escortbabe.com.au</div>
+                            All Rights Reserved ©2018 <a href="/" style="color:red">www.Escortbabe.com.au</a></div>
 
 
                     </div>
