@@ -72,3 +72,7 @@ Ajax.logout = function (data, success) {
 Ajax.get_friendly_links = function (data, success) {
     Ajax.get(BaseUri + API_LIST.GET_FRIENDLY_LINKS, data, success);
 }
+
+Ajax.email_to_friend = function (data, success) {
+    Ajax.post(BaseUri + API_LIST.EMAIL_TO_FRIEND, data, success);
+}

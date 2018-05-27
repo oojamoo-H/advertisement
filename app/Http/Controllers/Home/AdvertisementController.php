@@ -21,6 +21,7 @@ use Excel;
 use DB;
 use Illuminate\Http\Request;
 use Mockery\Exception;
+use Illuminate\Support\Facades\Mail;
 
 class AdvertisementController extends BaseController
 {
@@ -413,6 +414,27 @@ class AdvertisementController extends BaseController
         }
 
         return $this->Success();
+    }
+
+    public function emailToFriend(Request $request)
+    {
+        $email = $request->input('email');
+        if(!is_email($email)){
+            return $this->Error(-1,'email is error!');
+        }
+        $token = session()->get('home_user');
+        $user = session()->get('home_' . $token);
+        if($user){
+            $user = User::find($user['id']);
+        }
+        $params = array(
+            'uname'  => $user['nickname'] ?: ''
+        );
+        Mail::alwaysTo($email);
+        $flag = Mail::send('email_to_friend',$params,function($message){
+            $message->subject('EscortBabe Email To Friend');
+        });
+        return $this->Success($flag ? 1 : 0);
     }
 
 }

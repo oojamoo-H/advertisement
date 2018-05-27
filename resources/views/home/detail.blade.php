@@ -202,6 +202,7 @@
                             <div style="width:100%"><img data-preview-src="" data-preview-group="1"  style="width:100%" src="{{$media->media_url}}"/></div>
                         @endif
                     @endforeach
+
                     <!--list-->
                     <p style="margin-top:25px">
                         Related Link:
@@ -211,6 +212,7 @@
                         <li data-id="{{$advertisement['id']}}" data-user-id="{{$user_ad['id']}}" class="user-ads">{{$advertisement['title']}}</li>
                         @endforeach
                     </ul>
+                    <button id="send_to_friend" class="mui-btn mui-btn-danger mui-btn-outlined">email to friend</button>
                     <div class="friendly-links" id="friendly-links" style="font-size: 12px">
 
                         <div style="color:red">This site is restricted to persons 18 years or over<br/>
@@ -244,6 +246,20 @@
                     Helper.redirect('/index')
                 })
                 mui.previewImage();
+
+
+                mui('body').on('tap','#send_to_friend',function(){
+                    mui.prompt('friend\'s email','email','Email To Friend',['cancel','send'],function(data){
+                        if(data.index) {
+                            var email = data.value;
+                            Ajax.email_to_friend({email: email}, function (res) {
+                                if (res.code != 1) {
+                                    mui.alert(res.msg, 'Alert', 'ok');
+                                }
+                            })
+                        }
+                    },'div')
+                })
             })
             Ajax.get_friendly_links({}, function (res) {
                 if (res.code === 1){
