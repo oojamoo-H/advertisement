@@ -187,10 +187,11 @@ class UserController extends BaseController
     {
         $params = array(
             'code' => $code,
+            'uname'  => $user['nickname']
         );
         Mail::alwaysTo($user['username']);
         $flag = Mail::send('reg_email',$params,function($message){
-            $message->subject('测试邮件');
+            $message->subject('EscortBabe Account Verification');
         });
         return $flag;
     }

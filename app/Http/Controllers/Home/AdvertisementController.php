@@ -36,11 +36,14 @@ class AdvertisementController extends BaseController
                 $user['point'] = $userAsset->point;
             }
         }
-
-        return view('home.index', array('user' => $user));
+        if($this->isMobile()) {
+            return view('home.index', array('user' => $user));
+        }else{
+            return view('pc.index', array('user' => $user));
+        }
     }
 
-    public function getIndexContent(Request $request)
+        public function getIndexContent(Request $request)
     {
         $data = array();
         $parent_city = $request->input('parent_city') ? $request->input('parent_city') : 0;
@@ -107,15 +110,49 @@ class AdvertisementController extends BaseController
                 }
                 $res->image = $image;
                 $res->video = $video;
+                $res->created_at = date('j M,G A',strtotime($res->created_at));
             }
         } else {
             $results = array();
         }
-        foreach($results as &$v){
-            $v->created_at = date('j M,G A',strtotime($v->created_at));
-        }
-
         $data['advertisement_list'] = $results;
+
+
+        $db = DB::table('cities as c')
+            ->select('ad.title', 'ad.id as advertisement_id', 'u.id as user_id', 'ad.title', 'ad.content', 'ad.count','ad.created_at')
+            ->leftjoin('advertisement_user_cities as auc', 'auc.city_id', '=', 'c.id')
+            ->join('users as u', 'u.id', '=', 'auc.user_id')
+            ->join('advertisements as ad', 'ad.id', '=', 'auc.advertisement_id')
+            ->orderBy('ad.count', 'desc')
+            ->limit(10);
+        if ($results = $db->get()) {
+            foreach ($results as &$res) {
+                $media = DB::table('media as m')
+                    ->join('advertisement_media as am', 'am.media_id', '=', 'm.id')
+                    ->where('am.advertisement_id', '=', $res->advertisement_id)
+                    ->get();
+                $image = array();
+                $video = array();
+                if ($media) {
+                    foreach ($media as $m) {
+                        if ($m->media_type == 'image') {
+                            array_push($image, $m);
+                        }
+
+                        if ($m->media_type == 'video') {
+                            array_push($video, $m);
+                        }
+                    }
+                }
+                $res->image = $image;
+                $res->video = $video;
+                $res->created_at = date('j M,G A',strtotime($res->created_at));
+            }
+        } else {
+            $results = array();
+        }
+        $data['top_advertisement'] = $results;
+
 
         return $this->Success($data);
     }
@@ -155,6 +192,8 @@ class AdvertisementController extends BaseController
             ->leftjoin('advertisement_user_cities as auc', 'auc.advertisement_id', '=', 'ad.id')
             ->join('users as u', 'u.id', '=', 'auc.user_id')
             ->where('ad.content', 'like', "%{$keyword}%")
+            ->orWhere('ad.title', 'like', "%{$keyword}%")
+            ->orderBy('ad.created_at', 'desc')
             ->get();
         if ($results) {
             $results = $results->toArray();
@@ -212,12 +251,17 @@ class AdvertisementController extends BaseController
             ->select('u.id', 'u.username')
             ->first();
         $user_ad = User::with('advertisement', 'city')->select('id', 'nickname')->where('id', $other_detail->id)->first();
-        return view('home.detail', array('detail' => $ad_detail->toArray(), 'user_ad' => $user_ad->toArray()));
+        if($this->isMobile()) {
+            return view('home.detail', array('detail' => $ad_detail->toArray(), 'user_ad' => $user_ad->toArray()));
+        }else{
+            return view('pc.detail', array('detail' => $ad_detail->toArray(), 'user_ad' => $user_ad->toArray()));
+        }
     }
 
     public function search(Request $request)
     {
-
+        $keyword = $request->input('keyword');
+        return view('pc.search',array('keyword'=>$keyword));
     }
 
     /**
@@ -361,4 +405,5 @@ class AdvertisementController extends BaseController
 
         return $this->Success();
     }
+
 }
