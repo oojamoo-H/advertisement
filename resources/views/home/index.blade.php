@@ -324,16 +324,18 @@
                 <ul class="news-list">
                     {{# layui.each(d.advertisement_list, function(index, item){}}
                     {{# if (item.image.length > 0){}}
+
+                    {{# layui.each(item.image, function(i, mediaItem){}}
+                    {{# if (mediaItem.is_cover == 1) {}}
                     <li style="display: flex;flex-direction: column" data-id="{{item.advertisement_id}}" data-user-id="{{item.user_id}}">
-                        {{# layui.each(item.image, function(i, mediaItem){}}
-                        {{# if (mediaItem.is_cover == 1) {}}
                         <img data-preview-group="{{index}}" style="margin-right: 3px" width="100%" height="20%" src="{{mediaItem.media_url}}"/>
                         <br>
                         <sapn>{{item.title}}</sapn><br>
                         <span style="color:#aaa">Posted:{{item.created_at}}</span>
-                        {{# return true;} }}
-                        {{# });}}
                     </li>
+                    {{# return true;} }}
+                    {{# });}}
+
                     {{#} }}
                     {{# }); }}
                 </ul>

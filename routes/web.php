@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/maile/send', 'MailController@send');
 
 Route::namespace('Home')->group(function(){
     Route::group(array('middleware' => array('web', 'user.auth')), function(){
@@ -28,6 +28,7 @@ Route::namespace('Home')->group(function(){
 
     Route::get('/ad/getIndexContent', 'AdvertisementController@getIndexContent');
     Route::post('ad/searchAdvertisement', 'AdvertisementController@searchAdvertisement');
+    Route::get('ad/search', 'AdvertisementController@search');
     Route::get('/ad/getTop', 'AdvertisementController@getTop');
     Route::post('/user/registerTemp', 'UserController@registerTemp');
     Route::post('/user/login', 'LoginController@login');

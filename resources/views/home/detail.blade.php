@@ -211,9 +211,18 @@
                         <li data-id="{{$advertisement['id']}}" data-user-id="{{$user_ad['id']}}" class="user-ads">{{$advertisement['title']}}</li>
                         @endforeach
                     </ul>
+                    <div class="friendly-links" id="friendly-links" style="font-size: 12px">
+
+                        <div style="color:red">This site is restricted to persons 18 years or over<br/>
+                            All Rights Reserved ©2018 www.Escortbabe.com.au</div>
+
+
+                    </div>
                 </div>
+
             </div>
             <!-- off-canvas backdrop -->
+
         </div>
     @verbatim
         <script>
@@ -236,6 +245,19 @@
                 })
                 mui.previewImage();
             })
+            Ajax.get_friendly_links({}, function (res) {
+                if (res.code === 1){
+                    Helper.render($('#friendly-links'), $('#friendly-link'), res.data, 1);
+                }
+            })
+        </script>
+        <script type="text/html" id="friendly-link">
+            {{# layui.each(d, function(index, item){}}
+            {{# if (index != 0) {}}
+            <br/>
+            {{# } }}
+            <a style="color:red" href="javascript:;" data-url="{{item.url}}" class="sub-cities">{{item.name}}</a>
+            {{#  }); }}
         </script>
     @endverbatim
 @endsection
