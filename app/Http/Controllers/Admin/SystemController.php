@@ -93,8 +93,8 @@ class SystemController extends BaseController
         }
         $model->name = $name;
         $model->is_url = (int)$is_url;
-        $model->url = $url;
-        $model->content = $content;
+        $model->url = $url ?: '';
+        $model->content = $content ?: '';
         $model->status = (int)$status;
         $model->sort = (int)$sort;
         if($model->save()) {

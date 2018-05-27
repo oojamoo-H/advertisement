@@ -54,7 +54,7 @@
                 @if (empty($user))
                     <a href="/login"  id="myAccount"><i class="fa fa-fw fa-home"></i>My Account</a>
                 @else
-                    <a href="javacript:;"  id="myAccount2"><i class="fa fa-fw fa-home"></i>Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
+                    <a href="/ad/myAdList"  id="myAccount2"><i class="fa fa-fw fa-home"></i>Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
                 @endif
             </li>
             @if (! empty($user))
@@ -109,7 +109,7 @@
         </div>
         <div class="container-fluid text-center" style="padding-top: 20px">
             <p>This site is restricted to persons 18 years or over<br/>
-                All Rights Reserved ©2018 www.Escortbabe.com.au</p>
+                All Rights Reserved ©2018 <a href="/" style="color:#000">www.Escortbabe.com.au</a></p>
             <div class="row">
                 <div class="list-unstyled list-inline" id="friendly-links">
 

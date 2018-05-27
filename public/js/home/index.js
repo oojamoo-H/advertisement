@@ -47,7 +47,7 @@ $(function($) {
 			Helper.render($('#parent-cities'), $('#parent-city'), res.data, 1);
             Helper.render($('#sub-cities'), $('#sub-city'), res.data, 1);
             Helper.render($('#advertisement-item'), $('#advertisement'), res.data, 0);
-            $('#area_text').text('');
+            $('#area_text').text('Escort Adult Services');
 		} else {
             mui.alert(res.msg, 'Alert', 'ok');
 		}
