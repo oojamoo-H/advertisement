@@ -146,7 +146,9 @@ class UserController extends BaseController
             return $this->Error(-1, 'This user has been activated');
         }
         $code = $this->saveUserCode($user);
-        $this->sendRegisterEmail($user,$code);
+        //$this->sendRegisterEmail($user,$code);
+        $path = base_path()."/artisan email:send '{$user['nickname']}' '{$user['username']}' '{$code}'&";
+        pclose(popen("/usr/bin/php ".$path, "r"));
         return $this->Success(array('userId' => $user['id']));
     }
 
