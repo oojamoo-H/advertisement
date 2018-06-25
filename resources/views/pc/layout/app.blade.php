@@ -59,11 +59,11 @@
             </li>
             @if (! empty($user))
             <li>
-                <a href="javascript:;"  id="logout"><i class="fa fa-fw fa-cog"></i>Log Out</a>
-            </li>
-            <li>
                 <a href="/ad/myAdList"  id="myAccount2"><i class="fa fa-fw fa-home"></i>My Account</a>
             </li>
+                <li>
+                    <a href="javascript:;"  id="logout"><i class="fa fa-fw fa-cog"></i>Log Out</a>
+                </li>
             @endif
 
             {{--<li class="dropdown">
