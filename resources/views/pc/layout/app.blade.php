@@ -54,12 +54,16 @@
                 @if (empty($user))
                     <a href="/login"  id="myAccount"><i class="fa fa-fw fa-home"></i>My Account</a>
                 @else
-                    <a href="/ad/myAdList"  id="myAccount2"><i class="fa fa-fw fa-home"></i>Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
+                    <a href="javascript:;"  ><i class="fa fa-fw fa-home"></i>Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
                 @endif
             </li>
             @if (! empty($user))
             <li>
                 <a href="javascript:;"  id="logout"><i class="fa fa-fw fa-cog"></i>Log Out</a>
+            </li>
+            @else
+            <li>
+                <a href="/ad/myAdList"  id="myAccount2"><i class="fa fa-fw fa-home"></i>My Account</a>
             </li>
             @endif
 
