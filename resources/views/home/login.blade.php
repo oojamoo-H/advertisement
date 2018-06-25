@@ -75,9 +75,9 @@
             <div class="link-area mui-text-center">
                 <a href="javascript:;" id='logBtn'>Login</a>
             </div>
-            <div>
+            {{--<div>
                 Note: Working hr from 9am to 5pm, if register after working hr, authentication code might be received next working day.
-            </div>
+            </div>--}}
         </form>
     </div>
 </div>

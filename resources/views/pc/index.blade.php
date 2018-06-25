@@ -64,7 +64,7 @@
         <ul class="nav nav-tabs">
             <li class="active" data-index="1"><a href="#identifier1" data-toggle="tab">top</a></li>
             <li data-index="2"><a href="#identifier2" data-toggle="tab">gallery</a></li>
-            <li data-index="3"><a href="#identifier3" data-toggle="tab">vedio</a></li>
+            <li data-index="3"><a href="#identifier3" data-toggle="tab">video</a></li>
             <li data-index="4"><a href="#identifier4" data-toggle="tab">date</a></li>
         </ul>
         <div class="tab-content" id="advertisement-item">

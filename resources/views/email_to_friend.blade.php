@@ -4,4 +4,4 @@ Your friend {{$uname}} has invited you to register on this amazing website: <a h
 Sincerely yours,
 <br><br>
 
-Ascortbabe team
+Escortbabe team

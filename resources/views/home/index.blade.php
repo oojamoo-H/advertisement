@@ -180,9 +180,14 @@
                             @if (empty($user))
                                 <a href="/login" class="mui-navigate-right" id="myAccount">My Account</a>
                             @else
-                                <a href="javascript:;" class="mui-navigate-right" id="myAccount2">Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
+                                <a href="javascript:;" class="mui-navigate-right" >Your Point:&nbsp;&nbsp;{{$user['point']}}</a>
                             @endif
                         </li>
+                        @if (!empty($user))
+                            <li class="mui-table-view-cell">
+                                <a href="javascript:;" class="mui-navigate-right" id="myAccount2">My Account</a>
+                            </li>
+                        @endif
                         @if (! empty($user))
                         <li class="mui-table-view-cell">
 
@@ -238,7 +243,7 @@
                         <span class="spliter">|</span>
                         <a  href="javascript:;" class="mui-control-item tab" data-index="2">gallery</a>
                         <span class="spliter">|</span>
-                        <a  href="javascript:;" class="mui-control-item tab" data-index="3">vedio</a>
+                        <a  href="javascript:;" class="mui-control-item tab" data-index="3">video</a>
                         <span class="spliter">|</span>
                         <a  href="javascript:;" id="dateOrder" class="mui-control-item" data-index="4">date</a>
                     </div>
