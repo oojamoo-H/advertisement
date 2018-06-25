@@ -61,7 +61,6 @@
             <li>
                 <a href="javascript:;"  id="logout"><i class="fa fa-fw fa-cog"></i>Log Out</a>
             </li>
-            @else
             <li>
                 <a href="/ad/myAdList"  id="myAccount2"><i class="fa fa-fw fa-home"></i>My Account</a>
             </li>
