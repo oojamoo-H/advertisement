@@ -136,7 +136,7 @@ class UserController extends BaseController
             $user->password = '';
             $user->is_active = 0;
             $user->status = 0;
-            if($user->save()){
+            if(!$user->save()){
                 return $this->Error(-1, 'System Error!');
             }
         }
