@@ -1,3 +1,4 @@
+@include('UEditor::head')
 @extends('admin.layout.app')
 
 @section('content')
@@ -91,6 +92,10 @@
                     })
                     return false;
                 });
+            });
+            var ue = UE.getEditor('content', {
+                initialFrameWidth : '100%',
+                initialFrameHeight : 350,
             });
         });
 
