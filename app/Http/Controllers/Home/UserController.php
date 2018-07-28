@@ -147,7 +147,7 @@ class UserController extends BaseController
         }
         $code = $this->saveUserCode($user);
         //$this->sendRegisterEmail($user,$code);
-        $nickname = $user['nickname'] ?: ' ';
+        $nickname = $user['nickname'] ?: 'member';
         $path = base_path()."/artisan email:send '{$nickname}' '{$user['username']}' '{$code}'&";
         pclose(popen("/usr/bin/php ".$path, "r"));
         return $this->Success(array('userId' => $user['id']));
