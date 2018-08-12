@@ -296,9 +296,10 @@ class AdvertisementController extends BaseController
             $ad_detail['ad'] = Advertisement::find($id)->toArray();
             $auc = AdvertisementUserCity::where('advertisement_id', $id)->first();
             $city = City::with('children')->where('id', $auc->city_id)->select('id', 'city_name', 'parent_id')->first();
-            $ad_detail['city']['city'] = $city->toArray();
+            $ad_detail['city']['parent'] = $city->toArray();
             if($city->parent_id) {
                 $city_parent = City::with('children')->where('id', $city->parent_id)->select('id', 'city_name', 'parent_id')->first();
+                $ad_detail['city']['city'] = $ad_detail['city']['parent'];
                 $ad_detail['city']['parent'] = $city_parent->toArray();
             }
             //media
