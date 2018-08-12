@@ -296,11 +296,11 @@ class AdvertisementController extends BaseController
             $ad_detail['ad'] = Advertisement::find($id)->toArray();
             $auc = AdvertisementUserCity::where('advertisement_id', $id)->first();
             $city = City::with('children')->where('id', $auc->city_id)->select('id', 'city_name', 'parent_id')->first();
-            $city_parent = City::with('children')->where('id', $city->parent_id)->select('id', 'city_name', 'parent_id')->first();
-            $ad_detail['city'] = array(
-                'city' => $city->toArray(),
-                'parent' => $city_parent->toArray(),
-            );
+            $ad_detail['city']['city'] = $city->toArray();
+            if($city->parent_id) {
+                $city_parent = City::with('children')->where('id', $city->parent_id)->select('id', 'city_name', 'parent_id')->first();
+                $ad_detail['city']['parent'] = $city_parent->toArray();
+            }
             //media
             $media = DB::table('advertisement_media as am')
                 ->select('m.id', 'm.media_url', 'm.media_type', 'm.is_cover')
@@ -432,7 +432,7 @@ class AdvertisementController extends BaseController
         );
         Mail::alwaysTo($email);
         $flag = Mail::send('email_to_friend',$params,function($message){
-            $message->subject('EscortBabe Email To Friend');
+            $message->subject('EscortPie Email To Friend');
         });
         return $this->Success($flag ? 1 : 0);
     }

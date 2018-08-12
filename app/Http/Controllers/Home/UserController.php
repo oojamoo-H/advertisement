@@ -194,7 +194,7 @@ class UserController extends BaseController
         );
         Mail::alwaysTo($user['username']);
         $flag = Mail::send('reg_email',$params,function($message){
-            $message->subject('EscortBabe Account Verification');
+            $message->subject('EscortPie Account Verification');
         });
         return $flag;
     }

@@ -112,7 +112,7 @@
         </div>
         <div class="container-fluid text-center" style="padding-top: 20px">
             <p>This site is restricted to persons 18 years or over<br/>
-                All Rights Reserved ©2018 <a href="/" style="color:#000">www.Escortbabe.com.au</a></p>
+                All Rights Reserved ©2018 <a href="/" style="color:#000">www.escortpie.com/</a></p>
             <div class="row">
                 <div class="list-unstyled list-inline" id="friendly-links">
 

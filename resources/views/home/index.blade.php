@@ -210,7 +210,7 @@
                     <input name="keyword" type="text" class="mui-input-clear search-input" placeholder="">
                     <a href="javascript:;" class="mui-icon-search mui-icon search-ad'"></a>
                 </div>
-                <h1 class="mui-title">Escortbabe</h1>
+                <h1 class="mui-title">Escortpie</h1>
 
             </header>
             <div style="width:100%;height:30px;background: black;padding:5px 20px;font-size:12px;position: absolute;margin-top: 90px;z-index: 888;">
@@ -253,7 +253,7 @@
                     <div class="friendly-links" id="friendly-links">
 
                         <div style="color:red">This site is restricted to persons 18 years or over<br/>
-                            All Rights Reserved ©2018 <a href="/" style="color:red">www.Escortbabe.com.au</a></div>
+                            All Rights Reserved ©2018 <a href="/" style="color:red">www.escortpie.com</a></div>
 
 
                     </div>
