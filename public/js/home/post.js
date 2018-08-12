@@ -122,7 +122,11 @@ $(function () {
                 picker.pickers[1].setSelectedIndex(0);
                 picker.show(function(SelectedItem) {
                     $('#parent_city').data('city_id', SelectedItem[0].value).text(SelectedItem[0].text)
-                    $('#sub_city').data('city_id', SelectedItem[1].value).text(SelectedItem[1].text)
+                    if(SelectedItem[1]) {
+                        $('#sub_city').data('city_id', SelectedItem[1].value).text(SelectedItem[1].text)
+                    }else{
+                        $('#sub_city').data('city_id', 0).text('')
+                    }
                 })
             }
 
