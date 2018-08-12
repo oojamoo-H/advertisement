@@ -216,7 +216,7 @@
                     <div class="friendly-links" id="friendly-links" style="font-size: 12px">
 
                         <div style="color:red">This site is restricted to persons 18 years or over<br/>
-                            All Rights Reserved ©2018 www.escortpie.com/</div>
+                            All Rights Reserved ©2018 www.escortpie.com</div>
 
 
                     </div>
