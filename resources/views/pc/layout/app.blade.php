@@ -87,16 +87,17 @@
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-        <nav class="navbar navbar-default " style="position: fixed;top:0;width: 100%;z-index:100;">
+        <nav class="navbar navbar-default " style="position: fixed;top:0;width: 100%;z-index:100;height:50px;overflow: hidden">
             <div class="container-fluid">
                 <button type="button" class="hamburger is-closed animated fadeInLeft " data-toggle="offcanvas">
                     <span class="hamb-top"></span>
                     <span class="hamb-middle"></span>
                     <span class="hamb-bottom"></span>
                 </button>
-                <form class="navbar-form navbar-right" action="/ad/search">
+                <form class="navbar-form  pull-right" action="/ad/search"  style="padding-top: 0px;">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search" name="keyword">
+
                     </div>
                     <button type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
                 </form>

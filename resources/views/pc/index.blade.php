@@ -128,7 +128,7 @@
                             {{# });}}
                         </div>
                     </div>
-                    <div id='u_list' class="col-sm-3 col-md-2"   >
+                    <div id='u_list' class="col-xs-12 col-sm-3 col-md-2"   >
                         {{# layui.each(d.top_advertisement, function(index, item){}}
                         <div class="top_list">
                             <a href="/ad/detail?ad_id={{item.advertisement_id}}">{{item.title}}</a><br>
@@ -218,7 +218,7 @@
                 {{# layui.each(d, function(index, item){}}
                 <div class="item {{# if (index == 0) {}}active{{# } }}">
                     <a href="/ad/detail?ad_id={{item.advertisement_id}}">
-                    <img style="margin: 0 auto" src="{{item.media_url}}">
+                    <img style="margin: 0 auto;width:100%;" src="{{item.media_url}}">
                     </a>
                 </div>
                 {{# }) }}
