@@ -86,7 +86,7 @@
 
 
     <!-- Page Content -->
-    <div id="page-content-wrapper">
+    <div id="page-content-wrapper" style="position:relative">
         <nav class="navbar navbar-default " style="position: fixed;top:0;width: 100%;z-index:100;height:50px;overflow: hidden">
             <div class="container-fluid">
                 <button type="button" class="hamburger is-closed animated fadeInLeft " data-toggle="offcanvas">

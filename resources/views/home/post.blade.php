@@ -181,6 +181,7 @@
     <!--主界面部分-->
     <div class="mui-inner-wrap">
         <header class="mui-bar mui-bar-nav" style="background: black">
+            <a id="goBack" onclick="history.go(-1)" href="javascript:;" class="mui-icon mui-action-menu mui-icon mui-icon-back mui-pull-left" style="color: white"></a>
             <h1 class="mui-title">{{$title??'Post Ad'}}</h1>
         </header>
         <div id="offCanvasContentScroll" class="mui-content ">
